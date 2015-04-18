@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><system>
+	<mediaBaseURL></mediaBaseURL>
+	<xmlBaseURL></xmlBaseURL>
+	<allowXMLCache>0</allowXMLCache>
+	<staticWindow>0</staticWindow>
+	<fileIOType>sharedObject</fileIOType>
+	<fileIOService>save/fileio.php</fileIOService>
+	<tweenEngine>tweenLite</tweenEngine>
+	<invenMode>dynamic</invenMode>
+	<invenShow>0.4</invenShow>
+	<invenHide>0.25</invenHide>
+	<actionMode>disc</actionMode>
+	<actionShow>0.35</actionShow>
+	<actionHide>0.35</actionHide>
+	<skipControl>tab</skipControl>
+	<skipDiaControl>mouse</skipDiaControl>
+	<subtitleShow>0.5</subtitleShow>
+	<subtitleHide>0.3</subtitleHide>
+	<subtitleOverhead>15</subtitleOverhead>
+	<subtitlePadding>10</subtitlePadding>
+	<contextOff>0xFFFFFF</contextOff>
+	<contextOn>0xFF3300</contextOn>
+	<treeOff>0xFFFFFF</treeOff>
+	<treeOn>0xFF3300</treeOn>
+	<curtainColor>0x000000</curtainColor>
+	<menuSubtitle>1</menuSubtitle>
+	<menuSubtitleSpeed>1</menuSubtitleSpeed>
+	<menuVoice>1</menuVoice>
+	<menuFullscreen>1</menuFullscreen>
+	<menuGraphicsQuality>1</menuGraphicsQuality>
+	<menuQuit>1</menuQuit>
+	<menuHelp>1</menuHelp>
+	<menuHelpText><![CDATA[]]></menuHelpText>
+	<legal>
+		<en><![CDATA[<p>END-USER LICENSE AGREEMENT FOR "WHAT MAKES YOU TICK?" IMPORTANT PLEASE READ THE TERMS AND CONDITIONS OF THIS LICENSE AGREEMENT CAREFULLY BEFORE CONTINUING WITH THIS PROGRAM INSTALL: Lassie Games/Matthias Kempke ("LG") End-User License Agreement ("EULA") is a legal agreement between you (either an individual or a single entity) and LG for the LG software product(s) identified above which may include associated software components, media, printed materials, and "online" or electronic documentation ("SOFTWARE PRODUCT"). By installing, copying, or otherwise using the SOFTWARE PRODUCT, you agree to be bound by the terms of this EULA. This license agreement represents the entire agreement concerning the program between you and LG, (referred to as "licenser"), and it supersedes any prior proposal, representation, or understanding between the parties. If you do not agree to the terms of this EULA, do not install or use the SOFTWARE PRODUCT.</p><br><p>The SOFTWARE PRODUCT is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties. The SOFTWARE PRODUCT is licensed, not sold.</p><br><p><b>1. GRANT OF LICENSE.</b><br>
+The SOFTWARE PRODUCT is licensed as follows:</p><p><b>(a) Installation and Use.</b><br>
+LG grants you the right to install and use copies of the SOFTWARE PRODUCT on your computer running a validly licensed copy of the operating system for which the SOFTWARE PRODUCT was designed [e.g., Windows 95, Windows NT, Windows 98, Windows 2000, Windows 2003, Windows XP, Windows ME, Windows Vista, Mac OSX, Lunix].</p><p><b>(b) Backup Copies.</b><br>
+You may also make copies of the SOFTWARE PRODUCT as may be necessary for backup and archival purposes.</p><br><p><b>2. DESCRIPTION OF OTHER RIGHTS AND LIMITATIONS.</b></p><p><b>(a) Maintenance of Copyright Notices.</b><br>
+You must not remove or alter any copyright notices on any and all copies of the SOFTWARE PRODUCT.</p><p><b>(b) Distribution.</b><br>
+You may freely distribute copies of the SOFTWARE PRODUCT to third parties.</p><p><b>(c) Prohibition on Reverse Engineering, Decompilation, and Disassembly.</b><br>
+You may not reverse engineer, decompile, or disassemble the SOFTWARE PRODUCT, except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation.</p><p><b>(d) Rental.</b><br>
+You may not rent, lease, or lend the SOFTWARE PRODUCT.</p><p><b>(e) Support Services.</b><br>
+No support services are provided for this free product. Please enjoy in whatever capacity you are able to use the SOFTWARE PRODUCT.</p><p><b>(f) Compliance with Applicable Laws.</b><br>
+You must comply with all applicable laws regarding use of the SOFTWARE PRODUCT.</p><br><p><b>3. TERMINATION</b><br>
+Without prejudice to any other rights, LG may terminate this EULA if you fail to comply with the terms and conditions.</p><br><p><b>4. COPYRIGHT</b><br>
+All title, including but not limited to copyrights, in and to the SOFTWARE PRODUCT and any copies thereof are owned by LG or its suppliers; or are known by available records as falling within the public domain. All title and intellectual property rights in and to the content which may be accessed through use of the SOFTWARE PRODUCT is the property of the respective content owner and may be protected by applicable copyright or other intellectual property laws and treaties. This EULA grants you no rights to use such content. All rights not expressly granted are reserved by LG, its suppliers, or the public domain.</p><br><p><b>5. NO WARRANTIES</b><br>
+LG expressly disclaims any warranty for the SOFTWARE PRODUCT. The SOFTWARE PRODUCT is provided 'As Is' without any express or implied warranty of any kind, including but not limited to any warranties of merchantability, noninfringement, or fitness of a particular purpose. LG does not warrant or assume responsibility for the accuracy or completeness of any information, text, graphics, links or other items contained within the SOFTWARE PRODUCT. LG makes no warranties respecting any harm that may be caused by the transmission of a computer virus, worm, time bomb, logic bomb, or other such computer program. LG further expressly disclaims any warranty or representation to Authorized Users or to any third party.</p><br><p><b>6. LIMITATION OF LIABILITY</b><br>
+In no event shall LG be liable for any damages (including, without limitation, lost profits, business interruption, or lost information) rising out of 'Authorized Users' use of or inability to use the SOFTWARE PRODUCT, even if LG has been advised of the possibility of such damages. In no event will LG be liable for loss of data or for indirect, special, incidental, consequential (including lost profit), or other damages based in contract, tort or otherwise. LG shall have no liability with respect to the content of the SOFTWARE PRODUCT or any part thereof, including but not limited to errors or omissions contained therein, libel, infringements of rights of publicity, privacy, trademark rights, business interruption, personal injury, loss of privacy, moral rights or the disclosure of confidential information.</p>]]></en>
+		<de><![CDATA[]]></de>
+	</legal></system>

@@ -1,0 +1,133 @@
+<room id="intro" coreLibs="lib/intro.swf" voiceLibs="lib/intro_voice.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes />
+      <nodes />
+    </grid>
+  </grids>
+  <positions />
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="39" y="337" scale="0.5" rate="0.5" blur="1" color="0x000000" tint="0.5" />
+      <pole x="39" y="519" scale="1" rate="1" blur="5" color="0xFFFFFF" tint="0.5" />
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <ui target="ui_mask" display="hide" tween="0" />
+      <curtain blackout="0" />
+      <puppet target="sequence" callAction="0" />
+    </script>
+    <script id="_exit">
+      <library unloadRoom="_current" />
+      <curtain blackout="1" />
+      <ui target="ui_mask" display="show" tween="0" />
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/intro.swf:IntroBg" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="900" hitH="675" shape="rect">
+          <param mouse="0" scrollL="300" scrollR="300" scrollT="300" scrollB="300" />
+          <vars />
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="intro" type="plane" asset="lib/intro.swf:IntroMovie" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mouse="0" float="0" parallax="" />
+          <vars />
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="sequence" type="puppet" asset="" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="425" y="615" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="10" hitH="10" shape="rect">
+          <param mapX="35" mapY="35" turnTo="8" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Intro Sequence]]></en>
+              </title>
+              <dialog>
+                <dia puppet="sequence" frame="" sound="lib/intro_voice.swf:intro_000">
+                  <es><![CDATA[En unos segundos, un joven llegará a esta parada de autobús.]]></es>
+                  <en><![CDATA[In a few seconds, a young man will arrive at this bus stop.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="sequence" frame="" sound="lib/intro_voice.swf:intro_001">
+                  <es><![CDATA[Aquí está.]]></es>
+                  <en><![CDATA[Here he comes.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="sequence" frame="" sound="lib/intro_voice.swf:intro_002">
+                  <es><![CDATA[Se llama Nathan.]]></es>
+                  <en><![CDATA[His name is Nathan.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="sequence" frame="" sound="lib/intro_voice.swf:intro_003">
+                  <es><![CDATA[Ha sido enviado por la Universidad de B. para buscar a un hombre llamado Dr. Coppelius, que desapareció hace aproximadamente un año.]]></es>
+                  <en><![CDATA[He was sent here by the University of B. to search for a man called Dr. Coppelius, who disappeared about one year ago.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="sequence" frame="" sound="lib/intro_voice.swf:intro_004">
+                  <es><![CDATA[Aunque ha llegado mucho más tarde de lo que esperaba, Nathan comienza su búsqueda del misterioso Coppelius.]]></es>
+                  <en><![CDATA[Although he arrived much later than he expected, Nathan begins his search for the mysterious Coppelius.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="sequence" frame="" sound="lib/intro_voice.swf:intro_005">
+                  <es><![CDATA[Con tan sólo una fotografía de la casa del doctor, el joven inicia su viaje por el oscuro paisaje.]]></es>
+                  <en><![CDATA[With nothing but a photograph of the doctor’s house, the young man starts his journey through the dusky landscape.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="sequence" frame="" sound="lib/intro_voice.swf:intro_006">
+                  <es><![CDATA[Ni tan siquiera puede imaginar que al final del camino le aguarda la aventura ...]]></es>
+                  <en><![CDATA[Little does he expect that at the end of the path adventure is waiting for him ...]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <sequence skip="1">
+                  <layerSprite target="intro" animFrame="intro" waitForComplete="0" />
+                  <wait stageEvent="intro_000" />
+                  <dialogue playList="0" skipable="0" />
+                  <wait stageEvent="intro_001" />
+                  <dialogue playList="1" skipable="0" />
+                  <wait stageEvent="intro_002" />
+                  <dialogue playList="2" skipable="0" />
+                  <wait stageEvent="intro_003" />
+                  <dialogue playList="3" skipable="0" />
+                  <wait stageEvent="intro_004" />
+                  <dialogue playList="4" skipable="0" />
+                  <wait stageEvent="intro_005" />
+                  <dialogue playList="5" skipable="0" />
+                  <wait stageEvent="intro_006" />
+                  <dialogue playList="6" skipable="0" />
+                  <wait stageEvent="lassieAnimComplete" />
+                </sequence>
+                <game room="well:join_intro" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees />
+</room>

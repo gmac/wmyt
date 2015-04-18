@@ -1,0 +1,700 @@
+<room id="cliff" coreLibs="lib/cliff.swf" voiceLibs="lib/cliff_voice.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="" sound2="lib/cliff.swf:CliffFx">
+  <grids>
+    <grid id="main">
+      <boxes>
+        <box x="686" y="417" w="97" h="26" nodes="n2,n5,n8" />
+      </boxes>
+      <nodes>
+        <node id="n0" x="940" y="450" join="n1" trap="0" name="join_lab2" />
+        <node id="n1" x="865" y="465" join="n0,n2" trap="0" name="join_house" />
+        <node id="n2" x="780" y="440" join="n1,n5,n8" trap="0" />
+        <node id="n3" x="635" y="400" join="n4,n5" trap="0" />
+        <node id="n4" x="575" y="395" join="n6,n3" trap="1" name="string" />
+        <node id="n5" x="691" y="421" join="n3,n2,n8" trap="0" name="sundial" />
+        <node id="n6" x="529" y="439" join="n7,n4" trap="1" name="lookout" />
+        <node id="n7" x="635" y="470" join="n8,n6" trap="1" />
+        <node id="n8" x="690" y="440" join="n7,n2,n5" trap="0" />
+      </nodes>
+    </grid>
+  </grids>
+  <positions>
+    <position id="join_lab2" turn="4" x="940" y="450" />
+    <position id="join_house" turn="6" x="865" y="465" />
+    <position id="string" turn="4" x="575" y="395" />
+    <position id="sundial" turn="4" x="691" y="421" />
+    <position id="lookout" turn="4" x="529" y="439" />
+  </positions>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="714" y="379" scale="0.4" rate="0.5" blur="1" color="0x000000" tint="0.5" />
+      <pole x="714" y="485" scale="0.75" rate="1" blur="5" color="0xFFFFFF" tint="0.5" />
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <curtain blackout="0" />
+      <logic eval="[_startPosition] EQ join_lab2">
+        <puppet target="pod" callAction="0" />
+      </logic>
+    </script>
+    <script id="_exit">
+      <library unloadRoom="_current" />
+      <curtain blackout="1" />
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/cliff.swf:CliffBg" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="900" hitH="675" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300" />
+          <vars />
+          <title>
+            <es><![CDATA[]]></es>
+            <en><![CDATA[]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="water" type="plane" asset="lib/cliff.swf:CliffWater" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="113" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mouse="0" float="0" parallax="" />
+          <vars />
+          <title>
+            <es><![CDATA[]]></es>
+            <en><![CDATA[]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="pod" type="puppet" asset="lib/cliff.swf:CliffPod" depth="2" visible="1" state="pre">
+      <states>
+        <state id="pre" x="0" y="113" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="523" hitY="127" hitW="84" hitH="161" shape="rect">
+          <param mapX="469" mapY="411" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[]]></es>
+            <en><![CDATA[]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[crash]]></es>
+                <en><![CDATA[crash]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="lspeak" sound="lib/cliff_voice.swf:cliff_000">
+                  <es><![CDATA[&#191;A qué eso ha sido escalofriante, eh?]]></es>
+                  <en><![CDATA[That was scary, hu?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="hspeak" sound="lib/cliff_voice.swf:cliff_001">
+                  <es><![CDATA[Pero no te preocupes, &#161;sigo vivo!]]></es>
+                  <en><![CDATA[But don’t worry, I’m still alive!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="hspeak" sound="lib/cliff_voice.swf:cliff_002">
+                  <es><![CDATA[Gracias a Dios fui expulsado de la cápsulda antes de que chocara con el suelo.]]></es>
+                  <en><![CDATA[Thank goodness I was thrown out of the pod seconds before it hit the ground.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_003">
+                  <es><![CDATA[&#161;Ahora tengo que volver al laboratorio y liberar al Dr. Coppelius!]]></es>
+                  <en><![CDATA[Now I need to get back to the lab and free Dr. Coppelius!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <params walkTo="none" />
+                <sequence skip="1">
+                  <layerSprite target="pod" animFrame="arrival" waitForComplete="1" />
+                  <layer target="_current:pod" state="post" />
+                  <wait seconds="4" />
+                  <puppetTween target="_avatar" to="position:sundial" toView="5" type="moveThenTurn" waitForComplete="1" />
+                </sequence>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+        <state id="post" x="0" y="113" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="3" blend="normal" alpha="1" bitmap="0" hit="0" hitX="360" hitY="200" hitW="211" hitH="148" shape="rect">
+          <param mapX="605" mapY="387" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[]]></es>
+            <en><![CDATA[]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Aterrizaje]]></es>
+                <en><![CDATA[arrival]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="lspeak" sound="lib/cliff_voice.swf:cliff_000">
+                  <es><![CDATA[&#191;A qué eso ha sido escalofriante, eh?]]></es>
+                  <en><![CDATA[That was scary, hu?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="hspeak" sound="lib/cliff_voice.swf:cliff_001">
+                  <es><![CDATA[Pero no te preocupes, &#161;sigo vivo!]]></es>
+                  <en><![CDATA[But don’t worry, I’m still alive!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_002">
+                  <es><![CDATA[Gracias a Dios que fui expulsado de la cápsulda antes de que chocara con el suelo.]]></es>
+                  <en><![CDATA[Thank goodness I was thrown out of the pod seconds before it hit the ground.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_007">
+                  <es><![CDATA[&#161;Ahora tengo que volver al laboratorio y liberar al Dr. Coppelius!]]></es>
+                  <en><![CDATA[Now I should get back to the house and free Dr. Coppelius!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="lighthouse" type="puppet" asset="" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="196" y="309" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-20" hitY="-30" hitW="39" hitH="46" shape="rect">
+          <param mapX="529" mapY="439" turnTo="8" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[faro]]></es>
+            <en><![CDATA[lighthouse]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_008">
+                  <es><![CDATA[Hay un faro allá lejos... pero no hay luz.]]></es>
+                  <en><![CDATA[There’s a lighthouse off in the distance... but no light.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="boat" type="puppet" asset="lib/cliff.swf:CliffBoat" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="141" y="336" img="1" imgX="-17" imgY="-23" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-29" hitY="-28" hitW="60" hitH="40" shape="rect">
+          <param mapX="529" mapY="439" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[barco]]></es>
+            <en><![CDATA[boat]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_009">
+                  <es><![CDATA[El barco está anclado en la bahía.]]></es>
+                  <en><![CDATA[A boat is at anchor in the bay.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="pier" type="puppet" asset="" depth="5" visible="1" state="main">
+      <states>
+        <state id="main" x="40" y="404" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-38" hitY="-86" hitW="78" hitH="87" shape="rect">
+          <param mapX="529" mapY="439" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[embarcadero lejano]]></es>
+            <en><![CDATA[distant pier]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_010">
+                  <es><![CDATA[Hay un viejo embarcadero al otro lado de la bahía.]]></es>
+                  <en><![CDATA[There’s an old pier on the other side of the bay.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="string" type="puppet" asset="lib/cliff.swf:CliffString" depth="6" visible="1" state="main">
+      <states>
+        <state id="main" x="505" y="315" img="1" imgX="-41" imgY="-50" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-30" hitY="-30" hitW="70" hitH="46" shape="rect">
+          <param mapX="575" mapY="395" turnTo="8" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[cordón]]></es>
+            <en><![CDATA[piece of string]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_011">
+                  <es><![CDATA[Hay un cordón enredado en las ramas.]]></es>
+                  <en><![CDATA[There’s a piece of string caught in the branches.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Coger]]></es>
+                <en><![CDATA[Take]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_012">
+                  <es><![CDATA[&#161;Un cordón puede serme útil!]]></es>
+                  <en><![CDATA[A piece of string can be useful!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <sequence>
+                  <dialogue play="*" />
+                  <layerSprite target="_avatar" animFrame="reach_out" waitForComplete="1" />
+                  <layer target="_current:string" visible="0" omit="1" />
+                  <inventory add="twine" />
+                  <layerSprite target="_avatar" animFrame="reach_in" waitForComplete="1" />
+                </sequence>
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="sundial" type="puppet" asset="lib/cliff.swf:CliffSundial" depth="7" visible="1" state="main">
+      <states>
+        <state id="main" x="624" y="447" img="1" imgX="-35" imgY="-87" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="1" hit="1" hitX="-34" hitY="-87" hitW="71" hitH="90" shape="rect">
+          <param mapX="691" mapY="421" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="1" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[reloj de sol]]></es>
+            <en><![CDATA[sundial]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_013">
+                  <es><![CDATA[Es un reloj de sol.]]></es>
+                  <en><![CDATA[It’s a sundial.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_014">
+                  <es><![CDATA[No hace sol, por lo que no puedo decir que hora es.]]></es>
+                  <en><![CDATA[There’s no sunlight, so I can’t tell what time it is.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="exit_house" type="puppet" asset="" depth="8" visible="1" state="main">
+      <states>
+        <state id="main" x="899" y="474" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-100" hitY="-250" hitW="100" hitH="270" shape="rect">
+          <param mapX="940" mapY="450" turnTo="4" turn="0" cursor="exit3" onclick="0" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[]]></es>
+            <en><![CDATA[]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog />
+              <script>
+                <game room="house:join_cliff" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="crow" type="puppet" asset="lib/cliff.swf:CliffCrow" depth="9" visible="0" state="key">
+      <states>
+        <state id="key" x="734" y="251" img="1" imgX="-24" imgY="-29" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-28" hitY="-34" hitW="61" hitH="63" shape="rect">
+          <param mapX="735" mapY="420" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[cuervo dormido]]></es>
+            <en><![CDATA[sleeping crow]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_015">
+                  <es><![CDATA[Está dormido. Parece que mis sedantes han sido efectivos.]]></es>
+                  <en><![CDATA[He’s asleep. It seems that my sedatives worked.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_016">
+                  <es><![CDATA[Creo que ahora podré coger la llave.]]></es>
+                  <en><![CDATA[I guess I can take the key now.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Quitarle la llave al]]></es>
+                <en><![CDATA[Take key from]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_017">
+                  <es><![CDATA[Vale, tengo la llave.]]></es>
+                  <en><![CDATA[Okay, I have the key.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <sequence>
+                  <layerSprite target="_avatar" animFrame="reach_out" waitForComplete="1" />
+                  <layer target="_current:crow" state="no_key" omit="1" />
+                  <inventory add="key1" />
+                  <layerSprite target="_avatar" animFrame="reach_in" waitForComplete="1" />
+                </sequence>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+        <state id="no_key" x="734" y="251" img="1" imgX="-24" imgY="-29" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-28" hitY="-34" hitW="61" hitH="63" shape="rect">
+          <param mapX="735" mapY="420" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[cuervo dormido]]></es>
+            <en><![CDATA[sleeping crow]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_015">
+                  <es><![CDATA[Está dormido. Parece que mis sedantes han sido efectivos.]]></es>
+                  <en><![CDATA[He’s asleep. It seems that my sedatives worked.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Despertar]]></es>
+                <en><![CDATA[Poke]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/cliff_voice.swf:cliff_019">
+                  <es><![CDATA[No. Se ha ganado un merecido descando.]]></es>
+                  <en><![CDATA[No. He deserves some rest.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="_avatar" type="avatar" asset="lib/nathan.swf:Nathan" depth="10" visible="1" state="main">
+      <states>
+        <state id="main" x="763" y="445" img="1" imgX="4" imgY="3" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[nathan]]></es>
+            <en><![CDATA[nathan]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="foreground" type="plane" asset="lib/cliff.swf:CliffFg" depth="11" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="113" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="1" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mouse="0" float="0" parallax="" />
+          <vars />
+          <title>
+            <es><![CDATA[]]></es>
+            <en><![CDATA[]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees />
+</room>

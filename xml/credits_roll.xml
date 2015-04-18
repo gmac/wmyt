@@ -1,0 +1,144 @@
+<credits>
+	<table title="What Makes You Tick?" cols="1">
+		<c><![CDATA[A Matthias Kempke Game]]></c>
+		<c><![CDATA[Performed by Happenstance Theater]]></c>
+	</table>
+	<table title="Voice Cast" cols="2" align="right,left">
+		<c><![CDATA[Nathan ...]]></c>
+			<c><![CDATA[Alex Vernon]]></c>
+		<c><![CDATA[Coppelius ...]]></c>
+			<c><![CDATA[Mark Jaster]]></c>
+		<c><![CDATA[Nora ...]]></c>
+			<c><![CDATA[Sarah Olmsted Thomas]]></c>
+		<c><![CDATA[McManus ...]]></c>
+  		<c><![CDATA[Mark Jaster]]></c>
+  	<c><![CDATA[Vincent ...]]></c>
+  		<c><![CDATA[Alex Vernon]]></c>
+  	<c><![CDATA[Greg the Backpacker ...]]></c>
+  		<c><![CDATA[Greg MacWilliam]]></c>
+		<c><![CDATA[Narrator ...]]></c>
+  		<c><![CDATA[Mark Jaster]]></c>
+  	<c><![CDATA[Vocal Director ...]]></c>
+  		<c><![CDATA[Greg MacWilliam]]></c>
+	</table>
+	<table title="Localization" cols="2">
+  	<c><![CDATA[Spanish Translation ...]]></c>
+  		<c><![CDATA[Carlos Moisés Mateos Rodríguez]]></c>
+	</table>
+	<table title="Art Department" cols="2" align="right,left">
+		<c><![CDATA[Art Director ...]]></c>
+			<c><![CDATA[Matthias Kempke]]></c>
+		<c><![CDATA[Background Art ...]]></c>
+			<c><![CDATA[Matthias Kempke]]></c>
+		<c><![CDATA[Animations ...]]></c>
+			<c><![CDATA[Matthias Kempke<br>Sebastian Kempke<br>Greg MacWilliam<br>John Green]]></c>
+	</table>
+	<table title="Technology" cols="2" align="right,left">
+		<c><![CDATA[Lassie Engine Programming ...]]></c>
+			<c><![CDATA[Greg MacWilliam]]></c>
+		<c><![CDATA[Game Scripting ...]]></c>
+			<c><![CDATA[Greg MacWilliam<br>Matthias Kempke]]></c>
+		<c><![CDATA[Adobe Flash &amp; Adobe AIR ...]]></c>
+			<c><![CDATA[Adobe Systems, Inc.]]></c>
+		<c><![CDATA[Adobe AS3 Corelib ...]]></c>
+			<c><![CDATA[Adobe Systems, Inc.]]></c>
+		<c><![CDATA[Bulk Loader ...]]></c>
+			<c><![CDATA[Arthur Debert]]></c>
+		<c><![CDATA[TweenLite ...]]></c>
+			<c><![CDATA[Jack Doyle, GreenSock]]></c>
+		<c><![CDATA[SoundObject ...]]></c>
+			<c><![CDATA[Greg MacWilliam]]></c>
+		<c><![CDATA[Stats ...]]></c>
+			<c><![CDATA[mrdoob]]></c>
+		<c><![CDATA[MathParser ...]]></c>
+			<c><![CDATA[Raphael Graf]]></c>
+	</table>
+	<table title="Music" cols="3">
+		<c><![CDATA["Life As I Know It"<br>Justin R. Durban]]></c>
+		<c><![CDATA["The Prodigal"<br>Justin R. Durban]]></c>
+		<c><![CDATA["The Hard Times Remembered"<br>Justin R. Durban]]></c>
+		<c><![CDATA["Solo Session"<br>Justin R. Durban]]></c>
+		<c><![CDATA["Traveling The Lands"<br>Justin R. Durban]]></c>
+		<c><![CDATA["A Stitch in Time Theme"<br>Justin R. Durban]]></c>
+		<c><![CDATA[]]></c>
+		<c><![CDATA["St. James Infirmary"<br>Louis Armstrong]]></c>
+		<c><![CDATA[]]></c>
+	</table>
+	<table title="Sound" cols="2" align="right,left">
+		<c><![CDATA[Soundscapes ...]]></c>
+			<c><![CDATA[Matthias Kempke]]></c>
+		<c><![CDATA[Sound effects ...]]></c>
+			<c><![CDATA[Matthias Kempke<br>Greg MacWilliam]]></c>
+		<c><![CDATA[Sound samples ...]]></c>
+			<c><![CDATA[Freesound Project]]></c>
+		<c><![CDATA[Voice recording technician ...]]></c>
+			<c><![CDATA[Greg MacWilliam]]></c>
+		<c><![CDATA[Voice editor ...]]></c>
+			<c><![CDATA[Greg MacWilliam]]></c>
+	</table>
+	<table title="Freesound Contributors" cols="3">
+		<c><![CDATA[A43]]></c>
+		<c><![CDATA[acclivity]]></c>
+		<c><![CDATA[Anton]]></c>
+		<c><![CDATA[adcbicycle]]></c>
+		<c><![CDATA[Charel Sytze]]></c>
+		<c><![CDATA[Connum]]></c>
+		<c><![CDATA[destron]]></c>
+		<c><![CDATA[dobroide]]></c>
+		<c><![CDATA[Dynamicell]]></c>
+		<c><![CDATA[Erratic]]></c>
+		<c><![CDATA[fonogeno]]></c>
+		<c><![CDATA[FreqMan]]></c>
+		<c><![CDATA[genghis attenborough]]></c>
+		<c><![CDATA[Hell's Sound Guy]]></c>
+		<c><![CDATA[homejrande]]></c>
+		<c><![CDATA[KB3JUV]]></c>
+		<c><![CDATA[Koops]]></c>
+		<c><![CDATA[laurent]]></c>
+		<c><![CDATA[luffy]]></c>
+		<c><![CDATA[medialint]]></c>
+		<c><![CDATA[megamart]]></c>
+		<c><![CDATA[mrjingles]]></c>
+		<c><![CDATA[mystiscool]]></c>
+		<c><![CDATA[Notofficial]]></c>
+		<c><![CDATA[NoiseCollector]]></c>
+		<c><![CDATA[petenice]]></c>
+		<c><![CDATA[plagasul]]></c>
+		<c><![CDATA[pushtobreak]]></c>
+		<c><![CDATA[RHumphries]]></c>
+		<c><![CDATA[schluppipuppie]]></c>
+		<c><![CDATA[sir smith]]></c>
+		<c><![CDATA[Snoman]]></c>
+		<c><![CDATA[splashzooka]]></c>
+		<c><![CDATA[stijn]]></c>
+		<c><![CDATA[vixuxx]]></c>
+		<c><![CDATA[vuzz]]></c>
+	</table>
+	<table title="Testing and Quality Assurance" cols="3">
+		<c><![CDATA[Oliver Brown]]></c>
+		<c><![CDATA[Tucker Bowen]]></c>
+		<c><![CDATA[Jack Ellis]]></c>
+		<c><![CDATA[Ralf Hebecker]]></c>
+		<c><![CDATA[Matthias Kempke]]></c>
+		<c><![CDATA[Sebastian Kempke]]></c>
+		<c><![CDATA[Greg MacWilliam]]></c>
+		<c><![CDATA[Wes Sucy]]></c>
+		<c><![CDATA[Alex Vernon]]></c>
+	</table>
+	<table title="Special Appearances" cols="3">
+		<c><![CDATA[Vincent Price<br>(as Vincent)]]></c>
+		<c><![CDATA[Greg<br>(as himself)]]></c>
+		<c><![CDATA[Shroom<br>(the wonder dog)]]></c>
+	</table>
+	<table title="Special Thanks" cols="1">
+		<c><![CDATA[Sebastian Kempke]]></c>
+		<c><![CDATA[Lars Christiansen]]></c>
+		<c><![CDATA[Amanda Stultz]]></c>
+		<c><![CDATA[Happenstance Theater Company]]></c>
+		<c><![CDATA[Carlos Moisés Mateos Rodríguez]]></c>
+		<c><![CDATA[FreeSound Project]]></c>
+		<c><![CDATA[Creative Commons]]></c>
+		<c><![CDATA[Adobe Systems]]></c>
+		<c><![CDATA[Lucas Arts]]></c>
+		<c><![CDATA[To our friends and fans who keep the spirit of classic adventure games alive.]]></c>
+	</table></credits>

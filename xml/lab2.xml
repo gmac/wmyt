@@ -1,0 +1,2386 @@
+<room id="lab2" coreLibs="lib/lab2.swf,lib/coppelius.swf" voiceLibs="lib/lab2_voice.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="lib/lab2.swf:Lab2Music1" sound2="">
+  <grids>
+    <grid id="main">
+      <boxes>
+        <box x="39" y="477" w="667" h="41" nodes="n1,n2,n3,n6,n8,n11,n13,n15,n16" />
+        <box x="197" y="445" w="155" h="41" nodes="n1,n3,n11" />
+      </boxes>
+      <nodes>
+        <node id="n0" x="575" y="420" join="n4,n6,n5,n7" trap="1" name="papers" />
+        <node id="n1" x="350" y="480" join="n2,n3,n6,n8,n11,n13,n15,n16" trap="0" />
+        <node id="n2" x="350" y="495" join="n1,n3,n6,n8,n11,n13,n15,n16" trap="0" name="coppelius_to" />
+        <node id="n3" x="200" y="480" join="n1,n2,n6,n8,n11,n13,n15,n16" trap="0" name="join_lab1" />
+        <node id="n4" x="610" y="390" join="n0,n7" trap="1" name="back" />
+        <node id="n5" x="510" y="420" join="n6,n0" trap="1" name="desk" />
+        <node id="n6" x="545" y="480" join="n5,n0,n1,n2,n3,n8,n11,n13,n15,n16" trap="0" />
+        <node id="n7" x="685" y="380" join="n4,n0" trap="1" name="radio" />
+        <node id="n8" x="705" y="500" join="n9,n1,n2,n3,n6,n11,n13,n15,n16" trap="0" name="boiler" />
+        <node id="n9" x="825" y="495" join="n8" trap="0" name="pod" />
+        <node id="n11" x="275" y="480" join="n1,n2,n3,n6,n8,n13,n15,n16" trap="0" />
+        <node id="n12" x="615" y="605" join="n13,n15,n14,n16" trap="1" name="photo" />
+        <node id="n13" x="590" y="515" join="n12,n14,n1,n2,n3,n6,n8,n11,n15,n16" trap="0" />
+        <node id="n14" x="390" y="575" join="n15,n12,n13,n16" trap="1" name="coppelius_to2" />
+        <node id="n15" x="360" y="515" join="n14,n12,n1,n2,n3,n6,n8,n11,n13,n16" trap="0" />
+        <node id="n16" x="490" y="515" join="n12,n14,n1,n2,n3,n6,n8,n11,n13,n15" trap="0" />
+      </nodes>
+    </grid>
+  </grids>
+  <positions>
+    <position id="papers" turn="4" x="575" y="420" />
+    <position id="coppelius_to" turn="4" x="350" y="495" />
+    <position id="join_lab1" turn="4" x="200" y="480" />
+    <position id="back" turn="4" x="610" y="390" />
+    <position id="desk" turn="4" x="510" y="420" />
+    <position id="radio" turn="4" x="685" y="380" />
+    <position id="boiler" turn="4" x="705" y="500" />
+    <position id="pod" turn="4" x="825" y="495" />
+    <position id="photo" turn="4" x="615" y="605" />
+    <position id="coppelius_to2" turn="4" x="390" y="575" />
+  </positions>
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="152" y="374" scale="0.55" rate="0.5" blur="1" color="0x000000" tint="0.5" />
+      <pole x="152" y="586" scale="1.16" rate="1" blur="5" color="0xFFFFFF" tint="0.5" />
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <curtain blackout="0" />
+    </script>
+    <script id="_exit">
+      <library unloadRoom="_current" />
+      <curtain blackout="1" />
+    </script>
+    <script id="_prerender">
+      <layer target="_current:_avatar" visible="1" />
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="lib/lab2.swf:Lab2Bg" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="800" hitH="600" shape="rect">
+          <param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300" />
+          <vars />
+          <title>
+            <es><![CDATA[]]></es>
+            <en><![CDATA[]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="dome" type="puppet" asset="" depth="1" visible="1" state="main">
+      <states>
+        <state id="main" x="557" y="217" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-225" hitY="-102" hitW="456" hitH="108" shape="round">
+          <param mapX="510" mapY="420" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[cúpula de cristal]]></es>
+            <en><![CDATA[domed-glass ceiling]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_000">
+                  <es><![CDATA[&#161;Interesante! Parece que estamos bajo el estanque que está junto a la casa.]]></es>
+                  <en><![CDATA[Interesting! It seems that we are under the pond next to the house.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="chair" type="puppet" asset="" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="644" y="369" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-10" hitY="-121" hitW="52" hitH="121" shape="rect">
+          <param mapX="610" mapY="390" turnTo="2" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[silla]]></es>
+            <en><![CDATA[chair]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_001">
+                  <es><![CDATA[Es algún tipo de silla sofisticada.]]></es>
+                  <en><![CDATA[It’s some kind of sophisticated chair.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="bookshelf" type="puppet" asset="" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="272" y="388" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-50" hitY="-154" hitW="94" hitH="157" shape="rect">
+          <param mapX="300" mapY="446" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[estantería]]></es>
+            <en><![CDATA[bookshelf]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_002">
+                  <es><![CDATA[Parece que alguien ha estado buscando algo.]]></es>
+                  <en><![CDATA[It looks like someone was searching for something here.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_003">
+                  <es><![CDATA[Afortunadamente me deshice de todo lo que podía ser útil para Vincent.]]></es>
+                  <en><![CDATA[Fortunately I got rid of everything that might be useful for Vincent.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue play="*" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Trepar por]]></es>
+                <en><![CDATA[Climb]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_004">
+                  <es><![CDATA[Eso no sería buena idea.]]></es>
+                  <en><![CDATA[That would be a bad idea.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="books1" type="puppet" asset="" depth="4" visible="1" state="main">
+      <states>
+        <state id="main" x="393" y="258" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-54" hitY="-30" hitW="94" hitH="33" shape="rect">
+          <param mapX="510" mapY="420" turnTo="8" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[libros]]></es>
+            <en><![CDATA[books]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_005">
+                  <es><![CDATA[Sólo es un montón de libros aburridos.]]></es>
+                  <en><![CDATA[They’re just a lot of boring books.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_006">
+                  <es><![CDATA[Vigila esa lengua, jovencito.]]></es>
+                  <en><![CDATA[Watch your tongue, young man.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_007">
+                  <es><![CDATA[Perdón.]]></es>
+                  <en><![CDATA[Sorry.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue play="*" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_008">
+                  <es><![CDATA[Esos libros no despiertan mi interés.]]></es>
+                  <en><![CDATA[These books do not spark my interest.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_009">
+                  <es><![CDATA[Hey, &#191;te gustaría que me pasara por tu puesto de trabajo y te dijese lo que pienso de tus cosas?]]></es>
+                  <en><![CDATA[Hey, would you like me to come over to your place and tell you what I think about your things?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_010">
+                  <es><![CDATA[Claro... si alguna vez tengo mi propio laboratorio secreto lleno de libros aburridos, le invitaré. Seguro que le gustará.]]></es>
+                  <en><![CDATA[Sure... if I should ever have my own secret room filled with boring books, then I’ll invite you. I’m sure you’d like that.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_011">
+                  <es><![CDATA[.........]]></es>
+                  <en><![CDATA[.........]]></en>
+                  <de><![CDATA[.........]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue play="*" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="books2" type="puppet" asset="" depth="5" visible="1" state="main">
+      <states>
+        <state id="main" x="738" y="247" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-36" hitY="-26" hitW="65" hitH="34" shape="rect">
+          <param mapX="685" mapY="380" turnTo="2" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[más libros]]></es>
+            <en><![CDATA[more books]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_005">
+                  <es><![CDATA[Sólo es un montón de libros aburridos.]]></es>
+                  <en><![CDATA[They’re just a lot of boring books.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_006">
+                  <es><![CDATA[Vigila esa lengua, jovencito.]]></es>
+                  <en><![CDATA[Watch your tongue, young man.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_007">
+                  <es><![CDATA[Perdón.]]></es>
+                  <en><![CDATA[Sorry.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue play="*" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_008">
+                  <es><![CDATA[Esos libros no despiertan mi interés.]]></es>
+                  <en><![CDATA[These books do not spark my interest.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_009">
+                  <es><![CDATA[Hey, &#191;te gustaría que me pasara por tu puesto de trabajo y te dijese lo que pienso de tus cosas?]]></es>
+                  <en><![CDATA[Hey, would you like me to come over to your place and tell you what I think about your things?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_010">
+                  <es><![CDATA[Claro... si alguna vez tengo mi propio laboratorio secreto lleno de libros aburridos, le invitaré. Seguro que le gustará.]]></es>
+                  <en><![CDATA[Sure... if I should ever have my own secret room filled with boring books, then I’ll invite you. I’m sure you’d like that.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_011">
+                  <es><![CDATA[.........]]></es>
+                  <en><![CDATA[.........]]></en>
+                  <de><![CDATA[.........]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue play="*" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="blackboard" type="puppet" asset="" depth="6" visible="1" state="main">
+      <states>
+        <state id="main" x="478" y="305" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-40" hitY="-63" hitW="80" hitH="65" shape="rect">
+          <param mapX="510" mapY="420" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[pizarra]]></es>
+            <en><![CDATA[blackboard]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_019">
+                  <es><![CDATA[&#191;Eso son fórmulas matemáticas?]]></es>
+                  <en><![CDATA[Are these mathematical formulas?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_020">
+                  <es><![CDATA[Algo así.]]></es>
+                  <en><![CDATA[Something like that.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue play="*" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_021">
+                  <es><![CDATA[No entiendo ni papa de esas fórmulas.]]></es>
+                  <en><![CDATA[These formulas are way over my head.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="flasks" type="puppet" asset="" depth="7" visible="1" state="main">
+      <states>
+        <state id="main" x="546" y="318" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-23" hitY="-89" hitW="47" hitH="91" shape="rect">
+          <param mapX="610" mapY="390" turnTo="8" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[matraces y tubos de ensayo]]></es>
+            <en><![CDATA[flasks and tubes]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_022">
+                  <es><![CDATA[Hay un par de matraces. Algunos están rotos.]]></es>
+                  <en><![CDATA[There are a couple of flasks. Some of them are broken.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Coger]]></es>
+                <en><![CDATA[Take]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_023">
+                  <es><![CDATA[No sirven para nada.]]></es>
+                  <en><![CDATA[Useless.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_024">
+                  <es><![CDATA[A menos que sepas como usarlos ...]]></es>
+                  <en><![CDATA[Unless you know how to use them ...]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue play="*" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="radio" type="puppet" asset="" depth="8" visible="1" state="main">
+      <states>
+        <state id="main" x="752" y="290" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-21" hitY="-35" hitW="38" hitH="37" shape="rect">
+          <param mapX="685" mapY="380" turnTo="3" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[radio]]></es>
+            <en><![CDATA[radio]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_025">
+                  <es><![CDATA[La radio está encendida.]]></es>
+                  <en><![CDATA[The radio is on.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Apagar]]></es>
+                <en><![CDATA[Turn off]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_026">
+                  <es><![CDATA[Ahora mismo no.]]></es>
+                  <en><![CDATA[Not right now.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_027">
+                  <es><![CDATA[No quiero hacer que el Dr. Coppelius se enfade.]]></es>
+                  <en><![CDATA[I don’t want to make Dr. Coppelius angry.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue playList="1" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="papers2" type="puppet" asset="" depth="9" visible="1" state="main">
+      <states>
+        <state id="main" x="716" y="372" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-40" hitY="-14" hitW="77" hitH="22" shape="rect">
+          <param mapX="685" mapY="380" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[más papeles]]></es>
+            <en><![CDATA[more papers]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_028">
+                  <es><![CDATA[No tienen nada de especial.]]></es>
+                  <en><![CDATA[They’re nothing special.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Coger]]></es>
+                <en><![CDATA[Take]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_026">
+                  <es><![CDATA[Ahora mismo no.]]></es>
+                  <en><![CDATA[Not right now.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_030">
+                  <es><![CDATA[&#191;Puedo coger alguno de estos papeles?]]></es>
+                  <en><![CDATA[May I take some of these papers?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_031">
+                  <es><![CDATA[No, no puedes.]]></es>
+                  <en><![CDATA[You may not.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue playList="1,2" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="papers1" type="puppet" asset="" depth="10" visible="1" state="main">
+      <states>
+        <state id="main" x="520" y="406" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-53" hitY="-20" hitW="116" hitH="26" shape="rect">
+          <param mapX="575" mapY="420" turnTo="8" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[papeles]]></es>
+            <en><![CDATA[papers]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_032">
+                  <es><![CDATA[Alguien ha dejado todos esos papeles tirados por el suelo.]]></es>
+                  <en><![CDATA[Someone left all these papers on the floor.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Recoger]]></es>
+                <en><![CDATA[Pick up]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_026">
+                  <es><![CDATA[Ahora mismo no.]]></es>
+                  <en><![CDATA[Not right now.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_034">
+                  <es><![CDATA[&#161;No toques mis papeles!]]></es>
+                  <en><![CDATA[Don’t touch my papers!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_035">
+                  <es><![CDATA[Vale, vale. No se preocupe.]]></es>
+                  <en><![CDATA[Ok, ok. Don’t worry.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue playList="1,2" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="plan" type="puppet" asset="" depth="11" visible="1" state="main">
+      <states>
+        <state id="main" x="455" y="350" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-43" hitY="-21" hitW="79" hitH="25" shape="rect">
+          <param mapX="510" mapY="420" turnTo="7" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[plano]]></es>
+            <en><![CDATA[plan]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_036">
+                  <es><![CDATA[Es algún tipo de plano...]]></es>
+                  <en><![CDATA[It’s some sort of plan...]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_037">
+                  <es><![CDATA[Es el plano para construir un teléfono inalámbrico.]]></es>
+                  <en><![CDATA[It’s the construction plan for a wireless phone.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_038">
+                  <es><![CDATA[Me pregunto cuanto tardó Vincent en darse cuenta de que no sirve para nada.]]></es>
+                  <en><![CDATA[I wonder how long it took Vincent to realize that it’s useless.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_039">
+                  <es><![CDATA[... por supuesto es imposible construir un teléfono inalámbrico.]]></es>
+                  <en><![CDATA[... of course it’s impossible to build a wireless phone.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue play="*" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Coger]]></es>
+                <en><![CDATA[Take]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_026">
+                  <es><![CDATA[Ahora mismo no.]]></es>
+                  <en><![CDATA[Not right now.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_041">
+                  <es><![CDATA[&#161;Aparta tus manos de ese plano!]]></es>
+                  <en><![CDATA[Take your hands off that plan!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_007">
+                  <es><![CDATA[Perdón.]]></es>
+                  <en><![CDATA[Sorry.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue playList="1,2" />
+                  </if>
+                  <else>
+                    <dialogue playList="0" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="divider" type="plane" asset="lib/lab2.swf:Lab2Divider" depth="12" visible="1" state="main">
+      <states>
+        <state id="main" x="640" y="450" img="1" imgX="-640" imgY="-337" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="1" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mouse="0" float="1" parallax="" />
+          <vars />
+          <title>
+            <es><![CDATA[]]></es>
+            <en><![CDATA[]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="pod2" type="puppet" asset="lib/lab2.swf:Lab2Pod" depth="13" visible="0" state="main">
+      <states>
+        <state id="main" x="758" y="514" img="1" imgX="-33" imgY="-285" imgW="1" imgH="1" frame="3" blend="normal" alpha="1" bitmap="1" hit="0" hitX="0" hitY="-284" hitW="120" hitH="256" shape="rect">
+          <param mapX="705" mapY="500" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[cápsula cilíndrica]]></es>
+            <en><![CDATA[cylindrical pod]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="_avatar" type="avatar" asset="lib/nathan.swf:Nathan" depth="14" visible="1" state="main">
+      <states>
+        <state id="main" x="236" y="491" img="1" imgX="4" imgY="3" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[nathan]]></es>
+            <en><![CDATA[nathan]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="pod" type="puppet" asset="lib/lab2.swf:Lab2Pod" depth="15" visible="1" state="closed">
+      <states>
+        <state id="closed" x="758" y="514" img="1" imgX="-33" imgY="-285" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="-284" hitW="120" hitH="256" shape="rect">
+          <param mapX="705" mapY="500" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[cápsula cilíndrica]]></es>
+            <en><![CDATA[cylindrical pod]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_043">
+                  <es><![CDATA[Es una misteriosa y sólida cápsula de metal.]]></es>
+                  <en><![CDATA[It’s a mysterious and massive metal pod.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_044">
+                  <es><![CDATA[Está muy oxidada.]]></es>
+                  <en><![CDATA[It’s very rusty.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_045">
+                  <es><![CDATA[Quizás haya algo encerrado dentro, algo que no deba ser liberado.]]></es>
+                  <en><![CDATA[Maybe there’s something locked inside, that shouldn’t be set free.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_046">
+                  <es><![CDATA[Quizás no, Nathan.]]></es>
+                  <en><![CDATA[Maybe not, Nathan.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <logic>
+                  <if eval="[lab2Coppelius] EQ 1">
+                    <dialogue play="*" />
+                  </if>
+                  <else>
+                    <dialogue playList="0,1,2" />
+                  </else>
+                </logic>
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="item">
+              <title>
+                <es><![CDATA[abrir]]></es>
+                <en><![CDATA[open]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog />
+              <script>
+                <params walkTo="none" />
+                <dialogue play="none" />
+                <sequence>
+                  <layerSprite target="pod" animFrame="opening" waitForComplete="1" />
+                  <layer target="_current:pod" state="opened" />
+                </sequence>
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+        <state id="opened" x="758" y="514" img="1" imgX="-33" imgY="-285" imgW="1" imgH="1" frame="6" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-13" hitY="-284" hitW="122" hitH="256" shape="rect">
+          <param mapX="825" mapY="495" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[cápsula cilíndrica]]></es>
+            <en><![CDATA[cylindrical pod]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_047">
+                  <es><![CDATA[No hay nada dentro ...]]></es>
+                  <en><![CDATA[There’s nothing inside ...]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_048">
+                  <es><![CDATA[&#161;Pero se está realmente agustito aquí dentro!]]></es>
+                  <en><![CDATA[But it’s really cozy in here!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_145">
+                  <es><![CDATA[No, gracias.]]></es>
+                  <en><![CDATA[No, thanks.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Activar]]></es>
+                <en><![CDATA[Activate]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_049">
+                  <es><![CDATA[Me pregunto que ocurrirrá cuando pulse este botoncito rojo de aquí...]]></es>
+                  <en><![CDATA[I wonder what happens when I press this little red button here...]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_050">
+                  <es><![CDATA[Ya también .....]]></es>
+                  <en><![CDATA[Me too .....]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_051">
+                  <es><![CDATA[&#191;&#161;Qué!?]]></es>
+                  <en><![CDATA[What!?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <sequence skip="1">
+                  <dialogue play="*" />
+                  <layer target="_current:_avatar" visible="0" />
+                  <layer target="_current:pod2" visible="0" omit="1" />
+                  <layerSprite target="pod" animFrame="exit" waitForComplete="1" />
+                </sequence>
+                <layerState target="_current:boiler:complete" frameLabel="cold" update="0" />
+                <layerState target="foyer:statue_sockets:main" frameLabel="empty" />
+                <layer target="foyer:bookcase" state="closed" />
+                <layer target="foyer:plates" visible="1" render="1" />
+                <layer target="lab1:exit_foyer" state="opened" />
+                <layer target="_current:pod" state="hole" />
+                <cache field="goToFinale" value="1" />
+                <game room="cliff:join_lab2" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+        <state id="hole" x="758" y="514" img="1" imgX="-33" imgY="-285" imgW="1" imgH="1" frame="5" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-51" hitY="-60" hitW="136" hitH="58" shape="rect">
+          <param mapX="705" mapY="500" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[agujero enorme]]></es>
+            <en><![CDATA[gaping hole]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_052">
+                  <es><![CDATA[Es el tunel por el que escapé.]]></es>
+                  <en><![CDATA[That’s the tunnel I escaped through.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Entrar]]></es>
+                <en><![CDATA[Enter]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_053">
+                  <es><![CDATA[No gracias, con pasar una vez por ese hueco ya he tenido suficiente.]]></es>
+                  <en><![CDATA[No thanks, my first pass through that shaft was bad enough.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="exit_lab1" type="puppet" asset="lib/lab2.swf:Lab2Gate" depth="16" visible="1" state="main">
+      <states>
+        <state id="main" x="1" y="563" img="0" imgX="-6" imgY="-368" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="-374" hitW="136" hitH="375" shape="rect">
+          <param mapX="45" mapY="510" turnTo="7" turn="0" cursor="exit7" onclick="0" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[]]></es>
+            <en><![CDATA[]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog />
+              <script>
+                <game room="lab1:join_lab2" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="coppelius" type="puppet" asset="lib/coppelius.swf:Coppelius" depth="17" visible="0" state="enter">
+      <states>
+        <state id="enter" x="115" y="485" img="1" imgX="0" imgY="0" imgW="0.92" imgH="0.92" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-37" hitY="-206" hitW="69" hitH="220" shape="rect">
+          <param mapX="350" mapY="495" turnTo="6" turn="0" cursor="" onclick="-1" prefix="normal_" subtitle="0xCCCCCC" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[Dr. Coppelius]]></es>
+            <en><![CDATA[Dr. Coppelius]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="item">
+              <title>
+                <es><![CDATA[entrada]]></es>
+                <en><![CDATA[entrance]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="vincent" frame="" sound="lib/lab2_voice.swf:lab2_054">
+                  <es><![CDATA[&#161;Coppelius!]]></es>
+                  <en><![CDATA[Coppelius!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_055">
+                  <es><![CDATA[&#161;El mismo!]]></es>
+                  <en><![CDATA[None other!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_056">
+                  <es><![CDATA[&#191;Usted es el Dr. Coppelius? ... pero ... &#191;entonces quién es él?]]></es>
+                  <en><![CDATA[You’re Dr. Coppelius? ... but ... then who is he?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_057">
+                  <es><![CDATA[Nadie más que un ladrón y un traidor. &#161;Vincent, no permitiré que robes mi invento!]]></es>
+                  <en><![CDATA[Nothing but a thief and a traitor. Vincent, I won’t let you steal my invention!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="vincent" frame="" sound="lib/lab2_voice.swf:lab2_058">
+                  <es><![CDATA[Créeme, anciano. Lo encontraré. He recopilado docenas de ellos.]]></es>
+                  <en><![CDATA[Trust me, old man, I’ll find it. I’ve collected dozens of them.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="vincent" frame="" sound="lib/lab2_voice.swf:lab2_059">
+                  <es><![CDATA[Tus colegas y tú deberías haber aceptado mi oferta para uniros a mí.]]></es>
+                  <en><![CDATA[You and your colleagues should have accepted my offer to join me.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="vincent" frame="" sound="lib/lab2_voice.swf:lab2_060">
+                  <es><![CDATA[Después de que haya robado vuestros planos e inventos, me haré con el país y os barreré de la faz de la tierra. &#161;Ja ja!]]></es>
+                  <en><![CDATA[After I’ve stolen your plans and inventions, I’ll take over the country and you’ll be wiped away. Haha!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_061">
+                  <es><![CDATA[Nunca permitiré que mi trabajo caiga en tus manos. &#161;Ningún hombre honrado se uniría a tí, jamás Vincent!]]></es>
+                  <en><![CDATA[I’ll never allow my work to fall into your hands. No righteous man would ever join you, Vincent!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="vincent" frame="" sound="lib/lab2_voice.swf:lab2_062">
+                  <es><![CDATA[&#161;Encontraré tu invento, Coppelius! &#161;Tarde o temprano lo encontraré!]]></es>
+                  <en><![CDATA[I’ll find your invention, Coppelius! Sooner or later I’ll find it!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_063">
+                  <es><![CDATA[Es DR. Coppelius.]]></es>
+                  <en><![CDATA[It’s DR. Coppelius.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="FLASH" frame="" sound="lib/lab2_voice.swf:lab2_064">
+                  <es><![CDATA[---]]></es>
+                  <en><![CDATA[---]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_065">
+                  <es><![CDATA[&#191;Qué ha pasado? &#191;A dónde se ha ido? &#161;Hey, alguien me ha robado todas mis cosas!]]></es>
+                  <en><![CDATA[What happened? Where did he go? Hey, someone stole all my things!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_066">
+                  <es><![CDATA[Vincent se marchó de la sala mientras estábamos inconscientes.]]></es>
+                  <en><![CDATA[Vincent walked out of the room while we were unconscious.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_067">
+                  <es><![CDATA[Nos ha encerrado aquí dentro ... &#161;Tenemos que salir!]]></es>
+                  <en><![CDATA[He locked us in here ... We have to get out!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <params walkTo="none" />
+                <layer target="_current:coppelius" visible="1" />
+                <cache field="lab2Coppelius" value="1" />
+                <sequence skip="1">
+                  <process>
+                    <wait seconds="1" />
+                    <puppetTween target="_avatar" type="turn" to="view:6" waitForComplete="1" />
+                  </process>
+                  <puppetTween target="coppelius" type="moveThenTurn" to="position:coppelius_to" toView="4" waitForComplete="1" />
+                  <wait seconds="1.5" />
+                  <dialogue playList="0" />
+                  <puppetTween target="_avatar" type="turn" to="view:5" waitForComplete="1" />
+                  <dialogue playList="1,2,3" />
+                  <puppetTween target="_avatar" type="turn" to="view:4" waitForComplete="1" />
+                  <dialogue playList="4,5,6,7,8,9" />
+                  <layerSprite target="vincent" animFrame="escape" waitForComplete="1" />
+                  <curtain color="0xFFFFFF" to="1" seconds="2" waitForComplete="1" />
+                  <layer target="_current:boiler" visible="1" />
+                  <layer target="_current:vincent" visible="0" omit="1" />
+                  <layer target="_current:coppelius" state="read" />
+                  <puppetTween target="_avatar" type="turn" to="view:5" waitForComplete="1" />
+                  <layerState target="_current:exit_lab1:main" imageEnabled="1" />
+                  <layerState target="_current:photo:main" mouseEnabled="1" />
+                  <cache field="trappedInLab" value="1" />
+                  <inventory remove="*" />
+                  <sound soundtrack1="lib/lab2.swf:Lab2Music2" />
+                  <room target="_current" soundtrack1="lib/lab2.swf:Lab2Music2" />
+                  <wait seconds="7" />
+                  <curtain to="0" seconds="6" waitForComplete="1" />
+                  <curtain color="0x000000" />
+                </sequence>
+                <dialogue playList="11,12,13" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+        <state id="read" x="269" y="558" img="1" imgX="0" imgY="0" imgW="1.1" imgH="1.1" frame="7" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-36" hitY="-247" hitW="71" hitH="251" shape="rect">
+          <param mapX="390" mapY="575" turnTo="6" turn="0" cursor="" onclick="-1" prefix="read_" subtitle="0xCCCCCC" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[Dr. Coppelius]]></es>
+            <en><![CDATA[Dr. Coppelius]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_068">
+                  <es><![CDATA[&#191;Dr. Coppelius...?]]></es>
+                  <en><![CDATA[Dr. Coppelius...?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+                <tree load="coppelius" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="vincent" type="puppet" asset="lib/lab2.swf:Lab2Vincent" depth="18" visible="1" state="main">
+      <states>
+        <state id="main" x="614" y="511" img="1" imgX="-89" imgY="-281" imgW="1.74" imgH="1.74" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-71" hitY="-283" hitW="131" hitH="287" shape="rect">
+          <param mapX="430" mapY="480" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0x99CC99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[desconocido con capa]]></es>
+            <en><![CDATA[stranger with cape]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_069">
+                  <es><![CDATA[&#191;Será ese el Dr. Coppelius? Parece mucho más siniestro de lo que me esperaba.]]></es>
+                  <en><![CDATA[Could this be Dr. Coppelius? He looks more sinister than I expected.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="hspeak" sound="lib/lab2_voice.swf:lab2_070">
+                  <es><![CDATA[Disculpe, &#191;es usted el Dr. Coppelius?]]></es>
+                  <en><![CDATA[Excuse me, are you Dr. Coppelius?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="vincent" frame="" sound="lib/lab2_voice.swf:lab2_071">
+                  <es><![CDATA[Te estaba esperando... sabía que enviaría a alguien aquí, &#191;pero alguien como tú? Un tanto desesperado - &#161;ese anciano!]]></es>
+                  <en><![CDATA[I’ve expected you... I knew he was going to send someone in here, but someone like you? A little desperate - the old man!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="lspeak" sound="lib/lab2_voice.swf:lab2_072">
+                  <es><![CDATA[&#191;De qué está hablando?]]></es>
+                  <en><![CDATA[What are you talking about?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="vincent" frame="" sound="lib/lab2_voice.swf:lab2_073">
+                  <es><![CDATA[&#161;Tú no eres más que una marioneta! Si no fueses tan insignificante, te haría pedazos y los volvería a juntar...]]></es>
+                  <en><![CDATA[You’re nothing but a puppet! If you weren’t so insignificant, I would tear you apart and put you back together again...]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="vincent" frame="" sound="lib/lab2_voice.swf:lab2_074">
+                  <es><![CDATA[Podría borrar tus recuerdos y susurrar unos nuevos en tu cerebro vacío.]]></es>
+                  <en><![CDATA[I could even purge your memories and whisper new ones into your empty brain.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="vincent" frame="" sound="lib/lab2_voice.swf:lab2_075">
+                  <es><![CDATA[Entonces te convertirías en mi servidor y cumplirías mis órdenes. &#191;Ves? Todavía puedes ser útil - &#161;&#191;no te parece maravilloso?!]]></es>
+                  <en><![CDATA[Then you’d serve me and execute my commands. See? You could still become useful - isn’t that just wonderful?!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="lspeak" sound="lib/lab2_voice.swf:lab2_076">
+                  <es><![CDATA[No ... &#161;&#191;quién eres tú?!]]></es>
+                  <en><![CDATA[No ... who are you?!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+                <puppet target="coppelius" callAction="3" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Golpear]]></es>
+                <en><![CDATA[Hit]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_077">
+                  <es><![CDATA[Es mejor que evite pelearme con extraños.]]></es>
+                  <en><![CDATA[I’d better avoid roughing up random strangers.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="foreground" type="plane" asset="lib/lab2.swf:Lab2Fg" depth="19" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="113" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="1" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mouse="0" float="0" parallax="" />
+          <vars />
+          <title>
+            <es><![CDATA[]]></es>
+            <en><![CDATA[]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="photo" type="puppet" asset="lib/lab2.swf:Lab2Photo" depth="20" visible="1" state="main">
+      <states>
+        <state id="main" x="643" y="561" img="1" imgX="-57" imgY="-56" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="1" hit="1" hitX="-59" hitY="-57" hitW="105" hitH="60" shape="rect">
+          <param mapX="615" mapY="605" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[vieja fotografía]]></es>
+            <en><![CDATA[old photograph]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_078">
+                  <es><![CDATA[Se ve un grupo de científicos ... mh...]]></es>
+                  <en><![CDATA[There’s a group of scientists ... mh...]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="hspeak" sound="lib/lab2_voice.swf:lab2_079">
+                  <es><![CDATA[Hey, usted también está retratado aquí.]]></es>
+                  <en><![CDATA[Hey, you’re pictured here, too.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_080">
+                  <es><![CDATA[En efecto, soy yo.]]></es>
+                  <en><![CDATA[Indeed, I am.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+                <game room="photo" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Coger]]></es>
+                <en><![CDATA[Take]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_081">
+                  <es><![CDATA[No, la dejaré ahí.]]></es>
+                  <en><![CDATA[No, I’ll leave it here.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="boiler" type="puppet" asset="lib/lab2.swf:Lab2Boiler" depth="21" visible="0" state="cold">
+      <states>
+        <state id="cold" x="804" y="485" img="1" imgX="48" imgY="-23" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-37" hitY="-82" hitW="110" hitH="86" shape="rect">
+          <param mapX="705" mapY="500" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[caldera]]></es>
+            <en><![CDATA[boiler tank]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_082">
+                  <es><![CDATA[Es algún tipo de caldera que está conectada a la cápsula.]]></es>
+                  <en><![CDATA[It’s some kind of tank that is connected to the pod.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_083">
+                  <es><![CDATA[Tiene el símbolo de inflamable pintado en un lateral.]]></es>
+                  <en><![CDATA[There’s a flammable symbol painted on the side.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_084">
+                  <es><![CDATA[&#191;Cómo? Quizás pueda meter algo dentro ...]]></es>
+                  <en><![CDATA[How? Maybe I can put something in there ...]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="leafletBurn">
+              <title>
+                <es><![CDATA[Meter #item# en #noun#]]></es>
+                <en><![CDATA[Put #item# into #noun#]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_085">
+                  <es><![CDATA[Meteré el folleto ardiente en el tanque.]]></es>
+                  <en><![CDATA[I’ll put the burning leaflet into the tank.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="hspeak" sound="lib/lab2_voice.swf:lab2_086">
+                  <es><![CDATA[&#161;No intentéis esto en casa, niños!]]></es>
+                  <en><![CDATA[Don’t try this at home, kids!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_087">
+                  <es><![CDATA[Parece que he encendido un fuego dentro del tanque.]]></es>
+                  <en><![CDATA[It seems that I’ve started a fire within the tank.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="hspeak" sound="lib/lab2_voice.swf:lab2_088">
+                  <es><![CDATA[&#191;Eso es algo bueno, no?]]></es>
+                  <en><![CDATA[Is that a good thing?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <sequence>
+                  <cursor item="" />
+                  <dialogue playList="0,1" />
+                  <layerSprite target="_avatar" animFrame="kneel_down_reach" waitForComplete="1" />
+                  <layerSprite target="boiler" animFrame="fuel" waitForComplete="0" />
+                  <inventory remove="leafletBurn" />
+                  <layerSprite target="_avatar" animFrame="kneel_reach_in" waitForComplete="1" />
+                  <layerSprite target="_avatar" animFrame="kneel_up" waitForComplete="1" />
+                  <layer target="_current:boiler" state="hot" />
+                  <dialogue play="2,3" />
+                </sequence>
+              </script>
+            </action>
+            <action id="seeds0">
+              <title>
+                <es><![CDATA[Meter #item# en #noun#]]></es>
+                <en><![CDATA[Put #item# into #noun#]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_089">
+                  <es><![CDATA[Buena idea... Si tan sólo pudiera encender un fuego en la caldera, entonces esto la calentaría más.]]></es>
+                  <en><![CDATA[Good idea... if I could just start a fire in the boiler, then this could make it hotter.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="bottleEmpty">
+              <title>
+                <es><![CDATA[Meter #item# en #noun#]]></es>
+                <en><![CDATA[Put #item# into #noun#]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_089">
+                  <es><![CDATA[Buena idea... Si tan sólo pudiera encender un fuego en la caldera, entonces esto la calentaría más.]]></es>
+                  <en><![CDATA[Good idea... if I could just start a fire in the boiler, then this could make it hotter.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="clothWet">
+              <title>
+                <es><![CDATA[Meter #item# en #noun#]]></es>
+                <en><![CDATA[Put #item# into #noun#]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_089">
+                  <es><![CDATA[Buena idea... Si tan sólo pudiera encender un fuego en la caldera, entonces esto la calentaría más.]]></es>
+                  <en><![CDATA[Good idea... if I could just start a fire in the boiler, then this could make it hotter.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="hot" x="804" y="485" img="1" imgX="48" imgY="-23" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-37" hitY="-82" hitW="110" hitH="86" shape="rect">
+          <param mapX="705" mapY="500" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[caldera]]></es>
+            <en><![CDATA[boiler tank]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_082">
+                  <es><![CDATA[Es algún tipo de caldera que está conectada a la cápsula.]]></es>
+                  <en><![CDATA[It’s some kind of tank that is connected to the pod.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_083">
+                  <es><![CDATA[Tiene el símbolo de inflamable pintado en un lateral.]]></es>
+                  <en><![CDATA[There’s a flammable symbol painted on the side.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_094">
+                  <es><![CDATA[&#191;Cómo? Quizás pueda meter algo dentro ...]]></es>
+                  <en><![CDATA[How? Maybe I can put something else in there.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items>
+            <action id="bottleEmpty">
+              <title>
+                <es><![CDATA[]]></es>
+                <en><![CDATA[]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_095">
+                  <es><![CDATA[Meteré el resto del alcohol en el tanque.]]></es>
+                  <en><![CDATA[I’ll put the rest of the alcohol into the tank.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <sequence>
+                  <cursor item="" />
+                  <dialogue play="*" />
+                  <cache field="boiler_level" math="+1" />
+                  <layerSprite target="_avatar" animFrame="kneel_down_reach" waitForComplete="1" />
+                  <layerSprite target="boiler" animFrame="fuel" waitForComplete="0" />
+                  <inventory remove="bottleEmpty" />
+                  <layerSprite target="_avatar" animFrame="kneel_reach_in" waitForComplete="1" />
+                  <layerSprite target="_avatar" animFrame="kneel_up" waitForComplete="1" />
+                </sequence>
+                <logic eval="[boiler_level] EQ 3">
+                  <sequence>
+                    <layerSprite target="pod" animFrame="opening" waitForComplete="1" />
+                    <layer target="_current:pod2" visible="1" />
+                    <layer target="_current:pod" state="opened" />
+                    <layer target="_current:boiler" state="complete" />
+                  </sequence>
+                </logic>
+              </script>
+            </action>
+            <action id="seeds0">
+              <title>
+                <es><![CDATA[]]></es>
+                <en><![CDATA[]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_096">
+                  <es><![CDATA[Meteré estas semillas también.]]></es>
+                  <en><![CDATA[I’ll put in these seeds, too.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <sequence>
+                  <cursor item="" />
+                  <dialogue play="*" />
+                  <cache field="boiler_level" math="+1" />
+                  <layerSprite target="_avatar" animFrame="kneel_down_reach" waitForComplete="1" />
+                  <layerSprite target="boiler" animFrame="fuel" waitForComplete="0" />
+                  <inventory remove="seeds0" />
+                  <layerSprite target="_avatar" animFrame="kneel_reach_in" waitForComplete="1" />
+                  <layerSprite target="_avatar" animFrame="kneel_up" waitForComplete="1" />
+                </sequence>
+                <logic eval="[boiler_level] EQ 3">
+                  <sequence>
+                    <layerSprite target="pod" animFrame="opening" waitForComplete="1" />
+                    <layer target="_current:pod2" visible="1" />
+                    <layer target="_current:pod" state="opened" />
+                    <layer target="_current:boiler" state="complete" />
+                  </sequence>
+                </logic>
+              </script>
+            </action>
+            <action id="clothWet">
+              <title>
+                <es><![CDATA[]]></es>
+                <en><![CDATA[]]></en>
+                <de><![CDATA[]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_097">
+                  <es><![CDATA[Esto también debería arder.]]></es>
+                  <en><![CDATA[This should burn, too.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <sequence>
+                  <cursor item="" />
+                  <dialogue play="*" />
+                  <cache field="boiler_level" math="+1" />
+                  <layerSprite target="_avatar" animFrame="kneel_down_reach" waitForComplete="1" />
+                  <layerSprite target="boiler" animFrame="fuel" waitForComplete="0" />
+                  <inventory remove="clothWet" />
+                  <layerSprite target="_avatar" animFrame="kneel_reach_in" waitForComplete="1" />
+                  <layerSprite target="_avatar" animFrame="kneel_up" waitForComplete="1" />
+                </sequence>
+                <logic eval="[boiler_level] EQ 3">
+                  <sequence>
+                    <layerSprite target="pod" animFrame="opening" waitForComplete="1" />
+                    <layer target="_current:pod2" visible="1" />
+                    <layer target="_current:pod" state="opened" />
+                    <layer target="_current:boiler" state="complete" />
+                  </sequence>
+                </logic>
+              </script>
+            </action>
+          </items>
+        </state>
+        <state id="complete" x="804" y="485" img="1" imgX="48" imgY="-23" imgW="1" imgH="1" frame="2" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-37" hitY="-82" hitW="110" hitH="86" shape="rect">
+          <param mapX="705" mapY="500" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <es><![CDATA[caldera]]></es>
+            <en><![CDATA[boiler tank]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <es><![CDATA[Mirar]]></es>
+                <en><![CDATA[Look at]]></en>
+                <de><![CDATA[Untersuche]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_082">
+                  <es><![CDATA[Es algún tipo de caldera que está conectada a la cápsula.]]></es>
+                  <en><![CDATA[It’s some kind of tank that is connected to the pod.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_083">
+                  <es><![CDATA[Tiene el símbolo de inflamable pintado en un lateral.]]></es>
+                  <en><![CDATA[There’s a flammable symbol painted on the side.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act1">
+              <title>
+                <es><![CDATA[Hablar con]]></es>
+                <en><![CDATA[Talk to]]></en>
+                <de><![CDATA[Sprich mit]]></de>
+              </title>
+              <dialog />
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+            <action id="act2">
+              <title>
+                <es><![CDATA[Usar]]></es>
+                <en><![CDATA[Use]]></en>
+                <de><![CDATA[Benutze]]></de>
+              </title>
+              <dialog>
+                <dia puppet="_avatar" frame="lspeak" sound="lib/lab2_voice.swf:lab2_100">
+                  <es><![CDATA[Ya he metido bastante en esa caldera.]]></es>
+                  <en><![CDATA[I’ve put quite enough into that boiler.]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <dialogue play="*" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees>
+    <tree id="coppelius">
+      <tier key="r" id="">
+        <topic key="t0" id="quest" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <es><![CDATA[Dr. Coppelius, me enviaron a buscarle.]]></es>
+            <en><![CDATA[Dr. Coppelius, I was sent to find you.]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_101">
+              <es><![CDATA[Dr. Coppelius, me enviaron a buscarle.]]></es>
+              <en><![CDATA[Dr. Coppelius, I was sent to find you.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_102">
+              <es><![CDATA[Lo sé, lo sé. La universidad quiere saber si aún sigo vivo.]]></es>
+              <en><![CDATA[I know, I know. The university wants to know if I’m still alive.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="hspeak" sound="lib/lab2_voice.swf:lab2_103">
+              <es><![CDATA[Sí, se supone que debería decirle que &#161;se encuentra en grave peligro!]]></es>
+              <en><![CDATA[Yes. I’m supposed to tell you that you are in great danger!]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_104">
+              <es><![CDATA[Bueno, &#161;eso ya lo sé! Por eso tuve que esconderme. Imagino que mis viejos colegas se preocuparon tanto que te enviaron a buscarme.]]></es>
+              <en><![CDATA[Well, I know that! That’s why I had to hide. I guess my old colleagues were worried enough that they sent you to find me.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_105">
+              <es><![CDATA[&#191;En qué clase de peligro está metido?]]></es>
+              <en><![CDATA[What kind of danger are you in?]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_106">
+              <es><![CDATA[Sabía que Vincent andaba tras de mí... Tuve que esconderme para proteger mi invento. Mi nieta también estaría en grave peligro si Vincent conociera los detalles de mi invento.]]></es>
+              <en><![CDATA[I knew Vincent was after me... I had to hide to protect my invention. My granddaughter would be in great danger, too, if Vincent found out about my invention.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="hspeak" sound="lib/lab2_voice.swf:lab2_107">
+              <es><![CDATA[&#191;Nora?]]></es>
+              <en><![CDATA[Nora?]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_108">
+              <es><![CDATA[Sí, Nora ... prometí que cuidaría de ella.]]></es>
+              <en><![CDATA[Yes, Nora ... I promised to look after her.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*" />
+          </script>
+        </topic>
+        <topic key="t1" id="vincent" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <es><![CDATA[&#191;Quién es Vincent?]]></es>
+            <en><![CDATA[Who is Vincent?]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="lspeak" sound="lib/lab2_voice.swf:lab2_109">
+              <es><![CDATA[&#191;Quién es Vincent?]]></es>
+              <en><![CDATA[Who is Vincent?]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_110">
+              <es><![CDATA[Bien, &#191;ves esa vieja fotografía de allí? Échale un vistazo y te lo contaré ...]]></es>
+              <en><![CDATA[Well, do you see that old photograph over there? Have a look at it and I’ll tell you ...]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*" />
+          </script>
+        </topic>
+        <topic key="t2" id="invention" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <es><![CDATA[&#191;De qué invento hablaba Vincent?]]></es>
+            <en><![CDATA[What invention was Vincent talking about?]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_111">
+              <es><![CDATA[&#191;De qué invento hablaba Vincent?]]></es>
+              <en><![CDATA[What invention was Vincent talking about?]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_112">
+              <es><![CDATA[Tras muchos años de investigación logré construir aquello con lo que los científicos llevan soñando conseguir desde hace generaciones ...]]></es>
+              <en><![CDATA[After many years of research, I was able to construct that what scientists have dreamed to achieve for generations ...]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_113">
+              <es><![CDATA[&#161;He construido un corazón mecánico!]]></es>
+              <en><![CDATA[I constructed a mechanical heart!]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="hspeak" sound="lib/lab2_voice.swf:lab2_114">
+              <es><![CDATA[&#191;Un corazón mecánico?]]></es>
+              <en><![CDATA[A mechanical heart?]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_115">
+              <es><![CDATA[&#161;Sí! Un corazón mecánico podría ser el motor de cualquier tipo de dispositivo ... es muy efectivo. Sólo necesita una pequeña cantidad de energía eléctrica.]]></es>
+              <en><![CDATA[Yes! A mechanical heart could be the motor for every kind of device ... it’s very effective. It just needs a small amount of electric energy.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_116">
+              <es><![CDATA[Imagina ... un corazón mecánico que mantenga un tanque circulando, proporcionando energía a aviones, palpitando en el pecho de un hombre robot...]]></es>
+              <en><![CDATA[Imagine ... a mechanical heart that keeps a tank rolling, providing the energy for planes, beating in the chest of a robot man...]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_117">
+              <es><![CDATA[... o en el pecho de una chica enferma.]]></es>
+              <en><![CDATA[... or in the chest of a sick young girl.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="lspeak" sound="lib/lab2_voice.swf:lab2_118">
+              <es><![CDATA[&#191;Qué quiere decir? ]]></es>
+              <en><![CDATA[What do you mean? ]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="hspeak" sound="lib/lab2_voice.swf:lab2_119">
+              <es><![CDATA[Espere ... &#191;&#191;Nora??]]></es>
+              <en><![CDATA[Wait ... Nora??]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_120">
+              <es><![CDATA[&#161;Sí! Ella fue la razón de que invirtiese miles de horas investigando ... estaba muy enferma.]]></es>
+              <en><![CDATA[Yes! She was the reason I invested thousands of hours into research ... she was very sick.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_121">
+              <es><![CDATA[El único prototipo en el que llegué a trabajar no es perfecto ... de vez en cuando hay que ajustarlo ... pero ayudó a mi nieta Nora a sobrevivir.]]></es>
+              <en><![CDATA[The only prototype that ever worked was not perfect ... from time to time the device needs to be adjusted ... but it helped my granddaughter Nora to survive.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_122">
+              <es><![CDATA[Ahora entiendo por qué quería mantener su invento en secreto. Si Vincent lo descubriera entonces ...]]></es>
+              <en><![CDATA[Now I understand why you wanted to keep your invention a secret. If Vincent knew about it then ...]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_123">
+              <es><![CDATA[... &#161;Nora estaría en grave peligro! Sí.]]></es>
+              <en><![CDATA[... Nora would be in great danger! Yes.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_124">
+              <es><![CDATA[&#191;Pero por qué vino aquí? &#191;Por qué arriesgarse a topar con Vincent?]]></es>
+              <en><![CDATA[But why did you come here? Why risk running into Vincent?]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_125">
+              <es><![CDATA[Cuando me marché olvidé algunas notas que podrían servirme para evitar que Nora enferme. No sabía que Vincent ya estuviese aquí.]]></es>
+              <en><![CDATA[When I left I forgot some notes that could help me to keep Nora from getting sick. I didn’t know that Vincent was already here.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_126">
+              <es><![CDATA[&#191;Entonces por qué quería que yo entrase en la casa?]]></es>
+              <en><![CDATA[Then why did you want me to get into the house?]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_127">
+              <es><![CDATA[Bueno, no sé como Vincent consiguió entrar... intenté hacer que acceder aquí abajo fuese lo más complicado posible. Desgraciadamente ni yo mismo podía recordar como entrar ... parece que me estoy haciendo demasiado viejo.]]></es>
+              <en><![CDATA[Well, I don’t know how Vincent got in... but I tried to make it as complicated as possible to get down here. Unfortunately I couldn’t remember how to get in here myself ... it seems I’m getting too old.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*" />
+          </script>
+        </topic>
+        <topic key="t3" id="lab" enabled="1" hold="0" expose="" go="0">
+          <title>
+            <es><![CDATA[&#191;Qué es este lugar?]]></es>
+            <en><![CDATA[What is this place?]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_128">
+              <es><![CDATA[&#191;Qué es este lugar?]]></es>
+              <en><![CDATA[What is this place?]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_129">
+              <es><![CDATA[Es mi laboratorio de investigación.]]></es>
+              <en><![CDATA[This is my research laboratory.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_130">
+              <es><![CDATA[Hace unos dos años oí que Vincent andaba tras nuestros descubrimientos y que varios miembros del equipo habían desaparecido.]]></es>
+              <en><![CDATA[About two years ago I heard that Vincent was after our discoveries and that several members of our research team had disappeared.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_131">
+              <es><![CDATA[Intentamos mantenernos en contacto via radio y correo pero tras perder un contacto tras otro decidí que era mejor marcharme y destruir todo lo que puediera ser útil para Vincent y sus maléficos planes.]]></es>
+              <en><![CDATA[We tried to stay in contact via radio and mail, but after I lost one contact after the other, I decided that it’s better to leave and destroy everything that might be useful for Vincent and his evil plans.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_132">
+              <es><![CDATA[&#191;Es por eso que la universidad no sabe donde está?]]></es>
+              <en><![CDATA[So that’s why the university doesn’t know where you are?]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_133">
+              <es><![CDATA[Exacto.]]></es>
+              <en><![CDATA[Exactly.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*" />
+          </script>
+        </topic>
+        <topic key="t4" id="escape" enabled="1" hold="1" expose="" go="0">
+          <title>
+            <es><![CDATA[&#191;Cómo salimos de aquí?]]></es>
+            <en><![CDATA[How do we get out of here?]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_134">
+              <es><![CDATA[&#191;Cómo salimos de aquí?]]></es>
+              <en><![CDATA[How do we get out of here?]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_135">
+              <es><![CDATA[Bueno, esa cápsula de escape de ahí podría ser una opción, pero ...]]></es>
+              <en><![CDATA[Well, that escape pod over there would be an option, but ...]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="hspeak" sound="lib/lab2_voice.swf:lab2_136">
+              <es><![CDATA[&#191;Escape? &#161;Eso suena perfecto!]]></es>
+              <en><![CDATA[Escape? That sounds perfect!]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_137">
+              <es><![CDATA[Sí ... bueno ... tiene sus peculiaridades.]]></es>
+              <en><![CDATA[Yes ... well ... it has its quirks.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="" sound="lib/lab2_voice.swf:lab2_138">
+              <es><![CDATA[&#191;Cómo se usa?]]></es>
+              <en><![CDATA[How can I use it?]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_139">
+              <es><![CDATA[Quizás tengas razón, no tenemos alternativa.]]></es>
+              <en><![CDATA[Maybe you’re right, we don’t have a choice.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_140">
+              <es><![CDATA[Primero tendrás que encender un fuego para la caldera ... luego tendrás que meter dentro cualquier cosa que arda. Cualquier cosa con alcohol ayudaría.]]></es>
+              <en><![CDATA[First you’ll have to get a fire started in the boiler ... then put in anything that might burn. Anything that contains alcohol would help.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_141">
+              <es><![CDATA[Eso debería generar suficiente vapor para activar la cápsula.]]></es>
+              <en><![CDATA[That should generate enough steam to activate the pod.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="_avatar" frame="lspeak" sound="lib/lab2_voice.swf:lab2_142">
+              <es><![CDATA[Primero: encender un fuego.<BR/> Segundo: meter cosas altamente inflamables<BR/> ... Debería ser capaz de conseguirlo.]]></es>
+              <en><![CDATA[First: start a fire. Second: put in highly flammable things ... I should be able to do that.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*" />
+          </script>
+        </topic>
+        <topic key="t5" id="goodbye" enabled="1" hold="1" expose="" go="-2">
+          <title>
+            <es><![CDATA[Intentaré que salgamos de aquí.]]></es>
+            <en><![CDATA[I’ll try to get us out of here.]]></en>
+            <de><![CDATA[]]></de>
+          </title>
+          <dialog>
+            <dia puppet="_avatar" frame="lspeak" sound="lib/lab2_voice.swf:lab2_143">
+              <es><![CDATA[Intentaré que salgamos de aquí.]]></es>
+              <en><![CDATA[I’ll try to get us out of here.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+            <dia puppet="coppelius" frame="" sound="lib/lab2_voice.swf:lab2_144">
+              <es><![CDATA[Muy bien.]]></es>
+              <en><![CDATA[Very good.]]></en>
+              <de><![CDATA[]]></de>
+            </dia>
+          </dialog>
+          <script>
+            <dialogue play="*" />
+          </script>
+        </topic>
+      </tier>
+    </tree>
+  </trees>
+</room>

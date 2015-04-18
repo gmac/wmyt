@@ -1,0 +1,138 @@
+<room id="finale" coreLibs="lib/finale.swf" voiceLibs="lib/finale_voice.swf" enterScript="_enter" exitScript="_exit" grid="main" sound1="lib/finale.swf:FinaleMusic" sound2="lib/finale.swf:FinaleFx">
+  <grids>
+    <grid id="main">
+      <boxes />
+      <nodes />
+    </grid>
+  </grids>
+  <positions />
+  <filters>
+    <filter id="_main" axis="y" enabled="1">
+      <pole x="19" y="240" scale="0.5" rate="0.5" blur="1" color="0x000000" tint="0.5" />
+      <pole x="19" y="493" scale="1" rate="1" blur="5" color="0xFFFFFF" tint="0.5" />
+    </filter>
+  </filters>
+  <scripts>
+    <script id="_enter">
+      <ui target="ui_mask" display="hide" tween="0" />
+      <cursor gameMouse="0" wait="1" />
+      <curtain blackout="0" />
+      <puppet target="sequence" callAction="0" />
+    </script>
+    <script id="_exit">
+      <library unloadRoom="_current" />
+      <curtain blackout="1" />
+    </script>
+  </scripts>
+  <layers>
+    <layer id="_bg" type="background" asset="" depth="0" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="900" hitH="675" shape="rect">
+          <param mouse="0" scrollL="300" scrollR="300" scrollT="300" scrollB="300" />
+          <vars />
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="nora" type="puppet" asset="" depth="1" visible="0" state="main">
+      <states>
+        <state id="main" x="450" y="620" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1" hitH="1" shape="rect">
+          <param mapX="0" mapY="0" turnTo="5" turn="0" cursor="" onclick="-1" prefix="normal_" subtitle="0xFFFF99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="vincent" type="puppet" asset="" depth="2" visible="0" state="main">
+      <states>
+        <state id="main" x="450" y="620" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1" hitH="1" shape="rect">
+          <param mapX="0" mapY="0" turnTo="5" turn="0" cursor="" onclick="-1" prefix="normal_" subtitle="0x99CC99" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="finale" type="plane" asset="lib/finale.swf:FinaleCutscene" depth="3" visible="1" state="main">
+      <states>
+        <state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect">
+          <param mouse="0" float="0" parallax="" />
+          <vars />
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions />
+          <items />
+        </state>
+      </states>
+    </layer>
+    <layer id="sequence" type="puppet" asset="" depth="2" visible="1" state="main">
+      <states>
+        <state id="main" x="10" y="10" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="10" hitH="10" shape="rect">
+          <param mapX="35" mapY="35" turnTo="8" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur="" />
+          <vars />
+          <title>
+            <en><![CDATA[]]></en>
+          </title>
+          <actions>
+            <action id="act0">
+              <title>
+                <en><![CDATA[Finale sequence]]></en>
+              </title>
+              <dialog>
+                <dia puppet="nora" frame="" sound="lib/finale_voice.swf:finale_001">
+                  <es><![CDATA[¡¿Quién eres?!]]></es>
+                  <en><![CDATA[Who are you?!]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="nora" frame="" sound="lib/finale_voice.swf:finale_002">
+                  <es><![CDATA[¿Qué es lo que quieres de mí?]]></es>
+                  <en><![CDATA[What do you want?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="vincent" frame="" sound="lib/finale_voice.swf:finale_003">
+                  <es><![CDATA[¡No te preocupes! Tan sólo quiero saber...]]></es>
+                  <en><![CDATA[Don’t worry! I just want to know...]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+                <dia puppet="vincent" frame="" sound="lib/finale_voice.swf:finale_004">
+                  <es><![CDATA[¡¿Qué te hace palpitar (What makes you tick)?]]></es>
+                  <en><![CDATA[What Makes You Tick?]]></en>
+                  <de><![CDATA[]]></de>
+                </dia>
+              </dialog>
+              <script>
+                <sequence skip="1">
+                  <layerSprite target="finale" animFrame="scene1" waitForComplete="0" />
+                  <wait stageEvent="finale_000" skipable="0" />
+                  <dialogue playList="0" />
+                  <wait stageEvent="finale_001" skipable="0" />
+                  <dialogue playList="1" />
+                  <wait stageEvent="finale_002" skipable="0" />
+                  <dialogue playList="2" />
+                  <wait stageEvent="finale_003" skipable="0" />
+                  <dialogue playList="3" />
+                  <wait stageEvent="lassieAnimComplete" />
+                </sequence>
+                <game room="credits" />
+              </script>
+            </action>
+          </actions>
+          <items />
+        </state>
+      </states>
+    </layer>
+  </layers>
+  <trees />
+</room>
