@@ -1,0 +1,97 @@
+<room id="credits" coreLibs="lib/credits.swf,lib/theme.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="lib/theme.swf:StitchTheme" sound2=""><grids><grid id="main"><boxes/>
+<nodes/>
+</grid></grids><positions/>
+<filters><filter id="_main" axis="y" enabled="1"><pole x="45" y="337" scale="0.5" rate="0.5" blur="1" color="0x000000" tint="0.5"/>
+<pole x="45" y="564" scale="1" rate="1" blur="5" color="0xFFFFFF" tint="0.5"/>
+</filter></filters><scripts><script id="_enter"><ui target="ui_mask" display="hide" tween="0"/>
+<cursor gameMouse="0" visible="0"/>
+<layerState target="_current:button_demo:main" hoverState="on"/>
+<layerState target="_current:button_stitch:main" hoverState="on"/>
+<layerState target="_current:button_menu:main" hoverState="on"/>
+<layerBlend target="button_demo" at="alpha:0"/>
+<layerBlend target="button_stitch" at="alpha:0"/>
+<layerBlend target="button_menu" at="alpha:0"/>
+<curtain blackout="0"/>
+<puppet target="sequence" callAction="0"/>
+</script><script id="_exit"><library unloadRoom="_current"/>
+<curtain blackout="1"/>
+</script></scripts><layers><layer id="_bg" type="background" asset="" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="900" hitH="675" shape="rect"><param mouse="0" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer><layer id="credits_roll" type="plane" asset="lib/credits.swf:CreditsRoll" depth="1" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mouse="0" float="0" parallax=""/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer><layer id="button_menu" type="puppet" asset="lib/credits.swf:CreditsMenuButton" depth="2" visible="0" state="main"><states><state id="main" x="450" y="610" img="1" imgX="-100" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-104" hitY="-5" hitW="207" hitH="54" shape="rect"><param mapX="450" mapY="655" turnTo="5" turn="0" cursor="" onclick="0" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Button action]]></es>
+    <en><![CDATA[Button action]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><menu display="show"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="button_stitch" type="puppet" asset="lib/credits.swf:CreditsStitchButton" depth="3" visible="0" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="291" hitY="66" hitW="318" hitH="484" shape="rect"><param mapX="455" mapY="560" turnTo="5" turn="0" cursor="" onclick="0" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Button action]]></es>
+    <en><![CDATA[Button action]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><weblink url="http://www.lassiegames.com/stitch" target="_blank"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="button_demo" type="puppet" asset="lib/credits.swf:CreditsStitchDemo" depth="4" visible="0" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="681" hitY="252" hitW="158" hitH="116" shape="rect"><param mapX="50" mapY="50" turnTo="5" turn="0" cursor="" onclick="0" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Button action]]></es>
+    <en><![CDATA[Button action]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><weblink url="http://www.lassiegames.com/games/stitch_demo" target="_self"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="sequence" type="puppet" asset="" depth="5" visible="1" state="main"><states><state id="main" x="10" y="10" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="10" hitH="10" shape="rect"><param mapX="35" mapY="35" turnTo="8" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Credits sequence]]></es>
+    <en><![CDATA[Credits sequence]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><sequence><layerSprite target="credits_roll" animFrame="outro" waitForComplete="1"/>
+<wait seconds="1"/>
+</sequence><cursor visible="1"/>
+<layer target="_current:button_menu" visible="1"/>
+<layerBlend target="button_menu" to="alpha:1" seconds="1" waitForComplete="1"/>
+<process><layerSprite target="credits_roll" animFrame="credits" waitForComplete="1"/>
+<wait seconds="1.5"/>
+<layer target="_current:button_stitch" visible="1"/>
+<layerBlend target="button_stitch" to="alpha:1" seconds="3" waitForComplete="1"/>
+<layer target="_current:button_demo" visible="1"/>
+<layerBlend target="button_demo" to="alpha:1" seconds="1" waitForComplete="1"/>
+</process></script></action></actions><items/>
+</state></states></layer></layers><trees/>
+</room>

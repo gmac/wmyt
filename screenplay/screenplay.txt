@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="header">
+  <p class="queue-title" id="queue-title"></p>
+  <h1>What Makes You Tick?</h1>
+  <p class="filters">
+    <label for="cast">Highlight actor:</label>
+    <select id="cast">
+      <option value="">--NONE--</option>
+      {{ cast }}
+    </select>
+    
+    <label for="filter">Sequence:</label>
+    <select id="filter">
+      <option value="">--ALL--</option>
+      <option value="cast">All with highlighted actor</option>
+      {{ rooms }}
+    </select>
+  </p>
+</div>
+
+{{ content }}
+
+<script src="assets/jquery.js"></script>
+<script>
+// Configure room selector:
+var $cast = $('#cast').change(updateView);
+var $filter = $('#filter').change(updateView);
+var $rooms = $('.room');
+var $objects = $('.object');
+var $lines = $('.line');
+
+function updateView() {
+  var cast = $cast.val();
+  var filter = $filter.val();
+  $rooms.hide();
+  
+  if (!cast) {
+    $lines.removeClass('active');
+  } else {
+    $lines.removeClass('active').filter('.'+cast).addClass('active');
+  }
+
+  if (filter === 'cast' && !cast) filter = '';
+
+  if (filter === 'cast') {
+    $objects.hide().filter('.'+ cast).show().closest('.room').show();
+  } else if (!filter) {
+    $objects.show();
+    $rooms.show();
+  } else {
+    $objects.show();
+    $rooms.filter('.'+filter).show();
+  }
+  
+  $('#queue-title').text(cast);
+  location.hash = '/'+[cast, filter].join('/');
+}
+
+// Load cache:
+var cache = JSON.parse(localStorage.getItem('wmyt-screenplay')) || {};
+
+// Populate cached checkboxes:
+for (var i in cache) {
+  if (cache.hasOwnProperty(i)) $('#'+i).prop('checked', true);
+}
+
+// Cache changes:
+$(document).on('change', 'input:checkbox', function(evt) {
+  var $input = $(evt.currentTarget);
+  var id = $input.attr('id');
+  
+  if ($input.prop('checked')) {
+    cache[id] = 1;
+  } else {
+    delete cache[id];
+  }
+
+  localStorage.setItem('wmyt-screenplay', JSON.stringify(cache));
+});
+
+var params = location.hash.match(/^#\/(.*?)\/(.*?)$/);
+if (params) {
+  $cast.val(params[1]);
+  $filter.val(params[2]);
+  updateView();
+}
+</script>
+</body>
+</html>

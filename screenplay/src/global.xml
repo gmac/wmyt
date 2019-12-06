@@ -1,0 +1,2805 @@
+<global id="_b70e53f4feb9397cec8a3c0f82269910" key="" compact="1" stageWidth="900" stageHeight="675" coreLibs="lib/nathan.swf,lib/global.swf" voiceLibs="lib/global_voice.swf" langOptions="en">
+<config language="en" actor="nathan" room="intro" soundtrackVolume="0.6" soundfxVolume="0.8" voiceVolume="1.0" voices="1" subtitles="1"/>
+<title><![CDATA[What Makes You Tick?]]></title><author><![CDATA[Lassie Games]]></author><verbDialect>
+    <es><![CDATA[#verb# #noun#]]></es>
+    <en><![CDATA[#verb# #noun#]]></en>
+    <de><![CDATA[]]></de>
+</verbDialect><itemDialect>
+    <es><![CDATA[Usar #item# con #noun#]]></es>
+    <en><![CDATA[Use #item# with #noun#]]></en>
+    <de><![CDATA[]]></de>
+</itemDialect><actors><actor id="nathan" asset="lib/nathan.swf:Nathan" regX="-4" regY="-3" response="nathan" inventory="nathan" subtitle="0xFFFFFF"><![CDATA[Nathan]]></actor></actors><responses><response id="nathan"><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No veo que tenga nada de particular.]]></es>
+    <en><![CDATA[I don't see anything special about that.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No, gracias.]]></es>
+    <en><![CDATA[No, thanks.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Qué se supone que debería hacer con eso?]]></es>
+    <en><![CDATA[What should I do with it?]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Cómo se supone que debería usar eso?]]></es>
+    <en><![CDATA[How should I use this?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="item"><title>
+    <es><![CDATA[Objeto]]></es>
+    <en><![CDATA[Item]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No creo que eso sea útil.]]></es>
+    <en><![CDATA[I don't think that's useful.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Creo que eso no va a funcionar.]]></es>
+    <en><![CDATA[I don't think that'll work.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Eso es inútil.]]></es>
+    <en><![CDATA[I think that's useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></response></responses><items>
+<item id="barbedWire" asset="lib/global.swf:InvenBarbedWire" frame="" hover=""><title>
+    <es><![CDATA[Alambre de espino]]></es>
+    <en><![CDATA[barbed wire]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un trozo de alambre de espino.]]></es>
+    <en><![CDATA[It's a piece of barbed wire.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es fino y afilado. Tal vez me sirva para hacer saltar alguna cerrdura.]]></es>
+    <en><![CDATA[It's thin and sharp. Maybe I can pick a lock with this?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="book" asset="lib/global.swf:InvenBook" frame="" hover=""><title>
+    <es><![CDATA[&quot;Lo que importa es el interior&quot;]]></es>
+    <en><![CDATA[&quot;The Inside Matters&quot;]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[El título del libro es &quot;Lo que importa es el interior&quot; ... &#191;Qué significará eso?]]></es>
+    <en><![CDATA[The title of the book is &quot;The Inside Matters&quot; ... What does that mean?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Abrir]]></es>
+    <en><![CDATA[Open]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Veamos... &#161;Hey! Dentro hay una placa dorada.]]></es>
+    <en><![CDATA[Let's see... Hey! There's a golden plate inside.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Dejaré el libro vacío y me quedaré con la placa.]]></es>
+    <en><![CDATA[I'll discard the empty book and just keep the plate.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><inventory replace="book:plate2"/>
+<dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="bottleCork" asset="lib/global.swf:InvenBottle1" frame="" hover=""><title>
+    <es><![CDATA[Botella de alcohol sin descorchar]]></es>
+    <en><![CDATA[corked bottle of alcohol]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es una botella de alcohol sin descorchar.]]></es>
+    <en><![CDATA[It's a corked bottle of alcohol.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Morder]]></es>
+    <en><![CDATA[Bite]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He sacado el corcho con los dientes.]]></es>
+    <en><![CDATA[I pulled the cork out with my teeth.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><sound effect="lib/global.swf:SoundUncork" waitForComplete="0"/>
+<inventory replace="bottleCork:bottleFull,cork"/>
+<dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Abrir]]></es>
+    <en><![CDATA[Open]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[El corcho está demasiado apretado para sacarlo con las manos.]]></es>
+    <en><![CDATA[The cork is too tight to pull out with my hands.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Eso no la descorchará.]]></es>
+    <en><![CDATA[That won't uncork it.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="bottleEmpty" asset="lib/global.swf:InvenBottle4" frame="" hover=""><title>
+    <es><![CDATA[Botella de alcohol casi vacía]]></es>
+    <en><![CDATA[almost empty bottle of alcohol]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Está casi vacía.]]></es>
+    <en><![CDATA[It's almost empty.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Beber]]></es>
+    <en><![CDATA[Drink]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora mismo no estoy de ánimo para beber.]]></es>
+    <en><![CDATA[I'm not in the mood for drinking right now.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Cómo se supone que debería usar eso?]]></es>
+    <en><![CDATA[How should I use this?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[El alcohol nunca es una buena solución para los problemas.]]></es>
+    <en><![CDATA[Alcohol is never a good solution for problems.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="bottleFull" asset="lib/global.swf:InvenBottle2" frame="" hover=""><title>
+    <es><![CDATA[Botella llena de alcohol]]></es>
+    <en><![CDATA[full bottle of alcohol]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Está llena de alcohol.]]></es>
+    <en><![CDATA[It's a full bottle of alcohol.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Beber]]></es>
+    <en><![CDATA[Drink]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora mismo no estoy de ánimo para beber.]]></es>
+    <en><![CDATA[I'm not in the mood for drinking right now.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Cómo se supone que debería usar eso?]]></es>
+    <en><![CDATA[How should I use this?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[El alcohol nunca es una buena solución para los problemas.]]></es>
+    <en><![CDATA[Alcohol is never a good solution for problems.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="bottleHalf" asset="lib/global.swf:InvenBottle3" frame="" hover=""><title>
+    <es><![CDATA[Botella medio llena de alcohol]]></es>
+    <en><![CDATA[half a bottle of alcohol]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Medio llena o medio vacía? Esa es la cuestión.]]></es>
+    <en><![CDATA[Half-full or half-empty? That's the question.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Beber]]></es>
+    <en><![CDATA[Drink]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora mismo no estoy de ánimo para beber.]]></es>
+    <en><![CDATA[I'm not in the mood for drinking right now.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Cómo se supone que debería usar eso?]]></es>
+    <en><![CDATA[How should I use this?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[El alcohol nunca es una buena solución para los problemas.]]></es>
+    <en><![CDATA[Alcohol is never a good solution for problems.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="clothDry" asset="lib/global.swf:InvenCloth1" frame="" hover=""><title>
+    <es><![CDATA[Trapo]]></es>
+    <en><![CDATA[cloth]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un trapo.]]></es>
+    <en><![CDATA[It's a piece of cloth.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Podría usarlo para limpiar algo... pero el trapo está demasiado seco.]]></es>
+    <en><![CDATA[I could try to clean something... but the cloth is too dry.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="clothWet" asset="lib/global.swf:InvenCloth2" frame="" hover=""><title>
+    <es><![CDATA[Trapo húmedo]]></es>
+    <en><![CDATA[wet cloth]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora es un trapo empapado en alcohol.]]></es>
+    <en><![CDATA[Now it's a wet piece of cloth soaked in alcohol.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Podría usarlo para limpiar algo...]]></es>
+    <en><![CDATA[I could clean something...]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No necesito limpiar eso.]]></es>
+    <en><![CDATA[That doesn't need to be cleaned.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="cork" asset="lib/global.swf:InvenCork" frame="" hover=""><title>
+    <es><![CDATA[Corcho]]></es>
+    <en><![CDATA[cork]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un corcho liviano.]]></es>
+    <en><![CDATA[It's a light cork.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="fish" asset="lib/global.swf:InvenFish" frame="" hover=""><title>
+    <es><![CDATA[Pescado fresco]]></es>
+    <en><![CDATA[fresh fish]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es el pez que cogí.]]></es>
+    <en><![CDATA[It's the fish I caught.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[De verdad que lo siento pececito. Nunca me ha gustado pescar, ya lo sabes.]]></es>
+    <en><![CDATA[I'm really sorry about this, fish. I've never liked fishing, you know.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Consumir]]></es>
+    <en><![CDATA[Consume]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No me gusta el pescado crudo.]]></es>
+    <en><![CDATA[I don't like raw fish.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahí no hace falta un pez muerto.]]></es>
+    <en><![CDATA[A dead fish isn't needed here.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="fishing_bait" asset="lib/global.swf:InvenStickWorm" frame="" hover=""><title>
+    <es><![CDATA[Caña de pescar con cebo]]></es>
+    <en><![CDATA[fishing rod with bait]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es mi caña de pescar casera. Con cebo incluido.]]></es>
+    <en><![CDATA[It's my handmade fishing rod. With bait.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Debería ir a pescar.]]></es>
+    <en><![CDATA[I should go fishing.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Este no es un buen sitio para pescar.]]></es>
+    <en><![CDATA[This is not a good place for fishing.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="fishing_rod" asset="lib/global.swf:InvenStickTwineCorkHook" frame="" hover=""><title>
+    <es><![CDATA[Caña de pescar]]></es>
+    <en><![CDATA[fishing rod]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es mi caña de pescar casera.]]></es>
+    <en><![CDATA[It's my handmade fishing rod.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Debería ir a pescar, pero primero necesitaré cebar el anzuelo.]]></es>
+    <en><![CDATA[I should go fishing, but I'll need to bait the hook first.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Este no es un buen sitio para pescar.]]></es>
+    <en><![CDATA[This is not a good place for fishing.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Además necesito cebar el anzuelo.]]></es>
+    <en><![CDATA[Plus I need to bait the hook.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="glove1" asset="lib/global.swf:InvenGlove1" frame="" hover=""><title>
+    <es><![CDATA[Guante suelto]]></es>
+    <en><![CDATA[single glove]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un guante. Necesito otro para hacer un par.]]></es>
+    <en><![CDATA[It's a glove. I need a second one to make a pair.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Cómo se supone que debería usar eso?]]></es>
+    <en><![CDATA[How should I use a single glove?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="glove2" asset="lib/global.swf:InvenGlove2" frame="" hover=""><title>
+    <es><![CDATA[Guante viejo]]></es>
+    <en><![CDATA[old glove]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un guante. Necesitaré otro para hacer un par.]]></es>
+    <en><![CDATA[It's a glove. I need a second one to make a pair.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Cómo se supone que debería usar eso?]]></es>
+    <en><![CDATA[How should I use a single glove?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="glovePair" asset="lib/global.swf:InvenGlovePair" frame="" hover=""><title>
+    <es><![CDATA[Par de guantes]]></es>
+    <en><![CDATA[pair of gloves]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un par de guantes.]]></es>
+    <en><![CDATA[It's a pair of gloves.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Ponerse]]></es>
+    <en><![CDATA[Wear]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No quiero llevarlos puestos todo el rato.]]></es>
+    <en><![CDATA[I don't want to wear them all the time.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="handle" asset="lib/global.swf:InvenCrank" frame="" hover=""><title>
+    <es><![CDATA[Manivela]]></es>
+    <en><![CDATA[handle]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es la manivela del pozo.]]></es>
+    <en><![CDATA[It's the handle from the well.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Tengo que usarla con algo.]]></es>
+    <en><![CDATA[I have to use it with something.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="hook" asset="lib/global.swf:InvenHook" frame="" hover=""><title>
+    <es><![CDATA[Anzuelo]]></es>
+    <en><![CDATA[fishing hook]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un anzuelo pequeño y afilado.]]></es>
+    <en><![CDATA[It's a small and sharp metal hook.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Aauuu! Está afilado.]]></es>
+    <en><![CDATA[Ouch! It's sharp.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="journal" asset="lib/global.swf:InvenJournal" frame="" hover=""><title>
+    <es><![CDATA[Guía para la vida del Capitán Matt]]></es>
+    <en><![CDATA[Capt. Matt's Guide to Life]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es la &quot;Guía para la vida del Capitán Matt&quot;. Parece interesante. Debería tratar de leerlo.]]></es>
+    <en><![CDATA[It's &quot;Capt'n Matt's Guide to Life&quot;. Looks interesting. I should try reading it.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Leer]]></es>
+    <en><![CDATA[Read]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;Capítulo 27: Cómo aturdir un cuervo.&quot;]]></es>
+    <en><![CDATA[&quot;Chapter 27: How to Stun a Raven.&quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;En uno de mis viajes por el Caribe me vi obligado a sedar un cuervo.&quot;]]></es>
+    <en><![CDATA[&quot;On one of my travels through the Caribbean it became necessary to drug a raven. &quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;De encontrarte en una situación similar, simplemente sigue estas instrucciones:&quot;]]></es>
+    <en><![CDATA[&quot;Should you get into a similar situation just follow these instructions:&quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;Primero consigue algo de comida para pájaros que parezca apetitosa, algo de alcohol fuerte y finalmente añade la SETA DE LA MUERTE. La Seta de La Muerte (no es letal).&quot;]]></es>
+    <en><![CDATA[&quot;First get some kind of nice looking bird food, some strong alcohol and finally add the SETA DE MUERTE. The Mushroom of Death (not deadly).&quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;Mezcla los trés ingredientes en un tazón o en un bol. Ahora dale los cereales al cuervo. Alimenta el pájaro hasta que se quede dormido.&quot;]]></es>
+    <en><![CDATA[&quot;Mix the three ingredients in a cup or bowl. Now give the cereal to the raven. Feed the bird until it falls asleep.&quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;Después de eso puedes continuar con lo que quiera que estuvieras haciendo - tal y como yo continué con la búsqueda del Gurú Vudú. Para más detalles ver el capítulo 51 ‘Isla Coco’&quot;]]></es>
+    <en><![CDATA[&quot;After that you can proceed with whatever you were doing - just like I continued to search for the Voodoo Priest. For further details see Chapter 51 ‘Coco Island’&quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Hey, creo que esa es una buena sugerencia. Mezclar cereales, alcohol y Seta de La Muerte. Creo que lo he pillado.]]></es>
+    <en><![CDATA[Hey, I think that's a useful hint. Mix cereal, alcohol and Mushroom of Death. I think I got it.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><tree enableTopic="ferry:sailor:book2:0"/>
+<dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[En vez de eso, debería leer el libro.]]></es>
+    <en><![CDATA[I should read the book instead.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="key1" asset="lib/global.swf:InvenKey1" frame="" hover=""><title>
+    <es><![CDATA[Trozo de llave]]></es>
+    <en><![CDATA[key part]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Parece parte de una llave más grande.]]></es>
+    <en><![CDATA[It seems to be a part of a larger key.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Un sólo trozo de llave no resulta muy útil.]]></es>
+    <en><![CDATA[A single part of a key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Un sólo trozo de llave no resulta muy útil.]]></es>
+    <en><![CDATA[A single part of a key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="key12" asset="lib/global.swf:InvenKey12" frame="" hover=""><title>
+    <es><![CDATA[Trozo grande de llave]]></es>
+    <en><![CDATA[larger key part]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Estas dos partes encajan. Pero sigue faltando una parte.]]></es>
+    <en><![CDATA[These two parts fit together. But there's still a part missing.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Una llave incompleta no es muy útil que se diga.]]></es>
+    <en><![CDATA[An incomplete key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Una llave incompleta no es muy útil que se diga.]]></es>
+    <en><![CDATA[An incomplete key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="key123" asset="lib/global.swf:InvenKey123" frame="" hover=""><title>
+    <es><![CDATA[Llave completa]]></es>
+    <en><![CDATA[complete key]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Una llave completa formada por tres partes. Lo que sea que abra, debe ser algo importante.]]></es>
+    <en><![CDATA[A complete three-part key. Whatever this unlocks, it must be important.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Esta llave no encaja aquí.]]></es>
+    <en><![CDATA[The key doesn't fit here.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No puedo usar la llave aquí.]]></es>
+    <en><![CDATA[I can't use the key here.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="key13" asset="lib/global.swf:InvenKey13" frame="" hover=""><title>
+    <es><![CDATA[Trozo grande de llave]]></es>
+    <en><![CDATA[larger key part]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Estas dos partes encajan. Pero sigue faltando una parte.]]></es>
+    <en><![CDATA[These two parts fit together. But there's still a part missing.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Una llave incompleta no es muy útil que se diga.]]></es>
+    <en><![CDATA[An incomplete key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Una llave incompleta no es muy útil que se diga.]]></es>
+    <en><![CDATA[An incomplete key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="key2" asset="lib/global.swf:InvenKey2" frame="" hover=""><title>
+    <es><![CDATA[Trozo pequeño de llave]]></es>
+    <en><![CDATA[small key part]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Tan sólo es un trozo de una llave más grande.]]></es>
+    <en><![CDATA[This is only a part of a larger key.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Un sólo trozo de llave no resulta muy útil.]]></es>
+    <en><![CDATA[A single part of a key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Un sólo trozo de llave no resulta muy útil.]]></es>
+    <en><![CDATA[A single part of a key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="key23" asset="lib/global.swf:InvenKey23" frame="" hover=""><title>
+    <es><![CDATA[Trozo grande de llave]]></es>
+    <en><![CDATA[larger key part]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Estas dos partes encajan. Pero sigue faltando una parte.]]></es>
+    <en><![CDATA[These two parts fit together. But there's still a part missing.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Una llave incompleta no es muy útil que se diga.]]></es>
+    <en><![CDATA[An incomplete key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Una llave incompleta no es muy útil que se diga.]]></es>
+    <en><![CDATA[An incomplete key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="key3" asset="lib/global.swf:InvenKey3" frame="" hover=""><title>
+    <es><![CDATA[Trozo diminuto de llave]]></es>
+    <en><![CDATA[tiny key part]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Tan sólo es un trozo de una llave más grande.]]></es>
+    <en><![CDATA[This is only a part of a larger key.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Un sólo trozo de llave no resulta muy útil.]]></es>
+    <en><![CDATA[A single part of a key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Un sólo trozo de llave no resulta muy útil.]]></es>
+    <en><![CDATA[A single part of a key is rather useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="leaflet" asset="lib/global.swf:InvenFlyer" frame="" hover=""><title>
+    <es><![CDATA[Folleto del club de pesca]]></es>
+    <en><![CDATA[fishing club leaflet]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es el folleto del club de pesca local. Dice:]]></es>
+    <en><![CDATA[It's a leaflet from the local fishing club. It says:]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;El maravilloso arte de la pesca ha ocupado nuestro corazón e imaginación durante décadas.&quot;]]></es>
+    <en><![CDATA[&quot;The wonderful art of fishing has captured our hearts and imaginations for decades.&quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;En nuestra infancia, todo lo que necesitabamos era un palo largo, un cordón, una boya, un anzuelo y cebo.&quot;]]></es>
+    <en><![CDATA[&quot;In our childhood, all it took was a long stick, a string, a float, a hook and some bait.&quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;Ven y únete a nuestro feliz círculo de pescadores.&quot;]]></es>
+    <en><![CDATA[&quot;Come and join our happy circle of fishermen.&quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Feliz círculo de pescadores, hu?]]></es>
+    <en><![CDATA[Happy circle of fishermen, hu?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Los folletos se usan leyéndolos... <BR/>o tirándolos por ahí.]]></es>
+    <en><![CDATA[You use leaflets by reading them... or by throwing them away.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="leafletBurn" asset="lib/global.swf:InvenFire" frame="" hover=""><title>
+    <es><![CDATA[Folleto ardiente]]></es>
+    <en><![CDATA[burning leaflet]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es el folleto del club de pesca local, y está ardiendo.]]></es>
+    <en><![CDATA[It's a leaflet from the local fishing club, and it's burning.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Jugar con]]></es>
+    <en><![CDATA[Play with]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es peligroso jugar con fuego.]]></es>
+    <en><![CDATA[That's not good fire safety.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No necesito quemar eso.]]></es>
+    <en><![CDATA[That doesn't need fire.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="lighter" asset="lib/global.swf:InvenLighter" frame="" hover=""><title>
+    <es><![CDATA[Mechero]]></es>
+    <en><![CDATA[lighter]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es mi mechero.]]></es>
+    <en><![CDATA[It's my lighter.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Hola mechero.]]></es>
+    <en><![CDATA[Hi there, lighter.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No fumo, pero quizás puede usarlo para otra cosa.]]></es>
+    <en><![CDATA[I don't smoke, but maybe I can use it for something else.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No voy a quemar eso. Tengo mucho cuidado con el fuego desde aquel pequeño incidente.]]></es>
+    <en><![CDATA[I won't burn this. I'm really careful with fire since that one incident.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="mushroom" asset="lib/global.swf:InvenMushroom" frame="" hover=""><title>
+    <es><![CDATA[Seta de La Muerte (no es letal)]]></es>
+    <en><![CDATA[Seta de Muerte (not deadly)]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es la legendaria Seta de La Muerte. Qué gracioso, esos puntitos parecen una pequeña calavera.]]></es>
+    <en><![CDATA[It's the legendary mushroom of death. That's funny, these dots look like a small skull.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Comer]]></es>
+    <en><![CDATA[Eat]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;No!]]></es>
+    <en><![CDATA[No!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="photo" asset="lib/global.swf:InvenPhoto" frame="" hover=""><title>
+    <es><![CDATA[Fotografía]]></es>
+    <en><![CDATA[picture]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es una fotografía de la casa donde solía vivir el Dr. Coppelius. Me enviaron a decirle que se encuentra en grave peligro.]]></es>
+    <en><![CDATA[It's a picture of the house where Dr. Coppelius used to live. I was sent to tell him that he's in great danger.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ni siquiera sé de que tipo de peligro hablaban los ancianos de la universidad, pero se supone que Coppelius debería contactar con ellos.]]></es>
+    <en><![CDATA[I don't even know what kind of danger the old men at the university were talking about, but Coppelius is supposed to contact them.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Me pregunto si Coppelius todavía vive aquí. Bueno, debería averiguarlo.]]></es>
+    <en><![CDATA[I wonder if Coppelius still lives there. Well, I should try to find out.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="plate1" asset="lib/global.swf:InvenPlate1" frame="" hover=""><title>
+    <es><![CDATA[Placa de La Muerte]]></es>
+    <en><![CDATA[death plate]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es una placa dorada y ovalada con un grabado de La Muerte.]]></es>
+    <en><![CDATA[It's an oval-shaped golden plate depicting grim death himself.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Espero que no esté maldita ni nada de eso.]]></es>
+    <en><![CDATA[I hope it's not cursed or something.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="plate2" asset="lib/global.swf:InvenPlate2" frame="" hover=""><title>
+    <es><![CDATA[Placa del aventurero]]></es>
+    <en><![CDATA[adventure plate]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es una placa dorada y ovalada con un grabado de un joven aventurero.]]></es>
+    <en><![CDATA[It's an oval-shaped golden plate depicting a young adventurer.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="plateDirty" asset="lib/global.swf:InvenPlate1Dirty" frame="" hover=""><title>
+    <es><![CDATA[Cosa mugrienta]]></es>
+    <en><![CDATA[muddy thing]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es algún tipo de trozo de metal mugriento.]]></es>
+    <en><![CDATA[It's some muddy piece of metal.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Lamer]]></es>
+    <en><![CDATA[Lick]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;No pienso limpiar eso con mi lengua!]]></es>
+    <en><![CDATA[I'm not cleaning this with my tongue!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Limpiar]]></es>
+    <en><![CDATA[Clean]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No puedo limpiarla con las manos. La mugre está demasiado seca.]]></es>
+    <en><![CDATA[I can't clean it with my hands. The mud is dry and hard.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Eso no lo va a dejar limpio.]]></es>
+    <en><![CDATA[That won't get it clean.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="seeds0" asset="lib/global.swf:InvenSeeds1" frame="" hover=""><title>
+    <es><![CDATA[Semillas sedantes restantes]]></es>
+    <en><![CDATA[remaining sedative seeds]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Son las semillas verdes que hice mezclando setas, alcohol y trigo.]]></es>
+    <en><![CDATA[These are green seeds that I made by mixing mushroom and alcohol with wheat.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Huelen a medicina.]]></es>
+    <en><![CDATA[They smell like medicine.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No gracias, no quiero quedarme dormido.]]></es>
+    <en><![CDATA[No, I don't want to get sleepy.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No nocesito drogar eso.]]></es>
+    <en><![CDATA[That doesn't need to be drugged.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="seeds1" asset="lib/global.swf:InvenSeeds2" frame="" hover=""><title>
+    <es><![CDATA[Suministro limitado de semillas sedantes]]></es>
+    <en><![CDATA[limited supply of sedative seeds]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Son las semillas verdes que hice mezclando setas, alcohol y trigo.]]></es>
+    <en><![CDATA[These are green seeds that I made by mixing mushroom and alcohol with wheat.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Huelen a medicina.]]></es>
+    <en><![CDATA[They smell like medicine.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No gracias, no quiero quedarme dormido.]]></es>
+    <en><![CDATA[No, I don't want to get sleepy.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No nocesito drogar eso.]]></es>
+    <en><![CDATA[That doesn't need to be drugged.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="seeds2" asset="lib/global.swf:InvenSeeds3" frame="" hover=""><title>
+    <es><![CDATA[Menos semillas sedantes]]></es>
+    <en><![CDATA[fewer sedative seeds]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Son las semillas verdes que hice mezclando setas, alcohol y trigo.]]></es>
+    <en><![CDATA[These are green seeds that I made by mixing mushroom and alcohol with wheat.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Huelen a medicina.]]></es>
+    <en><![CDATA[They smell like medicine.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No gracias, no quiero quedarme dormido.]]></es>
+    <en><![CDATA[No, I don't want to get sleepy.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No nocesito drogar eso.]]></es>
+    <en><![CDATA[That doesn't need to be drugged.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="seeds3" asset="lib/global.swf:InvenSeeds4" frame="" hover=""><title>
+    <es><![CDATA[Semillas sedantes]]></es>
+    <en><![CDATA[sedative seeds]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Son las semillas verdes que hice mezclando setas, alcohol y trigo.]]></es>
+    <en><![CDATA[These are green seeds that I made by mixing mushroom and alcohol with wheat.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Huelen a medicina.]]></es>
+    <en><![CDATA[They smell like medicine.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No gracias, no quiero quedarme dormido.]]></es>
+    <en><![CDATA[No, I don't want to get sleepy.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No nocesito drogar eso.]]></es>
+    <en><![CDATA[That doesn't need to be drugged.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="shaker" asset="lib/global.swf:InvenShaker" frame="" hover=""><title>
+    <es><![CDATA[coctelera]]></es>
+    <en><![CDATA[cocktail shaker]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es una coctelera.]]></es>
+    <en><![CDATA[It's a cocktail shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Agitar]]></es>
+    <en><![CDATA[Shake]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Podría agitar y mezclar algo, &#191;pero el qué?]]></es>
+    <en><![CDATA[I could shake and mix something, but what?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="shaker1" asset="lib/global.swf:InvenShaker1" frame="" hover=""><title>
+    <es><![CDATA[Coctelera con trigo]]></es>
+    <en><![CDATA[shaker with wheat]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es la coctelera.]]></es>
+    <en><![CDATA[It's a cocktail shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He puesto trigo dentro.]]></es>
+    <en><![CDATA[I've put wheat in it.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Agitar]]></es>
+    <en><![CDATA[Shake]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Sólo debería mezclar una receta completa.]]></es>
+    <en><![CDATA[I should only mix a complete recipe.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="shaker12" asset="lib/global.swf:InvenShaker12" frame="" hover=""><title>
+    <es><![CDATA[Coctelera con trigo y alcohol]]></es>
+    <en><![CDATA[shaker with wheat and alcohol]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es la coctelera.]]></es>
+    <en><![CDATA[It's a cocktail shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He puesto dentro trigo y alcohol.]]></es>
+    <en><![CDATA[I've put the wheat and alcohol into it.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Agitar]]></es>
+    <en><![CDATA[Shake]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Sólo debería mezclar una receta completa.]]></es>
+    <en><![CDATA[I should only mix a complete recipe.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="shaker123" asset="lib/global.swf:InvenShaker123" frame="" hover=""><title>
+    <es><![CDATA[Coctelera con seta, trigo y alcohol]]></es>
+    <en><![CDATA[shaker with mushroom, wheat and alcohol]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es la coctelera.]]></es>
+    <en><![CDATA[It's a cocktail shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He puesto dentro la seta, trigo y alcohol. &#161;Ya está!]]></es>
+    <en><![CDATA[I've put the mushroom, wheat and alcohol into it. That's it!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Agitar]]></es>
+    <en><![CDATA[Shake]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Vale, &#161;lo mezclaré!]]></es>
+    <en><![CDATA[Ok, I'll mix it!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><sound effect="lib/global.swf:SoundShaker" waitForComplete="0"/>
+<inventory replace="shaker123:seeds3"/>
+<dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="shaker13" asset="lib/global.swf:InvenShaker13" frame="" hover=""><title>
+    <es><![CDATA[Coctelera con seta y trigo]]></es>
+    <en><![CDATA[shaker with mushroom and wheat]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es la coctelera.]]></es>
+    <en><![CDATA[It's a cocktail shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He puesto dentro la seta y trigo.]]></es>
+    <en><![CDATA[I've put the mushroom and wheat in it.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Agitar]]></es>
+    <en><![CDATA[Shake]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Sólo debería mezclar una receta completa.]]></es>
+    <en><![CDATA[I should only mix a complete recipe.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="shaker2" asset="lib/global.swf:InvenShaker2" frame="" hover=""><title>
+    <es><![CDATA[Coctelera con alcohol]]></es>
+    <en><![CDATA[shaker with alcohol]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es la coctelera.]]></es>
+    <en><![CDATA[It's a cocktail shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He puesto alcohol dentro.]]></es>
+    <en><![CDATA[I've put alcohol into it.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Agitar]]></es>
+    <en><![CDATA[Shake]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Sólo debería mezclar una receta completa.]]></es>
+    <en><![CDATA[I should only mix a complete recipe.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="shaker23" asset="lib/global.swf:InvenShaker23" frame="" hover=""><title>
+    <es><![CDATA[Coctelera con seta y alcohol]]></es>
+    <en><![CDATA[shaker with mushroom and alcohol]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es la coctelera.]]></es>
+    <en><![CDATA[It's a cocktail shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He puesto dentro la seta y alcohol.]]></es>
+    <en><![CDATA[I've put the mushroom and alcohol into it.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Agitar]]></es>
+    <en><![CDATA[Shake]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Sólo debería mezclar una receta completa.]]></es>
+    <en><![CDATA[I should only mix a complete recipe.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="shaker3" asset="lib/global.swf:InvenShaker3" frame="" hover=""><title>
+    <es><![CDATA[Coctelera con seta]]></es>
+    <en><![CDATA[shaker with mushroom]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es la coctelera.]]></es>
+    <en><![CDATA[It's a cocktail shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He puesto dentro la seta.]]></es>
+    <en><![CDATA[I've put the mushroom in it.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Agitar]]></es>
+    <en><![CDATA[Shake]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Sólo debería mezclar una receta completa.]]></es>
+    <en><![CDATA[I should only mix a complete recipe.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="sodaClosed" asset="lib/global.swf:InvenSoda" frame="" hover=""><title>
+    <es><![CDATA[Lata de Dr. Pepper]]></es>
+    <en><![CDATA[can o' Dr. Pepper]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Guau! Una lata de Dr. Pepper sin abrir.]]></es>
+    <en><![CDATA[Wow! An unopened can of Dr. Pepper.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Me encanta Dr. Pepper.]]></es>
+    <en><![CDATA[I love Dr. Pepper.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Beber]]></es>
+    <en><![CDATA[Drink]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Me gustaría, pero primero tengo que abrirla.]]></es>
+    <en><![CDATA[I'd like to, but I have to open it first.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Abrir]]></es>
+    <en><![CDATA[Open]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Buena idea. La lata está abierta.]]></es>
+    <en><![CDATA[Good idea. The can is opened.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><sound effect="lib/global.swf:SoundSodaCan" waitForComplete="0"/>
+<inventory replace="sodaClosed:sodaOpen"/>
+<dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No desperdiciaré mi Dr. Pepper ahí.]]></es>
+    <en><![CDATA[I won't waste my Dr. Pepper here.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="sodaEmpty" asset="lib/global.swf:InvenSodaEmpty" frame="" hover=""><title>
+    <es><![CDATA[Lata vacía]]></es>
+    <en><![CDATA[empty can]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Más sabrosa que una poción roja!]]></es>
+    <en><![CDATA[Tastier than a red potion!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Y más refrescante que la hierba verde!]]></es>
+    <en><![CDATA[And more refreshing than a green herb!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Beber]]></es>
+    <en><![CDATA[Drink]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No queda nada, pero aún tengo el buen sabor en mi lengua. Mmmm.]]></es>
+    <en><![CDATA[There's nothing left, but I still have that good taste on my tongue. Mmm.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Escachar]]></es>
+    <en><![CDATA[Crush]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[La dejaré intacta. Quizás pueda usarla más tarde.]]></es>
+    <en><![CDATA[I'll keep it intact. Maybe I can use it later.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="sodaOpen" asset="lib/global.swf:InvenSodaOpen" frame="" hover=""><title>
+    <es><![CDATA[Abrir Dr. Pepper]]></es>
+    <en><![CDATA[open Dr. Pepper]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Está abierta! El olor, el sonido. Maravilloso.]]></es>
+    <en><![CDATA[It's open! The smell, the sound. Wonderful.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Beber]]></es>
+    <en><![CDATA[Drink]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Salúd!]]></es>
+    <en><![CDATA[Cheers!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><inventory replace="sodaOpen:sodaEmpty"/>
+<inventory display="hide" tween="0"/>
+<sequence><puppetTween target="_avatar" type="turn" to="view:5" waitForComplete="1"/>
+<dialogue play="*"/>
+<layerSprite target="_avatar" animFrame="soda" waitForComplete="1"/>
+</sequence></script></action><action id="act2"><title>
+    <es><![CDATA[Consumir]]></es>
+    <en><![CDATA[Consume]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Salúd!]]></es>
+    <en><![CDATA[Cheers!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><inventory replace="sodaOpen:sodaEmpty"/>
+<inventory display="hide" tween="0"/>
+<sequence><puppetTween target="_avatar" type="turn" to="view:5" waitForComplete="1"/>
+<dialogue play="*"/>
+<layerSprite target="_avatar" animFrame="soda" waitForComplete="1"/>
+</sequence></script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No desperdiciaré mi Dr. Pepper ahí.]]></es>
+    <en><![CDATA[I won't waste my Dr. Pepper here.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="stick" asset="lib/global.swf:InvenStick" frame="" hover=""><title>
+    <es><![CDATA[Palo largo]]></es>
+    <en><![CDATA[long stick]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un palo largo.]]></es>
+    <en><![CDATA[It's a long stick.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Cómo podría usar eso?]]></es>
+    <en><![CDATA[How could I use this?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="stickCork" asset="lib/global.swf:InvenStickTwineCork" frame="" hover=""><title>
+    <es><![CDATA[Palo atado con un cordón con un corcho]]></es>
+    <en><![CDATA[stick with cork on string]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Un palo atado con un cordón del que cuelga un corcho.]]></es>
+    <en><![CDATA[A stick with a cork on a string.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Parece un látigo con un corcho... Así no sirve para nada.]]></es>
+    <en><![CDATA[It looks like a whip with a cork... So far it's useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No hay necesidad de hacer eso.]]></es>
+    <en><![CDATA[There's no need to do that.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="stickHook" asset="lib/global.swf:InvenStickTwineHook" frame="" hover=""><title>
+    <es><![CDATA[Palo atado con un cordón con un anzuelo.]]></es>
+    <en><![CDATA[stick with hook on string]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Un palo atado con un cordón del que cuelga un anzuelo. &#161;Hey! Parece una caña de pescar.]]></es>
+    <en><![CDATA[A stick with a hook on a string. Hey! It looks like a fishing rod.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Necesito algo para hacer que el anzuelo flote en el agua.]]></es>
+    <en><![CDATA[I need something to make the hook float in the water.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No hay necesidad de hacer eso.]]></es>
+    <en><![CDATA[There's no need to do that.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="stickTwine" asset="lib/global.swf:InvenStickTwine" frame="" hover=""><title>
+    <es><![CDATA[Palo atado con un cordón]]></es>
+    <en><![CDATA[stick with string]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He sujetado el cordón a un extremo del palo largo.]]></es>
+    <en><![CDATA[I affixed the string to the long stick.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Parece un látigo; pero sé que no lo es. Así no sirve para nada.]]></es>
+    <en><![CDATA[It looks like a whip; but I know it's not a whip. So far it's useless.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No hay necesidad de hacer eso.]]></es>
+    <en><![CDATA[There's no need to do that.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="twine" asset="lib/global.swf:InvenTwine" frame="" hover=""><title>
+    <es><![CDATA[Cordón]]></es>
+    <en><![CDATA[string]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un cordón.]]></es>
+    <en><![CDATA[It's a string.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No, nunca se me dió muy bien jugar a las cunitas de gato (Cat's Cradle).]]></es>
+    <en><![CDATA[No, I was never very good at cat's cradle.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="twineCork" asset="lib/global.swf:InvenTwineCork" frame="" hover=""><title>
+    <es><![CDATA[Cordón con corcho]]></es>
+    <en><![CDATA[string with float]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un cordón del que cuelga un corcho.]]></es>
+    <en><![CDATA[It's a string with a cork.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="twineCorkHook" asset="lib/global.swf:InvenTwineCorkHook" frame="" hover=""><title>
+    <es><![CDATA[Cordón con corcho y anzuelo]]></es>
+    <en><![CDATA[string with float and hook]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un cordón del que cuelgan un corcho y un anzuelo.]]></es>
+    <en><![CDATA[It's a string with a cork and a hook.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="twineHook" asset="lib/global.swf:InvenTwineHook" frame="" hover=""><title>
+    <es><![CDATA[Cordón con anzuelo]]></es>
+    <en><![CDATA[string with hook]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un cordón del que cuelga un anzuelo.]]></es>
+    <en><![CDATA[It's a string with a hook.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></item>
+<item id="wheat" asset="lib/global.swf:InvenWheat" frame="" hover=""><title>
+    <es><![CDATA[Puñado de trigo]]></es>
+    <en><![CDATA[handful of wheat]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Un trigo preciso.]]></es>
+    <en><![CDATA[Nice wheat.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Comer]]></es>
+    <en><![CDATA[Eat]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No, más bien parece comida para pájaros.]]></es>
+    <en><![CDATA[No, that looks rather like bird food.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Cómo se supone que debería usar eso?]]></es>
+    <en><![CDATA[How should I use this?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahí no hace falta trigo.]]></es>
+    <en><![CDATA[There's no need for wheat here.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item>
+<item id="worm" asset="lib/global.swf:InvenWorm" frame="" hover=""><title>
+    <es><![CDATA[Gusano serpenteante]]></es>
+    <en><![CDATA[wriggly worm]]></en>
+    <de><![CDATA[]]></de>
+</title><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Un lindo coleguita. Hey, creo que me está mirando.]]></es>
+    <en><![CDATA[A cute little fella. Hey, I think he's looking at me.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Parece que sabe que tengo algo pensado.]]></es>
+    <en><![CDATA[It seems that he knows I'm up to something.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No estoy seguro de lo que voy a hacer contigo ... Tal vez algo malo, por eso de pido disculpas por adelantado.]]></es>
+    <en><![CDATA[I'm not sure what I'll do with you ... Maybe it's something bad, so I'll apologize in advance now.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Perdón, gusanito.]]></es>
+    <en><![CDATA[Sorry, worm.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No deja de serpentear.]]></es>
+    <en><![CDATA[He wriggles.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="_default"><title>
+    <es><![CDATA[_default]]></es>
+    <en><![CDATA[_default]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No, creo que lo guardaré aquí.]]></es>
+    <en><![CDATA[No, I think I'll keep him here.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></item></items><inventories><inventory id="nathan" items="lighter,photo" hoverStyle="outline" hoverColor="0xCC0033"/>
+</inventories><combos><combo id="bottle_clothDry" primary="clothDry" pool="bottleFull,bottleHalf"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Vertiré algo de alcohol en el trapo.]]></es>
+    <en><![CDATA[I'll pour some alcohol on the cloth.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundLiquid" waitForComplete="0"/>
+<inventory replace="bottleHalf:bottleEmpty:0"/>
+<inventory replace="bottleFull:bottleHalf:0"/>
+<inventory replace="clothDry:clothWet"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="clothWet_bottleHalf" primary="clothWet" pool="bottleHalf"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[El trapo ya está empapado en alcohol.]]></es>
+    <en><![CDATA[The cloth is already soaking wet.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></combo><combo id="fishingRod_worm" primary="fishing_rod" pool="worm"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo siento, gusanito.]]></es>
+    <en><![CDATA[Sorry, worm.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="worm" replace="fishing_rod:fishing_bait"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="glove1_glove2" primary="glove1" pool="glove2"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora tengo un par.]]></es>
+    <en><![CDATA[Now I have a pair.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundGloves" waitForComplete="0"/>
+<inventory remove="glove2" replace="glove1:glovePair"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="key12_key3" primary="key12" pool="key3"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Hey, estos trozos encajan!]]></es>
+    <en><![CDATA[Hey, these parts fit together!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora la llave está completa.]]></es>
+    <en><![CDATA[The key is now complete.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundKey" waitForComplete="0"/>
+<inventory remove="key3" replace="key12:key123"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="key13_key2" primary="key13" pool="key2"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Hey, estos trozos encajan!]]></es>
+    <en><![CDATA[Hey, these parts fit together!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora la llave está completa.]]></es>
+    <en><![CDATA[The key is now complete.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundKey" waitForComplete="0"/>
+<inventory remove="key2" replace="key13:key123"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="key1_key2" primary="key1" pool="key2"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Hey, estos trozos encajan!]]></es>
+    <en><![CDATA[Hey, these parts fit together!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundKey" waitForComplete="0"/>
+<inventory remove="key2" replace="key1:key12"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="key1_key23" primary="key1" pool="key23"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Hey, estos trozos encajan!]]></es>
+    <en><![CDATA[Hey, these parts fit together!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora la llave está completa.]]></es>
+    <en><![CDATA[The key is now complete.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundKey" waitForComplete="0"/>
+<inventory remove="key23" replace="key1:key123"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="key1_key3" primary="key1" pool="key3"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Hey, estos trozos encajan!]]></es>
+    <en><![CDATA[Hey, these parts fit together!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundKey" waitForComplete="0"/>
+<inventory remove="key3" replace="key1:key13"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="key2_key3" primary="key2" pool="key3"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Hey, estos trozos encajan!]]></es>
+    <en><![CDATA[Hey, these parts fit together!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundKey" waitForComplete="0"/>
+<inventory remove="key3" replace="key2:key23"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="lighter_leaflet" primary="leaflet" pool="lighter"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora sí puede que resulte útil jugar con fuego.]]></es>
+    <en><![CDATA[Now playing with fire might really be useful.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory replace="leaflet:leafletBurn"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="lighter_worm" primary="lighter" pool="worm"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;&#191;Estás loco?! Me pones enfermo...]]></es>
+    <en><![CDATA[Are you insane?! You make me sick...]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></combo><combo id="plateDirty_clothDry" primary="plateDirty" pool="clothDry"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Está demasiado seco para limpiar la mugre.]]></es>
+    <en><![CDATA[That's too dry to clean the mud off.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></combo><combo id="plateDirty_clothWet" primary="plateDirty" pool="clothWet"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora está limpia.]]></es>
+    <en><![CDATA[Now it's clean.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundWipe" waitForComplete="0"/>
+<inventory replace="plateDirty:plate1"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker12_3" primary="shaker12" pool="mushroom"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[La añadiré a la coctelera.]]></es>
+    <en><![CDATA[I'll add it to the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="mushroom" replace="shaker12:shaker123"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker13_2" primary="shaker13" pool="bottleFull,bottleHalf"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo añadiré a la coctelera.]]></es>
+    <en><![CDATA[I'll add it to the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundLiquid" waitForComplete="0"/>
+<inventory replace="shaker13:shaker123"/>
+<inventory replace="bottleHalf:bottleEmpty:0"/>
+<inventory replace="bottleFull:bottleHalf:0"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker1_2" primary="shaker1" pool="bottleFull,bottleHalf"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo añadiré a la coctelera.]]></es>
+    <en><![CDATA[I'll add it to the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundLiquid" waitForComplete="0"/>
+<inventory replace="shaker1:shaker12"/>
+<inventory replace="bottleHalf:bottleEmpty:0"/>
+<inventory replace="bottleFull:bottleHalf:0"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker1_3" primary="shaker1" pool="mushroom"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo añadiré a la coctelera.]]></es>
+    <en><![CDATA[I'll add it to the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="mushroom" replace="shaker1:shaker13"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker23_1" primary="shaker23" pool="wheat"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo añadiré a la coctelera.]]></es>
+    <en><![CDATA[I'll add it to the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundWheat" waitForComplete="0"/>
+<inventory remove="wheat" replace="shaker23:shaker123"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker2_1" primary="shaker2" pool="wheat"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo añadiré a la coctelera.]]></es>
+    <en><![CDATA[I'll add it to the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundWheat" waitForComplete="0"/>
+<inventory remove="wheat" replace="shaker2:shaker12"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker2_3" primary="shaker2" pool="mushroom"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo añadiré a la coctelera.]]></es>
+    <en><![CDATA[I'll add it to the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="mushroom" replace="shaker2:shaker23"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker3_1" primary="shaker3" pool="wheat"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo añadiré a la coctelera.]]></es>
+    <en><![CDATA[I'll add it to the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundWheat" waitForComplete="0"/>
+<inventory remove="wheat" replace="shaker3:shaker13"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker3_2" primary="shaker3" pool="bottleFull,bottleHalf"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo añadiré a la coctelera.]]></es>
+    <en><![CDATA[I'll add it to the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundLiquid" waitForComplete="0"/>
+<inventory replace="shaker3:shaker23"/>
+<inventory replace="bottleHalf:bottleEmpty:0"/>
+<inventory replace="bottleFull:bottleHalf:0"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker_1" primary="shaker" pool="wheat"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Meteré algo de trigo en la coctelera.]]></es>
+    <en><![CDATA[I'll put some wheat into the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundWheat" waitForComplete="0"/>
+<inventory remove="wheat" replace="shaker:shaker1"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker_2" primary="shaker" pool="bottleFull,bottleHalf"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Echaré algo de alcohol en la coctelera.]]></es>
+    <en><![CDATA[I'll pour some alcohol into the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<sound effect="lib/global.swf:SoundLiquid" waitForComplete="0"/>
+<inventory replace="shaker:shaker2"/>
+<inventory replace="bottleHalf:bottleEmpty:0"/>
+<inventory replace="bottleFull:bottleHalf:0"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="shaker_3" primary="shaker" pool="mushroom"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Meteré la seta en la coctelera.]]></es>
+    <en><![CDATA[I'll put the mushroom into the shaker.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="mushroom" replace="shaker:shaker3"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="stickCork_hook" primary="stickCork" pool="hook"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo he atado al cordón.]]></es>
+    <en><![CDATA[I'll attach it to the string.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="hook" replace="stickCork:fishing_rod"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="stickHook_cork" primary="stickHook" pool="cork"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo he atado al cordón.]]></es>
+    <en><![CDATA[I'll attach it to the string.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="cork" replace="stickHook:fishing_rod"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="stickHook_worm" primary="stickHook" pool="worm"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Buena idea, pero me hará falta una boya para fabricar una caña de pescar.]]></es>
+    <en><![CDATA[Good idea, but I'll need a float to make a fishing rod.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></combo><combo id="stickTwine_cork" primary="stickTwine" pool="cork"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo he atado al cordón.]]></es>
+    <en><![CDATA[I'll attach it to the string.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="cork" replace="stickTwine:stickCork"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="stickTwine_hook" primary="stickTwine" pool="hook"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo he atado al cordón.]]></es>
+    <en><![CDATA[I'll attach it to the string.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="hook" replace="stickTwine:stickHook"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="stick_twine" primary="stick" pool="twine"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He atado el cordón al palo.]]></es>
+    <en><![CDATA[I'll attach the string to the stick.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="twine" replace="stick:stickTwine"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="stick_twineCork" primary="stick" pool="twineCork"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He atado el cordón al palo.]]></es>
+    <en><![CDATA[I'll attach the string to the stick.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="twineCork" replace="stick:stickCork"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="stick_twineHook" primary="stick" pool="twineHook"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He atado el cordón al palo.]]></es>
+    <en><![CDATA[I'll attach the string to the stick.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="twineHook" replace="stick:stickHook"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="stick_twineHookCopy" primary="stick" pool="twineCorkHook"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[He atado el cordón al palo.]]></es>
+    <en><![CDATA[I'll attach the string to the stick.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="twineCorkHook" replace="stick:fishing_rod"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="twineCork_hook" primary="twineCork" pool="hook"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo he atado al cordón.]]></es>
+    <en><![CDATA[I'll attach it to the string.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="hook" replace="twineCork:twineCorkHook"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="twineHook_cork" primary="twineHook" pool="cork"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo he atado al cordón.]]></es>
+    <en><![CDATA[I'll attach it to the string.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="cork" replace="twineHook:twineCorkHook"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="twine_cork" primary="twine" pool="cork"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo he atado al cordón.]]></es>
+    <en><![CDATA[I'll attach it to the string.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="cork" replace="twine:twineCork"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="twine_hook" primary="twine" pool="hook"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo he atado al cordón.]]></es>
+    <en><![CDATA[I'll attach it to the string.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<inventory remove="hook" replace="twine:twineHook"/>
+<dialogue play="*"/>
+</script></action></combo><combo id="worm_hook" primary="worm" pool="hook"><action id=""><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Podría ir a pecar, pero primero necesitaría una caña de pescar apropiada.]]></es>
+    <en><![CDATA[I could go fishing, but first I'd need a proper fishing rod.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></combo></combos><scripts><script id="_onStartGame"/>
+<script id="_onStartUp"><keyboard addKeyScript="i"><inventory display="toggle"/>
+</keyboard><keyboard addKeyScript="m"><cursor item=""/>
+<menu display="toggle"/>
+</keyboard><ui load="ui_mask" display="show"/>
+<menu display="show"/>
+</script></scripts></global>

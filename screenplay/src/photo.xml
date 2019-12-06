@@ -1,0 +1,13 @@
+<room id="photo" coreLibs="lib/photo.swf,lib/theme.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="lib/theme.swf:StitchTheme" sound2=""><grids><grid id="main"><boxes/><nodes/></grid></grids><positions/><filters><filter id="_main" axis="y" enabled="1"><pole x="38" y="294" scale="0.5" rate="0.5" blur="1" color="0x000000" tint="0.5"/><pole x="38" y="577" scale="1" rate="1" blur="5" color="0xFFFFFF" tint="0.5"/></filter></filters><scripts><script id="_enter"><ui target="ui_mask" display="hide" tween="0"/><curtain blackout="0" waitForComplete="0"/><puppet target="sequence" callAction="0"/></script><script id="_exit"><library unloadRoom="_current"/><curtain blackout="1"/><ui target="ui_mask" display="show" tween="0"/></script></scripts><layers><layer id="_bg" type="background" asset="" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="900" hitH="675" shape="rect"><param mouse="0" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/><vars/><title>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/><items/></state></states></layer><layer id="photo" type="plane" asset="lib/photo.swf:PhotoCutscene" depth="1" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mouse="0" float="0" parallax=""/><vars/><title>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/><items/></state></states></layer><layer id="sequence" type="puppet" asset="" depth="2" visible="1" state="main"><states><state id="main" x="10" y="10" img="0" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="10" hitH="10" shape="rect"><param mapX="35" mapY="35" turnTo="8" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/><vars/><title>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <en><![CDATA[Photo sequence]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/><script><sequence skip="1"><layerSprite target="photo" animFrame="cutscene" waitForComplete="1"/></sequence><game room="lab2:photo"/></script></action></actions><items/></state></states></layer></layers><trees/></room>

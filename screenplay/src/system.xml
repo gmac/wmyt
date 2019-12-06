@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<!--
+	<mediaBaseURL>http://wmyt.s3.amazonaws.com/</mediaBaseURL>
+	<xmlBaseURL>http://wmyt.s3.amazonaws.com/</xmlBaseURL>
+	-->
+
+	<allowXMLCache>1</allowXMLCache>
+	<staticWindow>1</staticWindow>
+	<fitToWindow>0</fitToWindow>
+	<fileIOType>sharedObject</fileIOType>
+	<fileIOService>save/fileio.php</fileIOService>
+	<tweenEngine>tweenLite</tweenEngine>
+	<invenMode>dynamic</invenMode>
+	<invenShow>0.4</invenShow>
+	<invenHide>0.25</invenHide>
+	<actionMode>disc</actionMode>
+	<actionShow>0.35</actionShow>
+	<actionHide>0.35</actionHide>
+	<skipControl>tab</skipControl>
+	<skipDiaControl>mouse</skipDiaControl>
+	<subtitleShow>0.5</subtitleShow>
+	<subtitleHide>0.3</subtitleHide>
+	<subtitleOverhead>15</subtitleOverhead>
+	<subtitlePadding>10</subtitlePadding>
+	<contextOff>0xFFFFFF</contextOff>
+	<contextOn>0xFF3300</contextOn>
+	<treeOff>0xFFFFFF</treeOff>
+	<treeOn>0xFF3300</treeOn>
+	<curtainColor>0x000000</curtainColor>
+	<menuSubtitle>0</menuSubtitle>
+	<menuSubtitleSpeed>1</menuSubtitleSpeed>
+	<menuVoice>0</menuVoice>
+	<menuFullscreen>1</menuFullscreen>
+	<menuGraphicsQuality>1</menuGraphicsQuality>
+	<menuQuit>1</menuQuit>
+	<menuHelp>1</menuHelp>
+	<menuHelpText><![CDATA[]]></menuHelpText>
+	<legal/>
+</system>

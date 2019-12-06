@@ -1,0 +1,187 @@
+<room id="finale_lab1" coreLibs="lib/lab1.swf,lib/coppelius.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main,trapped" sound1="" sound2="lib/lab1.swf:Lab1Fx"><grids><grid id="main"><boxes/>
+<nodes><node id="n2" x="380" y="420" join="n7" trap="1" name="binoculars"/>
+<node id="n4" x="330" y="600" join="n7" trap="0" name="join_foyer"/>
+<node id="n7" x="410" y="515" join="n2,n4" trap="1" name="coppelius"/>
+</nodes></grid><grid id="trapped"><boxes/>
+<nodes><node id="n8" x="660" y="485" join="n9,n11" trap="0"/>
+<node id="n9" x="875" y="455" join="n8" trap="0"/>
+<node id="n11" x="605" y="470" join="n8" trap="1" name="crow"/>
+</nodes></grid></grids><positions><position id="binoculars" turn="4" x="380" y="420"/>
+<position id="join_foyer" turn="2" x="330" y="600"/>
+<position id="coppelius" turn="4" x="410" y="515"/>
+<position id="crow" turn="4" x="605" y="470"/>
+</positions><filters><filter id="_main" axis="y" enabled="1"><pole x="123" y="428" scale="0.9" rate="0.5" blur="1" color="0x000000" tint="0.5"/>
+<pole x="123" y="672" scale="1.2" rate="1" blur="5" color="0xFFFFFF" tint="0.5"/>
+</filter></filters><scripts><script id="_enter"><cursor gameMouse="0" wait="1"/>
+<curtain blackout="0"/>
+<puppet target="coppelius" callAction="0"/>
+</script><script id="_exit"><library unloadRoom="_current"/>
+<curtain blackout="1"/>
+</script><script id="_prerender"/>
+</scripts><layers><layer id="_bg" type="background" asset="lib/lab1.swf:Lab1Bg" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="900" hitH="675" shape="rect"><param mouse="0" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer><layer id="cupboard" type="puppet" asset="lib/lab1.swf:Lab1Cupboard" depth="1" visible="1" state="empty"><states><state id="empty" x="378" y="418" img="1" imgX="20" imgY="-109" imgW="1" imgH="1" frame="4" blend="normal" alpha="1" bitmap="1" hit="0" hitX="-79" hitY="-102" hitW="100" hitH="80" shape="rect"><param mapX="391" mapY="412" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[armario]]></es>
+    <en><![CDATA[cupboard]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Cerrar]]></es>
+    <en><![CDATA[Close]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue playList="0"/>
+<layerSprite target="_avatar" animFrame="kneel_down" waitForComplete="1"/>
+<layerSprite target="cupboard" animFrame="opening" waitForComplete="1"/>
+<dialogue playList="1"/>
+<inventory add="lighter,photo,key123,glovePair,clothWet,bottleEmpty,leaflet,seeds0,barbedWire,journal,shaker"/>
+<layerSprite target="_avatar" animFrame="kneel_pocket_in" waitForComplete="1"/>
+<layerSprite target="_avatar" animFrame="kneel_up" waitForComplete="1"/>
+<dialogue playList="2,3"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="curtains" type="puppet" asset="lib/lab1.swf:Lab1Curtains" depth="2" visible="1" state="main"><states><state id="main" x="208" y="548" img="1" imgX="42" imgY="-239" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="-89" hitY="-436" hitW="145" hitH="263" shape="rect"><param mapX="310" mapY="510" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[exterior]]></es>
+    <en><![CDATA[outside]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="gate" type="puppet" asset="lib/lab1.swf:Lab1Gate" depth="3" visible="1" state="main"><states><state id="main" x="667" y="563" img="1" imgX="-153" imgY="-453" imgW="1" imgH="1" frame="3" blend="normal" alpha="1" bitmap="1" hit="0" hitX="-119" hitY="-400" hitW="195" hitH="360" shape="rect"><param mapX="550" mapY="510" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[reja]]></es>
+    <en><![CDATA[gate]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Abrir]]></es>
+    <en><![CDATA[Open]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="_avatar" type="avatar" asset="lib/nathan.swf:Nathan" depth="4" visible="1" state="main"><states><state id="main" x="409" y="514" img="1" imgX="4" imgY="3" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[nathan]]></es>
+    <en><![CDATA[nathan]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer><layer id="coppelius" type="puppet" asset="lib/coppelius.swf:Coppelius" depth="5" visible="1" state="main"><states><state id="main" x="545" y="517" img="1" imgX="0" imgY="0" imgW="-1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="-42" hitY="-228" hitW="80" hitH="228" shape="rect"><param mapX="410" mapY="515" turnTo="4" turn="0" cursor="" onclick="-1" prefix="normal_" subtitle="0xCCCCCC" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[Dr. Coppelius]]></es>
+    <en><![CDATA[Dr. Coppelius]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Sequence]]></es>
+    <en><![CDATA[Sequence]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="coppelius" frame="" sound="">
+    <es><![CDATA[&#161;Muy bien hecho, Nathan!]]></es>
+    <en><![CDATA[Very well done, Nathan!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="coppelius" frame="" sound="">
+    <es><![CDATA[&#161;Ahora debemos darnos prisa y llevar a Nora a casa! &#161;Tengo que ajustar su corazón mecánico!]]></es>
+    <en><![CDATA[Now we have to hurry and get Nora home! I have to adjust her mechanical heart!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Y si Vincent ya la ha encontrado?]]></es>
+    <en><![CDATA[What if Vincent has already found her?]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="coppelius" frame="" sound="">
+    <es><![CDATA[Prueba con esos prismáticos... tal vez podamos divisarla.]]></es>
+    <en><![CDATA[Check those binoculars... we may be able to spot her.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Mh ... Puedo ver el embarcadero. Y el barco.]]></es>
+    <en><![CDATA[Mh ... I can see the pier. And the ship.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Sí ... el marinero acaba de dejar a Nora abordo del barco. Ahora está remando de vuelta a la costa ... para recogerle a usted, supongo.]]></es>
+    <en><![CDATA[Yes ... the sailor just brought Nora aboard the ship. Now he's rowing back to shore ... to pick you up, I guess.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;&#191;Qué es eso?!]]></es>
+    <en><![CDATA[What's that?!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;&#161;Vincent!! &#191;Pero de dónde ha salido? &#161;Ha tirado a McManus por la borda! ]]></es>
+    <en><![CDATA[Vincent!! Where did he come from? He just threw McManus overboard! ]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Le está robando el bote de remos!]]></es>
+    <en><![CDATA[Now he's stealing the sailor's rowboat!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[... &#161;&#191;Dónde está Nora?! No puedo verla.]]></es>
+    <en><![CDATA[... Where is Nora?! I can't see her.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="coppelius" frame="" sound="">
+    <es><![CDATA[Oh no ...]]></es>
+    <en><![CDATA[Oh no ...]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><sequence skip="1"><dialogue playList="0,1,2,3"/>
+<puppetTween target="_avatar" type="moveThenTurn" to="position:binoculars" toView="8" waitForComplete="1"/>
+<dialogue playList="4,5,6,7,8,9,10"/>
+</sequence><game room="finale_ferry"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="foreground" type="plane" asset="lib/lab1.swf:Lab1Fg" depth="6" visible="1" state="main"><states><state id="main" x="0" y="113" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="1" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mouse="0" float="0" parallax=""/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer></layers><trees/>
+</room>

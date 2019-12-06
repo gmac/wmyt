@@ -1,0 +1,841 @@
+cliff,cliff_000,nathan,"That was scary, hu?",crashed pod,arrival,1
+cliff,cliff_001,nathan,"But don't worry, I'm still alive!",crashed pod,arrival,2
+cliff,cliff_002,nathan,Thank goodness I was thrown out of the pod seconds before it hit the ground.,crashed pod,arrival,3
+cliff,cliff_003,nathan,Now I need to get back to the lab and free Dr. Coppelius!,crashed pod,arrival,4
+cliff,cliff_004,nathan,"That was scary, uh?",crashed pod,look at,1
+cliff,cliff_007,nathan,Now I should get back to the house and free Dr. Coppelius!,crashed pod,look at,2
+cliff,cliff_008,nathan,There's a lighthouse off in the distance... but no light.,lighthouse,look at,
+cliff,cliff_009,nathan,A boat is at anchor in the bay.,boat,look at,
+cliff,cliff_010,nathan,There's an old pier on the other side of the bay.,distant pier,look at,
+cliff,cliff_011,nathan,There's a piece of string caught in the branches.,piece of string,look at,
+cliff,cliff_012,nathan,A piece of string can be useful!,piece of string,use (take),
+cliff,cliff_013,nathan,It's a sundial.,sundial,look at,
+cliff,cliff_014,nathan,"There's no sunlight, so I can't tell what time it is.",sundial,use,
+cliff,cliff_015,nathan,He's asleep. It seems that my sedatives worked.,sleeping crow,look at,1
+cliff,cliff_016,nathan,I guess I can take the key now.,sleeping crow,look at,2
+cliff,cliff_017,nathan,"Okay, I have the key.",sleeping crow (key),use (take),
+cliff,cliff_019,nathan,No. He deserves some rest.,sleeping crow (no key),use (poke),
+ferry,ferry_000,nathan,Over there is a lighthouse.,lighthouse,look at,
+ferry,ferry_001,nathan,It's too far away. They wouldn't hear me.,lighthouse,talk to,
+ferry,ferry_002,nathan,I don't think I'll hike over there ...,lighthouse,use,
+ferry,ferry_003,nathan,It was a massive stone bridge. It's collapsed.,collapsed bridge,look at,1
+ferry,ferry_004,nathan,I think that way leads to that village I saw on the map at home ... Ravenhollow.,collapsed bridge,look at,2
+ferry,ferry_005,nathan,I can't cross the bridge.,collapsed bridge,use,
+ferry,ferry_006,nathan,"Ah, the sea.",sea,look at,
+ferry,ferry_007,nathan,"No, the water looks really cold.",sea,use (swim in),
+ferry,ferry_008,nathan,I've never done this before...,sea,item (fishing_bait),1
+ferry,ferry_009,nathan,I guess I won't need that stupid fishing rod anymore.,sea,item (fishing_bait),2
+ferry,ferry_010,sailor,I would have paid fifty bucks for it.,sea,item (fishing_bait),3
+ferry,ferry_011,nathan,I'll just pretend like I didn't hear that.,sea,item (fishing_bait),4
+ferry,ferry_012,nathan,I'll need to bait the hook before I can try fishing.,sea,item (fishing_rod),
+ferry,ferry_013,nathan,I'll need a float and bait before I can try fishing.,sea,item (stick_hook),
+ferry,ferry_014,nathan,This fishing tackle is still incomplete.,sea,item (twine_hook / cork_hook),
+ferry,ferry_016,nathan,Seems like there was a ferry coming here once.,old timetable,look at,1
+ferry,ferry_017,nathan,Must have been a long time ago. I can't read the timetable anymore.,old timetable,look at,2
+ferry,ferry_018,nathan,I can't read it. Even if I could it would still be useless.,old timetable,use,1
+ferry,ferry_019,nathan,I'm sure the ferry doesn't come here anymore.,old timetable,use,2
+ferry,ferry_020,nathan,It's a leaflet from the local fishing club.,leaflet,look at,
+ferry,ferry_021,nathan,I'll take it. I doubt anyone else needs it.,leaflet,use (take),1
+ferry,ferry_022,nathan,The leaflet was pinned to the board with a small fishing hook.,leaflet,use (take),2
+ferry,ferry_023,nathan,Somehow I feel like someone is watching me...,distant cliff,look at,
+ferry,ferry_024,nathan,I'll have to take the long way through the fields ...,distant cliff,use,
+ferry,ferry_025,nathan,There's a boat at anchor.,boat,look at,1
+ferry,ferry_026,sailor,"Aye. That's me ship, the ""Sea Cucumber"".",boat,look at,2
+ferry,ferry_027,nathan,Excuse me! May I borrow your boat?,boat / rowboat,use,1
+ferry,ferry_028,sailor,Sorry. I can't lend you my boat.,boat / rowboat,use,2
+ferry,ferry_029,sailor,"Shroom and me, we'll have to get going soon...",boat / rowboat,use,3
+ferry,ferry_030,sailor,We have to deliver these boxes before sunrise.,boat / rowboat,use,4
+ferry,ferry_031,nathan,It's a rowboat.,rowboat,look at,
+ferry,ferry_036,nathan,He's asleep.,old dog (sleeping),look at,1
+ferry,ferry_037,nathan,It looks like he's running in his dream.,old dog (sleeping),look at,2
+ferry,ferry_038,shroom,...,old dog (sleeping),look at,3
+ferry,ferry_039,nathan,Hey old boy!,old dog (sleeping),talk to,1
+ferry,ferry_040,nathan,Want to help me?,old dog (sleeping),talk to,2
+ferry,ferry_041,sailor,Old Shroom is tired. He won't help you if you have nothin' to offer.,old dog (sleeping),talk to,3
+ferry,ferry_042,nathan,What would he like to have?,old dog (sleeping),talk to,4
+ferry,ferry_043,sailor,"He's a sailor, like me. Therefore he loves fish... Just like me.",old dog (sleeping),talk to,5
+ferry,ferry_044,sailor,Right boy?,old dog (sleeping),talk to,6
+ferry,ferry_046,nathan,I'll let him sleep.,old dog (sleeping),use (scratch),
+ferry,ferry_047,nathan,"Here, I heard you like fish...",old dog (sleeping),item (fish),
+ferry,ferry_048,nathan,Good idea ... but I think he's too tired.,old dog (sleeping),item (journal),
+ferry,ferry_049,nathan,It seems that I have his attention now.,old dog (awake),look at,
+ferry,ferry_050,nathan,"Shroom, old chap. How are you?",old dog (awake),talk to,1
+ferry,ferry_038,shroom,...,old dog (awake),talk to,2
+ferry,ferry_052,nathan,That's great to hear.,old dog (awake),talk to,3
+ferry,ferry_053,nathan,I'd better not.,old dog (awake),use (scratch),
+ferry,ferry_054,nathan,Ahem ...,old dog (awake),item (journal),1
+ferry,ferry_055,nathan,"Shroom! Come on, old boy! Find the SETA DE MUERTE!",old dog (awake),item (journal),2
+ferry,ferry_056,nathan,See? ... the name is in this book here! Have a good look at it.,old dog (awake),item (journal),3
+ferry,ferry_057,nathan,"Wow, Shroom found a mushroom.",old dog (awake),item (journal),4
+ferry,ferry_058,nathan,How convenient that it was hidden right under his nose.,old dog (awake),item (journal),5
+ferry,ferry_064,nathan,"No, he's done enough.",old dog (complete),item (journal),
+ferry,ferry_065,nathan,He looks a little dangerous.,sailor,look,1
+ferry,ferry_066,sailor,What did you just say?,sailor,look,2
+ferry,ferry_067,nathan,Nothing! Sorry!,sailor,look,3
+ferry,ferry_068,nathan,Excuse me...,sailor,talk to,
+ferry,ferry_069,nathan,I don't think so.,sailor,use (hit),
+ferry,ferry_073,nathan,How did Nora get here?,sailor (with nora),talk to,1
+ferry,ferry_074,sailor,Her grandfather brought her and told me to wait for him.,sailor (with nora),talk to,2
+ferry,ferry_075,nathan,Her grandfather? What did he look like?,sailor (with nora),talk to,3
+ferry,ferry_076,sailor,"Well, he looks a little bit like the first Doctor Who.",sailor (with nora),talk to,4
+ferry,ferry_077,nathan,Who?,sailor (with nora),talk to,5
+ferry,ferry_078,sailor,Aye! Just like him.,sailor (with nora),talk to,6
+ferry,ferry_079,nathan,I'm confused.,sailor (with nora),talk to,7
+ferry,ferry_081,nathan,Okay.,mushroom,use (take),
+ferry,ferry_082,nathan,It's an old glove.,old glove,look at,
+ferry,ferry_083,nathan,Okay.,old glove,use (take),
+ferry,ferry_084,nathan,The crab is living in an old glove.,hermit crab,look at,1
+ferry,ferry_085,nathan,Nature never fails to impress me.,hermit crab,look at,2
+ferry,ferry_086,nathan,"Hey ... nice weather, hu?",hermit crab,talk to,1
+ferry,ferry_087,crab,.......,hermit crab,talk to,2
+ferry,ferry_088,nathan,It seems he's not interested in small talk.,hermit crab,talk to,3
+ferry,ferry_089,nathan,It seems that he doesn't want to leave the glove.,hermit crab,use (take glove from crab),1
+ferry,ferry_090,nathan,Maybe I could persuade him to move out somehow...,hermit crab,use (take glove from crab),2
+ferry,ferry_091,nathan,"Good idea, but the can is closed and full of Dr. Pepper.",hermit crab,item (soda_closed),
+ferry,ferry_092,nathan,"Good idea, but the can is full of Dr. Pepper.",hermit crab,item (soda_opened),
+ferry,ferry_093,nathan,"Well, maybe I could give away an empty can.",hermit crab,item (soda_empty),1
+ferry,ferry_094,nathan,Let's see ...,hermit crab,item (soda_empty),2
+ferry,ferry_095,nathan,Now the crab is living comfortably in a Dr. Pepper can.,hermit crab (in soda can),look at,1
+ferry,ferry_096,nathan,He has a good taste.,hermit crab (in soda can),look at,2
+ferry,ferry_100,nathan,No. He's had more than enough adventures for one day.,hermit crab (in soda can),use (take),
+ferry,ferry_101,nathan,It seems she's not feeling well.,nora,look at,
+ferry,ferry_102,nathan,"Nora, may I ask you something?",nora,talk to,1
+ferry,ferry_103,nora,"Not right now please, Nathan.",nora,talk to,2
+ferry,ferry_104,nathan,Sorry.,nora,talk to,3
+ferry,ferry_105,nathan,That wouldn't be nice.,nora,use (push),
+ferry,ferry_106,nathan,These boxes contain unmarked bottles.,bottles,look at,1
+ferry,ferry_107,nathan,It smells like strong whiskey.,bottles,look at,2
+ferry,ferry_108,nathan,I'll take one.,bottles,use (take),1
+ferry,ferry_109,sailor,"No, you won't.",bottles,use (take),2
+ferry,ferry_038,shroom,...,bottles,use (take),3
+ferry,ferry_111,nathan,"Right, I won't.",bottles,use (take),4
+ferry,ferry_112,nathan,"Well, he said I can have one...",bottles,use (permitted),
+ferry,ferry_113,nathan,I've already taken my share.,bottles,use (taken),
+ferry,ferry_114,nathan,"Hi, I'm Nathan. And you are ...",sailor (dialog tree),topic: who,1
+ferry,ferry_115,sailor,I'm Martin Munchkin McManus.,sailor (dialog tree),topic: who,2
+ferry,ferry_116,nathan,"Is your name really ""Munchkin""?",sailor (dialog tree),topic: who,3
+ferry,ferry_117,sailor,Aye.,sailor (dialog tree),topic: who,4
+ferry,ferry_118,nathan,"Your parents must have liked ""The Wizard of Oz"".",sailor (dialog tree),topic: who,5
+ferry,ferry_119,sailor,"I have no idea what you are talking about, kid.",sailor (dialog tree),topic: who,6
+ferry,ferry_120,nathan,"Is your name really Martin ""Munchkin"" McManus?",sailor (dialog tree),"topic: who, repeat",1
+ferry,ferry_124,nathan,Is that your dog?,sailor (dialog tree),topic: dog,1
+ferry,ferry_125,sailor,Aye. T'is me mate.,sailor (dialog tree),topic: dog,2
+ferry,ferry_126,nathan,What is his name?,sailor (dialog tree),topic: dog,3
+ferry,ferry_127,sailor,His name is Shroom. Right boy?,sailor (dialog tree),topic: dog,4
+ferry,ferry_129,nathan,Shroom? As in Mushroom?,sailor (dialog tree),topic: dog,5
+ferry,ferry_130,sailor,Aye. He's a mushroom searching kind of dog.,sailor (dialog tree),topic: dog,6
+ferry,ferry_131,nathan,Really?! I've heard of those!,sailor (dialog tree),topic: dog,7
+ferry,ferry_132,sailor,"Aye. If you show old Shroom here the name of the mushroom that you're searching for, he'll be on his feet in a second to find it for you.",sailor (dialog tree),topic: dog,8
+ferry,ferry_133,nathan,"He has to see it written down somewhere? That means he can read, too! Wow.",sailor (dialog tree),topic: dog,9
+ferry,ferry_135,nathan,You said your dog can find mushrooms?,sailor (dialog tree),"topic: dog, repeat",1
+ferry,ferry_137,nathan,Fascinating...,sailor (dialog tree),"topic: dog, repeat",2
+ferry,ferry_138,nathan,I'm kind of stuck right now. Can you help?,sailor (dialog tree),topic: help,1
+ferry,ferry_139,sailor,"I've been at the shores of Africa, I've wrestled the boxers of China, and I've seen the ghost of the pirate captain Stoertebecker.",sailor (dialog tree),topic: help,2
+ferry,ferry_140,sailor,"...but still the most useful ideas and hints I've ever found are in the book ""Capt'n Matt's Guide to Life"".",sailor (dialog tree),topic: help,3
+ferry,ferry_141,sailor,"Here, I happen to have a copy that I could give you.",sailor (dialog tree),topic: help,4
+ferry,ferry_142,nathan,"Wow, thanks! ""Capt'n Matt's Guide to Life"". This sounds good. Sometimes I need guidance.",sailor (dialog tree),topic: help,5
+ferry,ferry_143,sailor,"Aye. We all do, kid.",sailor (dialog tree),topic: help,6
+ferry,ferry_144,nathan,Don't you need this book? It sounds like it's important to you.,sailor (dialog tree),"topic: help, repeat",1
+ferry,ferry_145,sailor,"Aye. It is, but I have about fifty more copies at home. You can keep it, boy.",sailor (dialog tree),"topic: help, repeat",2
+ferry,ferry_146,nathan,So giving me this copy won't diminish your collection?,sailor (dialog tree),"topic: help, repeat",3
+ferry,ferry_147,sailor,"Naw, I like to give them to strangers whenever possible. It spreads the word.",sailor (dialog tree),"topic: help, repeat",4
+ferry,ferry_148,nathan,It's dark. You are standing at an old pier. Alone. With a couple of boxes containing unlabeled bottles of alcohol.,sailor (dialog tree),topic: bribe,1
+ferry,ferry_149,nathan,Hey! Are you doing something illegal?,sailor (dialog tree),topic: bribe,2
+ferry,ferry_150,sailor,Aye aye.,sailor (dialog tree),topic: bribe,3
+ferry,ferry_151,nathan,May I have a bottle?,sailor (dialog tree),topic: bribe,4
+ferry,ferry_152,sailor,Aye. Take one. Ten percent of the goods are meant to be used to bribe officials and those who know too much.,sailor (dialog tree),topic: bribe,5
+ferry,ferry_154,nathan,Aren't you afraid that I'm going to report you?,sailor (dialog tree),topic: bribe,6
+ferry,ferry_155,sailor,No. You've officially been bribed.,sailor (dialog tree),topic: bribe,7
+ferry,ferry_156,nathan,I guess you're right. And I might need a bottle.,sailor (dialog tree),topic: bribe,8
+ferry,ferry_157,nathan,So you aren't afraid that I'm going to report your shady activities?,sailor (dialog tree),"topic: bribe, repeat",1
+ferry,ferry_158,sailor,No. I said you could take a bottle. You've been officially bribed.,sailor (dialog tree),"topic: bribe, repeat",2
+ferry,ferry_160,nathan,Bye.,sailor (dialog tree),topic: goodbye,1
+ferry,ferry_161,nathan,How are you?,shroom (dialog tree),topic: hello,
+ferry,ferry_163,nathan,Do you know what time it is?,shroom (dialog tree),topic: time,1
+ferry,ferry_164,shroom,......,shroom (dialog tree),topic: time,2
+ferry,ferry_165,nathan,That late?,shroom (dialog tree),topic: time,3
+field,field_000,nathan,It has a nice golden color.,field of wheat,look at,1
+field,field_001,nathan,I can hear crickets. I guess they live somewhere in there.,field of wheat,look at,2
+field,field_002,nathan,That's a good idea. I'll take some wheat.,field of wheat,use (take),
+field,field_003,nathan,I already have enough wheat.,field of wheat,use (taken),
+field,field_008,nathan,The barrel is full of old tins and tools.,barrel of scrap metal,look at,
+field,field_009,nathan,It's all rusty and useless.,barrel of scrap metal,use (take),1
+field,field_010,nathan,"Except, maybe, for that cocktail shaker on top.",barrel of scrap metal,use (take),2
+field,field_011,nathan,"It's a cocktail shaker, and it seems to be in good shape... unlike the rest of this scrap metal.",cocktail shaker,look at,
+field,field_012,nathan,Alright.,cocktail shaker,use (take),
+field,field_013,nathan,Nice bench. It looks comfortable.,bench,look at,
+field,field_014,nathan,I don't want to rest now.,bench,use (sit),1
+field,field_015,nathan,There are still mysteries to solve and plots to unfold.,bench,use (sit),2
+field,field_016,nathan,It's a single glove.,leather glove,look at,
+field,field_017,nathan,"Sorry, does this glove belong to you?",leather glove,use (take),1
+field,field_018,nora,"No, it was already here when I came.",leather glove,use (take),2
+field,field_019,nathan,Good. Then I'll take it.,leather glove,use (take),3
+field,field_020,nora,Why? Is it your glove?,leather glove,use (take),4
+field,field_021,nathan,Uh ... yes?,leather glove,use (take),5
+field,field_022,nora,Then why did you ask if it's mine?,leather glove,use (take),6
+field,field_023,nathan,... to test your honesty?,leather glove,use (take),7
+field,field_024,nathan,You passed the test! Congratulations.,leather glove,use (take),8
+field,field_025,nathan,"I'll take the glove, okay?",leather glove,use (take),9
+field,field_026,nora,*Sigh* Go ahead.,leather glove,use (take),10
+field,field_027,nathan,There's a scarecrow watching over this field.,scarecrow,look at,1
+field,field_028,nathan,"If I were a bird, I'd be terrified.",scarecrow,look at,2
+field,field_029,nathan,It's pretty much useless... and far too big to pick up.,scarecrow,use,
+field,field_030,nathan,"The sign says ""Path to Sea"".",wooden sign,look at,
+field,field_031,nathan,"There's some larger tools and bundles of wood. Nothing useful, I guess.",old shed,look at,
+field,field_032,nathan,"No, these tools are too heavy.",old shed,use (take),
+field,field_033,nathan,Mh ... it's a stone.,stone slab,look at,
+field,field_034,nathan,"Hey, there's a wriggly worm under that stone!",stone slab,use (lift),
+field,field_035,nathan,It's a worm. He's wriggling.,worm,look at,
+field,field_036,nathan,Okay. I have the worm.,worm,use (take),
+field,field_037,nathan,Who's he?,old man,look at,
+field,field_038,nathan,Excuse me...,old man,talk to,
+field,field_039,nathan,Who's she?,nora,look at,
+field,field_040,nathan,Ahem ...,nora,talk to,
+field,field_041,nathan,That wouldn't be very nice.,nora,use (push),
+field,field_042,nathan,Something seems terribly wrong with Nora ...,nora (pain),look at,
+field,field_043,nathan,"Are you alright, Nora?",nora (pain),talk to,1
+field,field_044,nora,I ... I don't feel well ...,nora (pain),talk to,2
+field,field_045,nora,"Please find my grandfather, Nathan ... he'll know what to do. See if he's around that house over there.",nora (pain),talk to,3
+field,field_046,nora,Please hurry Nathan. Mr. McManus has to take grandfather and I back home. I ... I need my medicine.,nora (pain),talk to,4
+field,field_048,nathan,"Don't worry, Nora. I'll find your grandfather!",nora (pain),talk to,5
+field,field_049,nora,And tell my grandfather that I found this ...,nora (pain),talk to (get key),1
+field,field_051,nathan,Is this some sort of key?,nora (pain),talk to (get key),2
+field,field_052,nora,I think so. I assume it has something to do with that house my grandfather was trying to get into.,nora (pain),talk to (get key),3
+field,field_053,nathan,"Okay, I'll look around that house for your grandfather.",nora (pain),talk to (get key),4
+field,field_054,nathan,What was I supposed to do with this key part?,nora (pain),talk to (has key),1
+field,field_056,nora,Please give it to my grandfather ... he was trying to find a way into that house.,nora (pain),talk to (has key),2
+field,field_058,nathan,It's a fence of barbed wire.,barbed wire fence,look at,
+field,field_059,nathan,I've got enough barbed wire.,barbed wire fence,use (taken),
+field,field_060,nathan,"Good idea, I may need some barbed wire...",barbed wire fence,use (take),1
+field,field_061,nathan,But I'll need something to protect my hands to free it.,barbed wire fence,use (take),2
+field,field_062,nathan,A single glove is rather useless.,barbed wire fence,item (glove_single),1
+field,field_063,nathan,I hear gloves are usually used in pairs...,barbed wire fence,item (glove_single),2
+field,field_064,nathan,"Like shoes, you know.",barbed wire fence,item (glove_single),3
+field,field_068,nathan,Who's your grandfather? What's his name?,nora (dialog tree),topic: grandfather,1
+field,field_069,nora,"I'm not supposed to talk about him, sorry Nathan.",nora (dialog tree),topic: grandfather,2
+field,field_070,nathan,What is your grandfather doing here?,nora (dialog tree),topic: grandfather,1
+field,field_071,nora,He has some business to do around here.,nora (dialog tree),topic: grandfather,2
+field,field_072,nathan,What kind of business?,nora (dialog tree),topic: grandfather,3
+field,field_073,nora,I'm not quite sure.,nora (dialog tree),topic: grandfather,4
+field,field_074,nora,He doesn't say much about his work... but he did tell me not to talk about him or his work with strangers.,nora (dialog tree),topic: grandfather,5
+field,field_075,nora,"Actually, he told me not to talk to strangers at all.",nora (dialog tree),topic: grandfather,6
+field,field_076,nathan,"But we can talk because I introduced myself, right?",nora (dialog tree),topic: grandfather,7
+field,field_077,nora,Right.,nora (dialog tree),topic: grandfather,8
+field,field_078,nathan,Isn't it kind of boring here?,nora (dialog tree),topic: reading,1
+field,field_079,nora,I think it's nice ... and I have something to read while I'm waiting.,nora (dialog tree),topic: reading,2
+field,field_080,nathan,What are you reading?,nora (dialog tree),topic: reading,3
+field,field_081,nora,"Mungo Park: ""Travels in the Interior of Africa"". I got it from my grandfather...",nora (dialog tree),topic: reading,4
+field,field_082,nora,That Mungo Park was a real adventurer.,nora (dialog tree),topic: reading,5
+field,field_083,nathan,What are you reading again?,nora (dialog tree),"topic: reading, repeat",1
+field,field_084,nora,"Mungo Park: ""Travels in the Interior of Africa"".",nora (dialog tree),"topic: reading, repeat",2
+field,field_085,nathan,"I've learned enough about you, I think.",nora (dialog tree),"topic: who, exit",
+field,field_086,nathan,Who are you and what are you doing here?,nora (dialog tree),topic: who,1
+field,field_087,nora,I'm Nora. I was reading as you might have noticed.,nora (dialog tree),topic: who,2
+field,field_088,nora,But If you must know: I'm waiting for my grandfather.,nora (dialog tree),topic: who,3
+field,field_090,nathan,Do you know a Dr. Coppelius?,nora (dialog tree),topic: coppelius,1
+field,field_091,nora,Why do you ask?,nora (dialog tree),topic: coppelius,2
+field,field_092,nathan,I was sent to tell him that he's in danger.,nora (dialog tree),topic: coppelius,3
+field,field_093,nora,In danger?,nora (dialog tree),topic: coppelius,4
+field,field_094,nathan,"Yes. I don't know why, but he's supposed to contact the university immediately.",nora (dialog tree),topic: coppelius,5
+field,field_095,nora,I wish I could help you... but I've been asked not to talk about him. Sorry.,nora (dialog tree),topic: coppelius,6
+field,field_096,nathan,So you know him?,nora (dialog tree),topic: coppelius,7
+field,field_097,nora,"Please, I can't answer that.",nora (dialog tree),topic: coppelius,8
+field,field_098,nathan,"Okay, sorry.",nora (dialog tree),topic: coppelius,9
+field,field_099,nathan,"You know, I can run really fast.",nora (dialog tree),topic: flirt,1
+field,field_100,nora,I'm excited to hear that.,nora (dialog tree),topic: flirt,2
+field,field_101,nathan,Really?,nora (dialog tree),topic: flirt,3
+field,field_102,nathan,Bye.,nora (dialog tree),topic: goodbye,
+field,field_103,nathan,I'm Nathan. Who are you?,coppelius (dialog tree),topic: mission,1
+field,field_104,coppelius,"Young man, I am someone who knows that you don't belong here... so what are you doing here?",coppelius (dialog tree),topic: mission,2
+field,field_105,nathan,I'm searching for a Dr. Coppelius.,coppelius (dialog tree),topic: mission,3
+field,field_106,coppelius,"Oh really? That's quite interesting, I must say.",coppelius (dialog tree),topic: mission,4
+field,field_107,nathan,Do you know this Coppelius? I was sent to warn him that he may be in grave danger.,coppelius (dialog tree),topic: mission,5
+field,field_108,coppelius,Of course I know him. He's quite a character...,coppelius (dialog tree),topic: mission,6
+field,field_109,nathan,Can you tell me where I could find him?,coppelius (dialog tree),topic: mission,7
+field,field_110,coppelius,What you should do right now is to get into that house over there. That would point you in the right direction.,coppelius (dialog tree),topic: mission,8
+field,field_111,nathan,But the house is locked...,coppelius (dialog tree),topic: mission,9
+field,field_112,coppelius,I know there's a three-part key that unlocks it. I've heard that you already have at least one part of it. There's another part under the doormat.,coppelius (dialog tree),topic: mission,10
+field,field_115,nathan,What's your name?,coppelius (dialog tree),"topic: mission, repeat",1
+field,field_116,coppelius,That's none of your business. You should try to get into that house... you might find some more answers in there.,coppelius (dialog tree),"topic: mission, repeat",2
+field,field_117,nathan,What's in the house? Why do you want me to get in there?,coppelius (dialog tree),"topic: mission, repeat",3
+field,field_118,coppelius,YOU want to go in there. I'm just telling you it's the right thing to do.,coppelius (dialog tree),"topic: mission, repeat",4
+field,field_113,nathan,Are you Nora's grandfather? Is she alright?,coppelius (dialog tree),topic: nora,1
+field,field_114,coppelius,"Oh yes, I am.  But don't you worry about her, I can assure you that she's in good hands and will be well soon.",coppelius (dialog tree),topic: nora,2
+field,field_119,nathan,I have to get going.,coppelius (dialog tree),topic: goodbye,
+finale,finale_001,nora,Who are you?!,finale,cutscene,1
+finale,finale_002,nora,What do you want?,finale,cutscene,2
+finale,finale_003,vincent,Don't worry! I just want to know...,finale,cutscene,3
+finale,finale_004,vincent,What Makes You Tick?!,finale,cutscene,4
+finale_ferry,ferry_023,nathan,Somehow I feel like someone is watching me...,distant cliff,look at,
+finale_ferry,finale_ferry_001,coppelius,What happened? Where's Nora?,ferry sequence,cutscene,1
+finale_ferry,finale_ferry_002,sailor,"I had just brought your granddaughter aboard my ship and was rowing back to the shore, when suddenly a guy with a cape appeared and threw me overboard!",ferry sequence,cutscene,2
+finale_ferry,finale_ferry_003,sailor,I swam back here ... but that villain stole away with my ship and the girl.,ferry sequence,cutscene,3
+finale_ferry,finale_ferry_004,nathan,"Oh, no!",ferry sequence,cutscene,4
+finale_ferry,finale_ferry_005,sailor,Hopefully that girl had the good sense to hide herself.,ferry sequence,cutscene,5
+finale_ferry,finale_ferry_006,coppelius,"If Vincent finds out about Nora, then she'll be in grave danger!",ferry sequence,cutscene,6
+finale_ferry,finale_ferry_007,nathan,We have to follow them.,ferry sequence,cutscene,7
+finale_ferry,finale_ferry_008,sailor,Aye!,ferry sequence,cutscene,8
+finale_ferry,finale_ferry_009,coppelius,"Vincent, you devil. If you dare to harm Nora, then I swear I'll hunt you to the end of the earth!",ferry sequence,cutscene,9
+finale_ferry,finale_ferry_010,nathan,Nora ... I hope you are alright.,ferry sequence,cutscene,10
+finale_lab1,finale_lab1_001,coppelius,Now we have to hurry and get Nora home! I have to adjust her mechanical heart!,lab sequence,cutscene,1
+finale_lab1,finale_lab1_002,nathan,What if Vincent has already found her?,lab sequence,cutscene,2
+finale_lab1,finale_lab1_003,coppelius,Check those binoculars... we may be able to spot her.,lab sequence,cutscene,3
+finale_lab1,finale_lab1_004,nathan,Mh ... I can see the pier. And the ship.,lab sequence,cutscene,4
+finale_lab1,finale_lab1_005,nathan,"Yes ... the sailor just brought Nora aboard the ship. Now he's rowing back to the shore ... to pick you up, I guess.",lab sequence,cutscene,5
+finale_lab1,finale_lab1_006,nathan,What's that?!,lab sequence,cutscene,6
+finale_lab1,finale_lab1_007,nathan,Vincent!! Where did he come from? He threw McManus overboard! ,lab sequence,cutscene,7
+finale_lab1,finale_lab1_008,nathan,Now he's stealing the sailor's rowboat!,lab sequence,cutscene,8
+finale_lab1,finale_lab1_009,nathan,... Where is Nora?! I can't see her.,lab sequence,cutscene,9
+finale_lab1,finale_lab1_010,coppelius,Oh no ...,lab sequence,cutscene,10
+foyer,foyer_000,nathan,It's a golden idol.,angry-looking statue,look at,
+foyer,foyer_001,nathan,This belongs into a museum! I'll take it with me.,angry-looking statue,use (take),1
+foyer,foyer_002,nathan,"No, wait. I should finish *this* adventure first.",angry-looking statue,use (take),2
+foyer,foyer_003,nathan,"Books on philosophy, mostly ethics, some on anatomy and literature theory.",bookcase,look at,1
+foyer,foyer_004,nathan,"There are a lot of scientific journals about biology and physics. They smell old, but in a positive way.",bookcase,look at,2
+foyer,foyer_005,nathan,"Oh and there's an 'Encyclopedia of Science'. Boring too, I guess.",bookcase,look at,3
+foyer,foyer_006,nathan,"If this bookcase holds a secret door, it won't be revealed simply by pushing on it.",bookcase,use (push),
+foyer,foyer_007,nathan,This can't be the correct time ...,grandfather clock,look at,
+foyer,foyer_008,nathan,How can I correct the time if I have no idea what time it is?,grandfather clock,change,
+foyer,foyer_009,nathan,"""Your Own Secret Underground Lab"", ""More about Secret Underground Labs"" & ""How Do I Keep Rodents From Invading My Secret Underground Lab"".",three books,look at,1
+foyer,foyer_010,nathan,No wonder these books are down there - they sound REALLY boring.,three books,look at,2
+foyer,foyer_011,nathan,"""The Inside Matters"". Sounds interesting!",interesting blue book,look at,
+foyer,foyer_012,nathan,"Ok, I'll take it.",interesting blue book,use (take),
+foyer,foyer_013,nathan,They're the metal plates from the socketed bird device.,metal discs,look at,
+foyer,foyer_014,nathan,It seems that Vincent took them out and simply dropped them here.,metal discs,look at,
+foyer,foyer_015,nathan,Ok.,metal discs,use (take),
+foyer,foyer_016,nathan,There are two oval-shaped sockets in the base of this statue.,oval-shaped sockets,look at,1
+foyer,foyer_017,nathan,"Hey, there's also an inscription...",oval-shaped sockets,look at,2
+foyer,foyer_018,nathan,"""Even the spirit of youth and grim death listen to the birds' song. For without words it will teach wisdom. For without key it will open up the path of truth."" Wu Xun.",oval-shaped sockets,look at,3
+foyer,foyer_019,nathan,It looks like there's something missing here... both sockets are empty.,oval-shaped sockets,use (activate),
+foyer,foyer_020,nathan,"I've now filled one socket, but the other is still empty.",oval-shaped sockets,item (disc1 / disc2),
+foyer,foyer_021,nathan,It looks like it's been completely activated.,oval-shaped sockets,item (disc1 / disc2),
+foyer,foyer_022,nathan,Here we go.,oval-shaped sockets,item (disc1 / disc2),
+foyer,foyer_023,nathan,One plate is still missing.,oval-shaped sockets,item (disc1 / disc2),
+foyer,foyer_024,nathan,"The bird's song opened up a secret passage, just like the inscription said.",oval-shaped sockets,item (disc1 / disc2),
+foyer,foyer_028,nathan,"If the mud was cleaned off this dirty object, then it might just fit into one of those sockets!",oval-shaped sockets,item (muddy disc),
+foyer,foyer_029,nathan,It's a beautiful golden bird sitting on a branch.,golden bird figure,look at,1
+foyer,foyer_030,nathan,It seems to be part of a larger mechanical device controlling something in this room...,golden bird figure,look at,2
+foyer,foyer_032,nathan,Open Sesame?,golden bird figure,talk to,
+foyer,foyer_033,nathan,"Hmm, that doesn't seem to work.",golden bird figure,use (activate),1
+foyer,foyer_034,nathan,I assume that I'll need to fill those oval-shaped sockets in the base to activate whatever this mechanism is.,golden bird figure,use (activate),2
+foyer,foyer_035,nathan,It's a buddha. It seems to be a very old statue.,Buddha statue,look at,
+foyer,foyer_036,nathan,Maybe later...,Buddha statue,talk to,1
+foyer,foyer_037,nathan,"I use to question everything, so I'm not a religious person.",Buddha statue,talk to,2
+foyer,foyer_038,nathan,But even that's not for sure.,Buddha statue,talk to,3
+foyer,foyer_039,nathan,It would be exceptionally bad karma to steal Coppelius' buddha.,Buddha statue,use (take),
+foyer,foyer_040,nathan,Old wine. It was bottled over 60 years ago.,dusty bottles,look at,
+foyer,foyer_041,nathan,I'm not stealing Dr. Coppelius' liquor!,dusty bottles,talk to (drink),
+foyer,foyer_043,nathan,The bottle contains a strange blue fluid.,blue bottle,look at,
+foyer,foyer_044,nathan,No. That's not a good idea.,blue bottle,talk to (drink),1
+foyer,foyer_045,nathan,I'd guess it's some sort of cleaning fluid for combs.,blue bottle,talk to (drink),2
+foyer,foyer_046,nathan,I'm not a barber so I'll leave it right here.,blue bottle,use (take),
+foyer,foyer_047,nathan,Nice ivy.,ivy,look at,
+foyer,foyer_048,nathan,These are all old letters. Some are even from Cairo ... another is from Delhi.,pile of letters,look at,1
+foyer,foyer_049,nathan,These are all letters addressed to Dr. Coppelius.,pile of letters,look at,2
+foyer,foyer_050,nathan,Hey! There are even some from my university... but the newest ones arrived here over one year ago.,pile of letters,look at,3
+foyer,foyer_051,nathan,It's a picture of a newborn child with its mother.,portrait1,look at,
+foyer,foyer_052,nathan,It's a picture of a middle-aged man. He looks healthy.,portrait2,look at,
+foyer,foyer_053,nathan,It's a picture of an old man. He looks tired.,portrait3,look at,
+foyer,foyer_054,nathan,It's a picture of a puppet. Without age and emotion.,portrait4,look at,
+foyer,foyer_055,nathan,Hey! It's the Beatles!,portrait collection,look at,1
+foyer,foyer_056,nathan,Except ... John Lennon is wearing an eyepatch and Ringo Starr is an old woman.,portrait collection,look at,2
+foyer,foyer_057,nathan,"My mistake, these are really just old family photos.",portrait collection,look at,3
+foyer,foyer_058,nathan,This is a list of radio frequencies.,list of radio frequencies,look at,1
+foyer,foyer_059,nathan,"You can radio Glasgow, Hamburg, Venice ...",list of radio frequencies,look at,2
+foyer,foyer_060,nathan,"... and a place just called ""Island Radio Station"". Strange.",list of radio frequencies,look at,3
+foyer,foyer_061,nathan,If I had a working radio then I might be able to use these.,list of radio frequencies,use,
+foyer,foyer_062,nathan,It's a radio for transmitting and receiving radio messages.,radio,look at,
+foyer,foyer_063,nathan,It doesn't work. There's no power.,radio,use,
+foyer,foyer_064,nathan,It's full of small tools.,small tools,look at,
+foyer,foyer_065,nathan,"To be honest, I'm not very good with mechanical things.",small tools,use,1
+foyer,foyer_066,nathan,I don't have the slightest idea of what some of these tools are used for.,small tools,use,2
+foyer,foyer_067,nathan,I wonder what Dr. Coppelius is working on here...,mechanical device,look at,1
+foyer,foyer_068,nathan,"Whatever it is, there sure are a lot of cogs and springs inside.",mechanical device,look at,2
+foyer,foyer_069,nathan,I'd better not. I have no idea what it is.,mechanical device,use (touch),
+foyer,foyer_070,nathan,"""Wahrheit währt am längsten""",plaque with proverb,look at,1
+foyer,foyer_071,nathan,"It translates as ""Truth will last longer than anything"". I guess it's an old german proverb.",plaque with proverb,look at,2
+foyer,foyer_072,nathan,"The books up there are about different cultures all over the world. Southern Ghana, Mexico, Hokkaido, Wales and others.",more books,look at,1
+foyer,foyer_073,nathan,"Ah! Finally some fiction. He has a good collection. From Kafka, Chesterton, E.T.A. Hoffmann and Hemingway ...",more books,look at,2
+foyer,foyer_074,nathan,"... to Gaiman and Carroll. And then back to the classics: Shakespeare, Goethe and Steve Martin.",more books,look at,3
+foyer,foyer_075,nathan,"Hmm, Winnie the Pooh is missing. This Coppelius is a strange man.",more books,look at,4
+foyer,foyer_076,nathan,I'd never get around to reading them.,more books,use (take),
+foyer,foyer_077,nathan,There are several markers in different regions of western africa.,antique globe,look at,1
+foyer,foyer_078,nathan,I wonder if Dr. Coppelius has been there ...,antique globe,look at,2
+foyer,foyer_079,nathan,These impressive masks are made from wood and straw.,mysterious masks,look at,1
+foyer,foyer_080,nathan,Probably African.,mysterious masks,look at,2
+global,global_000,nathan,I don't see anything special about that.,default responses,look at,
+global,global_001,nathan,"No, thanks.",default responses,talk to,
+global,global_002,nathan,What should I do with it?,default responses,use,
+global,global_003,nathan,How should I use this?,default responses,use,
+global,global_004,nathan,I don't think that's useful.,default responses,item,
+global,global_005,nathan,I don't think that'll work.,default responses,item,
+global,global_006,nathan,I think that's useless.,default responses,item,
+global,global_007,nathan,It's a piece of barbed wire.,inventory (barbed wire),look at,
+global,global_008,nathan,It's thin and sharp. Maybe I can pick a lock with this?,inventory (barbed wire),use,
+global,global_009,nathan,"The title of the book is ""The Inside Matters"" ... What does that mean?",inventory (blue book),look at,
+global,global_010,nathan,Let's see... Hey! There's a golden plate inside.,inventory (blue book),use (open),1
+global,global_011,nathan,I'll discard the empty book and just keep the plate.,inventory (blue book),use (open),2
+global,global_012,nathan,It's a corked bottle of alcohol.,inventory (corked bottle),look at,
+global,global_013,nathan,I pulled the cork out with my teeth.,inventory (corked bottle),talk to (bite),
+global,global_014,nathan,The cork is too tight to pull out with my hands.,inventory (corked bottle),use (open),
+global,global_015,nathan,That won't uncork it.,inventory (corked bottle),generic,
+global,global_016,nathan,It's almost empty.,inventory (near-empty bottle),look at,
+global,global_017,nathan,I'm not in the mood for drinking right now.,inventory (near-empty bottle),talk to (drink),
+global,global_019,nathan,Alcohol is never a good solution for problems.,inventory (near-empty bottle),generic,
+global,global_020,nathan,It's a full bottle of alcohol.,inventory (open bottle),look at,
+global,global_024,nathan,Half-full or half-empty? That's the question.,inventory (half-full bottle),look at,
+global,global_028,nathan,It's a piece of cloth.,inventory (cloth),look at,
+global,global_029,nathan,I could try to clean something... but the cloth is too dry.,inventory (cloth),use,
+global,global_030,nathan,Now it's a wet piece of cloth soaked in alcohol.,inventory (soaked cloth),look at,
+global,global_031,nathan,I could clean something...,inventory (soaked cloth),use,
+global,global_032,nathan,That doesn't need to be cleaned.,inventory (soaked cloth),generic,
+global,global_033,nathan,It's a light cork.,inventory (cork),look at,
+global,global_034,nathan,It's the fish I caught.,inventory (fish),look at,
+global,global_035,nathan,"I'm really sorry about this, fish. I've never liked fishing, you know.",inventory (fish),talk to,
+global,global_036,nathan,I don't like raw fish.,inventory (fish),use (eat),
+global,global_037,nathan,A dead fish isn't needed here.,inventory (fish),generic,
+global,global_038,nathan,It's my handmade fishing-rod. With bait.,"inventory (fishing pole, bait)",look at,
+global,global_039,nathan,I should go fishing.,"inventory (fishing pole, bait)",use,
+global,global_040,nathan,This is not a good place for fishing.,"inventory (fishing pole, bait)",generic,
+global,global_041,nathan,It's my handmade fishing rod.,inventory (fishing pole),look at,
+global,global_042,nathan,"I should go fishing, but I'll need to bait the hook first.",inventory (fishing pole),use,1
+global,global_044,nathan,Plus I need to bait the hook.,inventory (fishing pole),use,2
+global,global_045,nathan,It's a glove. I need a second one to make a pair.,"inventory (glove, single)",look at,
+global,global_046,nathan,How should I use a single glove?,"inventory (glove, single)",use,
+global,global_049,nathan,It's a pair of gloves.,"inventory (glove, pair)",look at,
+global,global_050,nathan,I don't want to wear them all the time.,"inventory (glove, pair)",use,
+global,global_051,nathan,It's the handle from the well.,inventory (water well crank),look at,
+global,global_052,nathan,I have to use it with something.,inventory (water well crank),use,
+global,global_053,nathan,It's a small and sharp metal hook.,inventory (fishing hook),look at,
+global,global_054,nathan,Ouch! It's sharp.,inventory (fishing hook),use,
+global,global_055,nathan,"It's ""Captn Matt's Guide to Life"". Looks interesting. I should try reading it.",inventory (guide book),look at,
+global,global_056,nathan,"""Chapter 27: How to stun a Raven.""",inventory (guide book),use (read),1
+global,global_057,nathan,"""On one of my travels through the Caribbean it became necessary to drug a raven. """,inventory (guide book),use (read),2
+global,global_058,nathan,"""Should you get into a similar situation just follow these instructions.""",inventory (guide book),use (read),3
+global,global_059,nathan,"""First get some kind of nice looking bird food, some strong alcohol and finally add the SETA DE MUERTE. The Mushroom of Death (not deadly).""",inventory (guide book),use (read),4
+global,global_060,nathan,"""Mix the three ingredients in a cup or bowl. Now give the cereal to the raven. Feed the bird until it falls asleep.""",inventory (guide book),use (read),5
+global,global_061,nathan,"""After that you can proceed with whatever you were doing - just like I continued to search for the Voodoo Priest. For further details see Chapter 51, 'Coco Island'""",inventory (guide book),use (read),6
+global,global_062,nathan,"Hey, I think that's a useful hint: mix cereal, alcohol and Mushroom of Death. I think I got it.",inventory (guide book),use (read),7
+global,global_063,nathan,I should read the book instead.,inventory (guide book),generic,
+global,global_064,nathan,It seems to be a part of a larger key.,inventory (key fragments),look at,
+global,global_065,nathan,A single part of a key is rather useless.,inventory (key fragments),use,
+global,global_067,nathan,These two parts fit together. But there's still a part missing.,inventory (key fragments),look at,
+global,global_068,nathan,An incomplete key is rather useless.,inventory (key fragments),use,
+global,global_070,nathan,"A complete three-part key. Whatever this unlocks, it must be important.",inventory (key fragments),look at,
+global,global_071,nathan,The key doesn't fit here.,inventory (key fragments),use,
+global,global_072,nathan,I can't use the key here.,inventory (key fragments),generic,
+global,global_076,nathan,This is only a part of a larger key.,inventory (key fragments),generic,
+global,global_085,nathan,It's a leaflet from the local fishing club. It says:,inventory (leaflet),look at (read),
+global,global_086,nathan,"""The wonderful art of fishing has captured our hearts and imaginations for decades.""",inventory (leaflet),look at (read),
+global,global_087,nathan,"""In our childhood, all it took was a long stick, a string, a float, a hook and some bait.""",inventory (leaflet),look at (read),
+global,global_088,nathan,"""Come and join our happy circle of fishermen.""",inventory (leaflet),look at (read),
+global,global_089,nathan,"Happy circle of fishermen, eh?",inventory (leaflet),look at (read),
+global,global_090,nathan,You use leaflets by reading them... or by throwing them away.,inventory (leaflet),use,
+global,global_091,nathan,"It's a leaflet from the local fishing club, and it's burning.","inventory (leaflet, burning)",look at,
+global,global_092,nathan,That's not good fire safety.,"inventory (leaflet, burning)",use (play with),
+global,global_093,nathan,That doesn't need fire.,"inventory (leaflet, burning)",generic,
+global,global_094,nathan,It's my lighter.,inventory (lighter),look at,
+global,global_095,nathan,"Hi there, lighter.",inventory (lighter),talk to,
+global,global_096,nathan,"I don't smoke, but maybe I can use it for something else.",inventory (lighter),use,
+global,global_097,nathan,I won't burn this. I'm really careful with fire since that one incident.,inventory (lighter),generic,
+global,global_098,nathan,"It's the legendary mushroom of death. That's funny, these dots look like a small skull.",inventory (mushroom),look at,
+global,global_099,nathan,No!,inventory (mushroom),talk to (eat),
+global,global_100,nathan,It's a picture of the house where Dr. Coppelius used to live. I was sent to tell him that he's in great danger.,inventory (picture),look at,1
+global,global_101,nathan,"I don't even know what kind of danger the old men at the university were talking about, but Coppelius is supposed to contact them.",inventory (picture),look at,2
+global,global_102,nathan,"I wonder if Coppelius still lives there. Well, I should try to find out.",inventory (picture),look at,3
+global,global_103,nathan,It's an oval-shaped golden plate depicting grim death himself.,"inventory (disc, death)",look at,1
+global,global_104,nathan,I hope it's not cursed or something.,"inventory (disc, death)",look at,2
+global,global_105,nathan,It's an oval-shaped golden plate depicting a young adventurer.,"inventory (disc, life)",look at,
+global,global_106,nathan,It's some muddy piece of metal.,"inventory (disc, muddy)",look at,
+global,global_107,nathan,I'm not cleaning this with my tongue!,"inventory (disc, muddy)",talk to (lick),
+global,global_108,nathan,I can't clean it with my hands. The mud is dry and hard.,"inventory (disc, muddy)",use (wipe),
+global,global_109,nathan,That won't get it clean.,"inventory (disc, muddy)",generic,
+global,global_110,nathan,These are green seeds that I made by mixing mushroom and alcohol with wheat.,inventory (seeds3),look at,1
+global,global_111,nathan,They smell like medicine.,inventory (seeds3),look at,2
+global,global_112,nathan,"No, I don't want to get sleepy.",inventory (seeds3),use,
+global,global_113,nathan,That doesn't need to be drugged.,inventory (seeds3),generic,
+global,global_126,nathan,It's a cocktail shaker.,inventory (cocktail shaker),look at,
+global,global_127,nathan,"I could shake and mix something, but what?",inventory (cocktail shaker),use,
+global,global_129,nathan,I've put wheat in it.,inventory (cocktail recipe),recipe,
+global,global_130,nathan,I should only mix a complete recipe.,inventory (cocktail recipe),recipe,
+global,global_132,nathan,I've put the wheat and alcohol into it.,inventory (cocktail recipe),recipe,
+global,global_135,nathan,"I've put the mushroom, wheat and alcohol into it. That's it!",inventory (cocktail recipe),recipe,
+global,global_136,nathan,"Ok, I'll mix it!",inventory (cocktail recipe),recipe,
+global,global_138,nathan,I've put the mushroom and wheat in it.,inventory (cocktail recipe),recipe,
+global,global_141,nathan,I've put alcohol into it.,inventory (cocktail recipe),recipe,
+global,global_144,nathan,I've put the mushroom and alcohol into it.,inventory (cocktail recipe),recipe,
+global,global_147,nathan,I've put the mushroom in it.,inventory (cocktail recipe),recipe,
+global,global_149,nathan,Wow! An unopened can of Dr Pepper.,"inventory (soda, closed)",look at,1
+global,global_150,nathan,I love Dr Pepper.,"inventory (soda, closed)",look at,2
+global,global_151,nathan,"I'd like to, but I have to open it first.","inventory (soda, closed)",talk to (drink),
+global,global_152,nathan,Good idea. The can is opened.,"inventory (soda, closed)",use (open),
+global,global_153,nathan,I won't waste my Dr. Pepper here.,"inventory (soda, closed)",generic,
+global,global_154,nathan,Tastier than a red potion!,"inventory (soda, empty)",look at,1
+global,global_155,nathan,And more refreshing than a green herb!,"inventory (soda, empty)",look at,2
+global,global_156,nathan,"There's nothing left, but I still have the good taste on my tongue. Mh.","inventory (soda, empty)",talk to (drink),
+global,global_157,nathan,I'll keep it intact. Maybe I can use it later.,"inventory (soda, empty)",use (crush),
+global,global_158,nathan,"It's open! The smell, the sound. Wonderful.","inventory (soda, opened)",look at,
+global,global_159,nathan,Cheers!,"inventory (soda, opened)",talk to (drink),
+global,global_162,nathan,It's a long stick.,inventory (stick),look at,
+global,global_163,nathan,How could I use this?,inventory (stick),use,
+global,global_164,nathan,A stick with a cork on a string.,inventory (fishing pole parts),recipe,
+global,global_165,nathan,It looks like a whip with a cork... So far it's useless.,inventory (fishing pole parts),recipe,
+global,global_166,nathan,There's no need to do that.,inventory (fishing pole parts),recipe,
+global,global_167,nathan,A stick with a hook on a string. Hey! It looks like a fishing-rod.,inventory (fishing pole parts),recipe,
+global,global_168,nathan,I need something to make the hook float in the water.,inventory (fishing pole parts),recipe,
+global,global_170,nathan,I affixed the string to the long stick.,inventory (fishing pole parts),recipe,
+global,global_171,nathan,It looks like a whip; but I know it's not a whip. So far it's useless.,inventory (fishing pole parts),recipe,
+global,global_173,nathan,It's a string.,inventory (fishing pole parts),recipe,
+global,global_174,nathan,"No, I was never very good at cat's cradle.",inventory (fishing pole parts),recipe,
+global,global_175,nathan,It's a string with a cork.,inventory (fishing pole parts),recipe,
+global,global_176,nathan,It's a string with a cork and a hook.,inventory (fishing pole parts),recipe,
+global,global_177,nathan,It's a string with a hook.,inventory (fishing pole parts),recipe,
+global,global_178,nathan,Nice wheat.,inventory (wheat),look at,
+global,global_179,nathan,"No, that looks rather like bird food.",inventory (wheat),talk to (eat),
+global,global_181,nathan,There's no need for wheat here.,inventory (wheat),generic,
+global,global_182,nathan,"A cute little fella. Hey, I think he's looking at me.",inventory (worm),look,
+global,global_183,nathan,It seems that he knows I'm up to something.,inventory (worm),look,
+global,global_184,nathan,"I'm not sure what I'll do with you ... Maybe it's something bad, so I'll apologize in now advance.",inventory (worm),talk to,
+global,global_185,nathan,"Sorry, worm.",inventory (worm),talk to,
+global,global_186,nathan,He wriggles.,inventory (worm),use,
+global,global_187,nathan,"No, I think I'll keep him here.",inventory (worm),generic,
+global,global_188,nathan,I'll pour some alcohol on the cloth.,"items (bottle, cloth)",combo,
+global,global_189,nathan,The cloth is already soaking wet.,"items (bottle, cloth)",combo,
+global,global_191,nathan,Now I have a pair.,"items (glove1, glove2)",combo,
+global,global_192,nathan,"Hey, these parts fit together!",items (key recipe),combo,
+global,global_193,nathan,The key is now complete.,items (key recipe),combo,
+global,global_201,nathan,Now playing with fire might really be useful.,"items (lighter, leafelt)",combo,
+global,global_202,nathan,Are you insane?! You make me sick...,"items (lighter, worm)",combo,
+global,global_203,nathan,That's too dry to clean the mud off.,"items (muddy disc, dry cloth)",combo,
+global,global_204,nathan,Now it's clean.,"items (muddy disc, wet cloth)",combo,
+global,global_205,nathan,I'll add it to the shaker.,items (cocktail recipe),combo,
+global,global_214,nathan,I'll put some wheat into the shaker.,items (cocktail recipe),combo,
+global,global_215,nathan,I'll pour some alcohol into the shaker.,items (cocktail recipe),combo,
+global,global_216,nathan,I'll put the mushroom into the shaker.,items (cocktail recipe),combo,
+global,global_217,nathan,I'll attach it to the string.,items (fishing pole recipe),combo,
+global,global_219,nathan,"Good idea, but I'll need a float to make a fishing rod.",items (fishing pole recipe),combo,
+global,global_222,nathan,I'll attach the string to the stick.,items (fishing pole recipe),combo,
+global,global_230,nathan,"I could go fishing, but first I'd need a proper fishing rod.",items (fishing pole recipe),combo,
+house,house_000,nathan,It's a waterwheel.,waterwheel,look at,
+house,house_001,nathan,"It reads, ""Wanderer's Path"".",wooden sign,look at,
+house,house_002,nathan,I could follow the sign... It's pointing south.,wooden sign,use,
+house,house_003,nathan,It's the house from the photograph! This is where Dr. Coppelius used to live.,strange house,look at,1
+house,house_004,nathan,It looks a little worn-out ...,strange house,look at,2
+house,house_005,nathan,Hello! Is someone in there?,strange house,talk to,1
+house,house_006,nathan,Apparently no one is home.,strange house,talk to,2
+house,house_007,nathan,Hmm. Nora said that her grandfather was around this house. I don't see any signs of him though...,strange house,mission reminder,1
+house,house_008,nathan,Perhaps he went the other way? Nora said that they were meeting McManus down at the pier.,strange house,mission reminder,2
+house,house_009,nathan,I have to find Nora's grandfather... she needs his help!,strange house,mission reminder,3
+house,house_010,nathan,"It looks a little bit older now, but this is definitely the house in the picture.",strange house,item (photo),
+house,house_011,nathan,There's no glass. Just bricks and paint.,windows,look at,
+house,house_012,nathan,Bricks and paint... the windows were closed years ago.,windows,use,
+house,house_013,nathan,The clock hands are missing.,clock,look at,1
+house,house_014,nathan,I have no idea what time it is.,clock,look at,2
+house,house_015,nathan,There's no use for a clock without hands.,clock,use,
+house,house_016,nathan,It's a rough mat to wipe your shoes on.,doormat,look at,1
+house,house_017,nathan,There's something under the doormat.,doormat,look at,2
+house,house_018,nathan,There's a tiny key hidden underneath...,doormat,use (lift),1
+house,house_021,nathan,Hmmm. It seems too small to be a real key.,doormat,use (lift),2
+house,house_023,nathan,It's the entrance door to the house.,door,look at,
+house,house_024,nathan,Is anyone home? Hello?,door,use (open),1
+house,house_025,nathan,It's firmly locked.,door,use (open),2
+house,house_026,nathan,I should try to get in there and warn the doctor.,door,use (open),3
+house,house_027,nathan,"Good idea, but the wire doesn't even fit into the keyhole.",door,item (barbed wire),
+house,house_028,nathan,That alone doesn't fit.,door,item (key parts),
+house,house_031,nathan,This key is still incomplete.,door,item (key parts),
+house,house_034,nathan,The key to match the lock. Finally.,door,item (key parts),
+house,house_035,nathan,It's an iron gate with a raven depicted on it.,iron gate,look at,
+house,house_036,nathan,It's locked.,iron gate,use (open),1
+house,house_037,nathan,Hmm... maybe I can pick the lock?,iron gate,use (open),2
+house,house_038,nathan,This should be able to pick the lock...,iron gate,item (barbed wire),1
+house,house_039,nathan,It's open!,iron gate,item (barbed wire),2
+house,house_040,nathan,It's a piece of cloth tied to a long stick. It makes some kind of flag or sign.,stick with flag,look at,
+house,house_041,nathan,Ok. I'll do that.,stick with flag,use,
+intro,intro_001,narrator,"In a few seconds, a young man will arrive at this bus stop.",intro,cutscene,1
+intro,intro_001,narrator,Here he comes,intro,cutscene,2
+intro,intro_001,narrator,His name is Nathan,intro,cutscene,3
+intro,intro_001,narrator,"He was sent here by the University of B. to search for a man called Dr. Coppelius, who disappeared about one year ago.",intro,cutscene,4
+intro,intro_001,narrator,"Although he arrived much later than he expected, Nathan begins his search for the mysterious Coppelius.",intro,cutscene,5
+intro,intro_001,narrator,"With nothing but a photograph of the doctor's house, the young man starts his journey through the dusky landscape.",intro,cutscene,6
+intro,intro_001,narrator,Little does he expect that at the end of the path adventure is waiting for him ...,intro,cutscene,7
+lab1,lab1_000,nathan,It's a map of this part of Ravenhollow Bay.,map,look at,1
+lab1,lab1_001,nathan,It seems there's an island near the coast.,map,look at,2
+lab1,lab1_002,nathan,I don't think I need that right now.,map,use (take),
+lab1,lab1_003,nathan,"""Note to self - don't forget: Vincent will come for you too. Leave before he does and take everything with you that he might find useful. Hide.""",larger note,look at,1
+lab1,lab1_004,nathan,"""PS: don't tell Nora, it's far too dangerous. You promised to look after her.""",larger note,look at,2
+lab1,lab1_005,nathan,Don't tell Nora ...?,larger note,look at,3
+lab1,lab1_006,nathan,"Eh, no.",larger note,use (take),
+lab1,lab1_007,nathan,"""Note to self - Danger! Don't use pod prototype. Chance to survive escape is minimal.""",note,look at,1
+lab1,lab1_008,nathan,What's that supposed to mean?,note,look at,2
+lab1,lab1_010,nathan,They're empty.,boxes,look at,
+lab1,lab1_011,nathan,There's nothing in them.,boxes,use (take),
+lab1,lab1_012,nathan,It's a box with bird food.,bird food,look at,
+lab1,lab1_013,nathan,No thanks.,bird food,talk to (eat),
+lab1,lab1_014,nathan,No thanks. I've had my fill of birdseed.,bird food,use (take),
+lab1,lab1_017,nathan,I can't reach it from here.,bird food (trapped),use (take),
+lab1,lab1_018,nathan,"""Phosphorus and Lily"". An impressive oil painting.",painting,look at,
+lab1,lab1_019,nathan,"It's called ""Britt's Place"".",another painting,look at,
+lab1,lab1_020,nathan,That's a pair of binoculars.,binoculars,look at,
+lab1,lab1_021,nathan,Mh ... puedo ver el embarcadero.,binoculars,use,1
+lab1,lab1_022,nathan,"Nora, the sailor, and his dog are down there.",binoculars,use,2
+lab1,lab1_023,nathan,It seems that Vincent doesn't want us to follow him.,stairs,look at,1
+lab1,lab1_024,nathan,He's closed the entrance.,stairs,look at,2
+lab1,lab1_025,nathan,I can't go up there. The secret entrance was closed.,stairs,use,1
+lab1,lab1_026,nathan,I guess it can only be opened from the other side.,stairs,use,2
+lab1,lab1_027,nathan,It's closed.,cupboard,look at,
+lab1,lab1_028,nathan,It's locked.,cupboard,use (open),1
+lab1,lab1_030,nathan,It's not locked!,cupboard (return),use (open),2
+lab1,lab1_031,nathan,"Hey, I found some of the things that Vincent stole from me!",cupboard (return),use (open),3
+lab1,lab1_032,nathan,At least I have some of my things back.,cupboard (return),use (open),4
+lab1,lab1_033,nathan,Now I just need to get out of here.,cupboard (return),use (open),5
+lab1,lab1_034,nathan,It's empty.,cupboard (opened),look at,
+lab1,lab1_035,nathan,I'll leave it be.,cupboard (opened),use (close),
+lab1,lab1_036,nathan,I can see the sea out there ...,outside,look at,1
+lab1,lab1_037,nathan,This place must be somewhere below the cliff.,outside,look at,2
+lab1,lab1_038,nathan,It's a framed photograph of a bearded man wearing a cowboy hat.,photograph,look at,
+lab1,lab1_039,nathan,"Who are you looking at, gringo?",photograph,talk to,
+lab1,lab1_040,nathan,"Hey, there was something hidden behind the picture.",photograph,use (touch),
+lab1,lab1_041,nathan,There's a small circular arrow painted next to the hole.,socket,look at,
+lab1,lab1_042,nathan,Something's missing here...,socket,use,
+lab1,lab1_043,nathan,That seems to fit.,socket,item (crank handle),
+lab1,lab1_044,nathan,This handle should work to open the gate.,handle,look at,
+lab1,lab1_045,nathan,Here we go...,handle,use (turn),1
+lab1,lab1_046,nathan,"Hey, it worked!",handle,use (turn),2
+lab1,lab1_047,nathan,I could open the gate if only I could reach the handle.,handle (trapped),look at,
+lab1,lab1_048,nathan,I can't reach it...,handle (trapped),use (turn),
+lab1,lab1_050,nathan,Hmm. The crow seems to be Dr. Coppelius' pet bird.,crow,look at,
+lab1,lab1_051,nathan,He's still sleeping.,crow,talk to,1
+lab1,lab1_052,nathan,WAKE UP!,crow,talk to,2
+lab1,lab1_054,nathan,He's awake.,crow (awake),look at,
+lab1,lab1_055,nathan,"Come here. Come, come.",crow (awake),talk to,1
+lab1,lab1_056,nathan,Remember me? I made you sleepy...,crow (awake),talk to,2
+lab1,lab1_057,crow,..........,crow (awake),talk to,3
+lab1,lab1_058,nathan,"Well, at least he seems to be listening to me.",crow (awake),talk to,4
+lab1,lab1_059,nathan,"Come on, come to Uncle Nathan!","crow (awake, repeat)",talk to,1
+lab1,lab1_060,nathan,"Thanks, my friend. You've been a really helpful crow.","crow (awake, repeat)",talk to,2
+lab1,lab1_061,nathan,Looks like he had enough sleep. I'm glad he's well.,"crow (awake, repeat)",use,
+lab1,lab1_063,nathan,"Too bad, I can't get a good view of those paintings beyond it.",gate,look at,
+lab1,lab1_064,nathan,How can I open it?,gate,use,
+lab1,lab1_066,nathan,It won't move.,gate (trapped),use,
+lab1,lab1_067,nathan,Vincent locked us in here ... that devil!,gate,intro,
+lab2,lab2_000,nathan,Interesting! It seems that we are under the pond next to the house.,domed-glass ceiling,look at,
+lab2,lab2_001,nathan,It's some kind of sophisticated chair.,chair,look at,
+lab2,lab2_002,nathan,It looks like someone was searching for something here.,bookshelf,look at,
+lab2,lab2_003,coppelius,Fortunately I got rid of everything that might be useful for Vincent.,bookshelf,look at,
+lab2,lab2_004,nathan,That would be a bad idea.,bookshelf,use (climb),
+lab2,lab2_005,nathan,They're just a lot of boring books.,books,look at,1
+lab2,lab2_006,coppelius,"Watch your tongue, young man.",books,look at,2
+lab2,lab2_007,nathan,Sorry.,books,look at,3
+lab2,lab2_008,nathan,These books do not spark my interest.,books,use,1
+lab2,lab2_009,coppelius,"Hey, would you like me to come over to your place and tell you what I think about your things?",books,use,2
+lab2,lab2_010,nathan,"Sure... if I should ever have my own secret room filled with boring books, then I'll invite you. I'm sure you'd like that.",books,use,3
+lab2,lab2_011,coppelius,.........,books,use,4
+lab2,lab2_019,nathan,Are these mathematical formulas?,blackboard,look at,1
+lab2,lab2_020,coppelius,Something like that.,blackboard,look at,2
+lab2,lab2_021,nathan,These formulas are way over my head.,look at,use,
+lab2,lab2_022,nathan,There are a couple of flasks. Some of them are broken.,flasks and tubes,look at,
+lab2,lab2_023,nathan,Useless.,flasks and tubes,use (take),1
+lab2,lab2_024,coppelius,Unless you know how to use them ...,flasks and tubes,use (take),2
+lab2,lab2_025,nathan,The radio is on.,radio,look at,
+lab2,lab2_026,nathan,Not right now.,radio,use (turn off),
+lab2,lab2_027,nathan,I don't want to make Dr. Coppelius angry.,radio,use (turn off),
+lab2,lab2_028,nathan,They're nothing special.,more papers,look at,
+lab2,lab2_030,nathan,May I take some of these papers?,more papers,use (take),1
+lab2,lab2_031,coppelius,You may not.,more papers,use (take),2
+lab2,lab2_032,nathan,Someone left all these papers on the floor.,papers,look at,
+lab2,lab2_034,coppelius,Don't touch my papers!,papers,use (take),1
+lab2,lab2_035,nathan,"Ok, ok. Don't worry.",papers,use (take),2
+lab2,lab2_036,nathan,It's some sort of plan...,plan,look at,1
+lab2,lab2_037,coppelius,It's the construction plan for a wireless phone.,plan,look at,2
+lab2,lab2_038,coppelius,I wonder how long it took Vincent to realize that it's useless.,plan,look at,3
+lab2,lab2_039,coppelius,... of course it's impossible to build a wireless phone.,plan,look at,4
+lab2,lab2_041,coppelius,Take your hands off that plan!,plan,use (take),
+lab2,lab2_043,nathan,It's a mysterious and massive metal pod.,cylindrical pod,look at,1
+lab2,lab2_044,nathan,It's very rusty.,cylindrical pod,look at,2
+lab2,lab2_045,nathan,"Maybe there's something locked inside, that shouldn't be set free.",cylindrical pod,look at,3
+lab2,lab2_046,coppelius,"Maybe not, Nathan.",cylindrical pod,look at,4
+lab2,lab2_047,nathan,There's nothing inside ...,cylindrical pod (opened),look at,1
+lab2,lab2_048,nathan,But it's really cozy in here!,cylindrical pod (opened),look at,2
+lab2,lab2_049,nathan,I wonder what happens when I press this little red button here...,cylindrical pod (opened),use (activate),1
+lab2,lab2_050,coppelius,Me too .....,cylindrical pod (opened),use (activate),2
+lab2,lab2_051,nathan,What!?,cylindrical pod (opened),use (activate),3
+lab2,lab2_052,nathan,That's the tunnel I escaped through.,gaping hole,look at,
+lab2,lab2_053,nathan,"No thanks, my first pass through that shaft was bad enough.",gaping hole,use (enter),
+lab2,lab2_054,vincent,Coppelius!,confrontation,cutscene,1
+lab2,lab2_055,coppelius,None other!,confrontation,cutscene,2
+lab2,lab2_056,nathan,You're Dr. Coppelius? ... but ... then who is he?,confrontation,cutscene,3
+lab2,lab2_057,coppelius,"Nothing but a thief and a traitor. Vincent, I won't let you steal my invention!",confrontation,cutscene,4
+lab2,lab2_058,vincent,"Trust me, old man, I'll find it. I've collected dozens of them.",confrontation,cutscene,5
+lab2,lab2_059,vincent,You and your colleagues should have accepted my offer to join me.,confrontation,cutscene,6
+lab2,lab2_060,vincent,"After I've stolen your plans and inventions, I'll take over the country and you'll be wiped away. Haha!",confrontation,cutscene,7
+lab2,lab2_061,coppelius,"I'll never allow my work to fall into your hands. No righteous man would ever join you, Vincent!",confrontation,cutscene,8
+lab2,lab2_062,vincent,"I'll find your invention, Coppelius! Sooner or later I'll find it!",confrontation,cutscene,9
+lab2,lab2_063,nathan,It's DR. Coppelius.,confrontation,cutscene,10
+lab2,lab2_064,FLASH,---,confrontation,cutscene,11
+lab2,lab2_065,nathan,"What happened? Where did he go? Hey, someone stole all my things!",confrontation,cutscene,12
+lab2,lab2_066,coppelius,Vincent walked out of the room while we were unconscious.,confrontation,cutscene,13
+lab2,lab2_067,coppelius,He locked us in here ... We have to get out!,confrontation,cutscene,14
+lab2,lab2_068,nathan,Dr. Coppelius...?,Dr. Coppelius,talk to,
+lab2,lab2_069,nathan,Could this be Dr. Coppelius? He looks more sinister than I expected.,stranger with cape,look at,
+lab2,lab2_070,nathan,"Excuse me, are you Dr. Coppelius?",stranger with cape,talk to,1
+lab2,lab2_071,vincent,"I've expected you... I knew he was going to send someone in here, but someone like you? A little desperate - the old man!",stranger with cape,talk to,2
+lab2,lab2_072,nathan,What are you talking about?,stranger with cape,talk to,3
+lab2,lab2_073,vincent,"You're nothing but a puppet! If you weren't so insignificant, I would tear you apart and put you back together again...",stranger with cape,talk to,4
+lab2,lab2_074,vincent,I could even purge your memories and whisper new ones into your empty brain.,stranger with cape,talk to,5
+lab2,lab2_075,vincent,Then you'd serve me and execute my commands. See? You could still become useful - isn't that just wonderful?!,stranger with cape,talk to,6
+lab2,lab2_076,nathan,No ... who are you?!,stranger with cape,talk to,7
+lab2,lab2_077,nathan,I'd better avoid roughing up random strangers.,stranger with cape,use (hit),
+lab2,lab2_078,nathan,There's a group of scientists ... mh...,old photograph,look at,1
+lab2,lab2_079,nathan,"Hey, you're pictured here, too.",old photograph,look at,2
+lab2,lab2_080,coppelius,"Indeed, I am.",old photograph,look at,3
+lab2,lab2_081,nathan,"No, I'll leave it here.",old photograph,use (take),
+lab2,lab2_082,nathan,It's some kind of tank that is connected to the pod.,boiler tank,look at,1
+lab2,lab2_083,nathan,There's a flammability symbol painted on the side.,boiler tank,look at,2
+lab2,lab2_084,nathan,How? Maybe I can put something in there ...,boiler tank,use,
+lab2,lab2_085,nathan,I'll put the burning leaflet into the tank.,boiler tank (ignition),item (leaflet),1
+lab2,lab2_086,nathan,"Don't try this at home, kids!",boiler tank (ignition),item (leaflet),2
+lab2,lab2_087,nathan,It seems that I've started a fire within the tank.,boiler tank (ignition),item (leaflet),3
+lab2,lab2_088,nathan,Is that a good thing?,boiler tank (ignition),item (leaflet),4
+lab2,lab2_089,nathan,"Good idea... if I could just start a fire in the boiler, then this could make it hotter.",boiler tank (ignition),item (anything flammable),
+lab2,lab2_094,nathan,How? Maybe I can put something else in there.,boiler tank (ignition),use,
+lab2,lab2_095,nathan,I'll put the rest of the alcohol into the tank.,boiler tank (ignition),item (bottle),
+lab2,lab2_096,nathan,"I'll put in these seeds, too.",boiler tank (ignition),item (seeds),
+lab2,lab2_097,nathan,"This should burn, too.",boiler tank (ignition),item (cloth),
+lab2,lab2_100,nathan,I've put quite enough into that boiler.,boiler tank (ready),use,
+lab2,lab2_101,nathan,"Dr. Coppelius, I was sent to find you.",Dr. Coppelius (dialog tree),topic: quest,
+lab2,lab2_102,coppelius,"I know, I know. The university wants to know if I'm still alive.",Dr. Coppelius (dialog tree),topic: quest,
+lab2,lab2_103,nathan,Yes. I'm supposed to tell you that you are in great danger!,Dr. Coppelius (dialog tree),topic: quest,
+lab2,lab2_104,coppelius,"Well, I know that! That's why I had to hide. I guess my old colleagues were worried enough that they sent you to find me.",Dr. Coppelius (dialog tree),topic: quest,
+lab2,lab2_105,nathan,What kind of danger are you in?,Dr. Coppelius (dialog tree),topic: quest,
+lab2,lab2_106,coppelius,"I knew Vincent was after me... I had to hide to protect my invention. My granddaughter would be in great danger, too, if Vincent found out about my invention.",Dr. Coppelius (dialog tree),topic: quest,
+lab2,lab2_107,nathan,Nora?,Dr. Coppelius (dialog tree),topic: quest,
+lab2,lab2_108,coppelius,"Yes, Nora ... I promised to look after her.",Dr. Coppelius (dialog tree),topic: quest,
+lab2,lab2_109,nathan,Who is Vincent?,Dr. Coppelius (dialog tree),topic: vincent,
+lab2,lab2_110,coppelius,"Well, do you see that old photograph over there? Have a look at it and I'll tell you ...",Dr. Coppelius (dialog tree),topic: vincent,
+lab2,lab2_111,nathan,What invention was Vincent talking about?,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_112,coppelius,After many years of research I was able to construct  that what scientists dream to achieve since generations ...,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_113,coppelius,I constructed a mechanical heart!,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_114,nathan,A mechanical heart?,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_115,coppelius,Yes! A mechanical heart could be the motor for every kind of device ... it's very effective. It just needs a small amount of electric energy.,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_116,coppelius,"Imagine ... a mechanical heart that keeps a tank rolling, providing the energy for planes, beating in the chest of a robot man...",Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_117,coppelius,... or in the chest of a sick young girl.,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_118,nathan,What do you mean? ,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_119,nathan,Wait ... Nora??,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_120,coppelius,Yes! She was the reason I invested thousands of hours into research ... she was very sick.,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_121,coppelius,The only prototype that ever worked was not perfect ... from time to time the device needs to be adjusted ... but it helped my granddaughter Nora to survive.,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_122,nathan,Now I understand why you wanted to keep your invention a secret. If Vincent knew about it then ...,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_123,coppelius,... Nora would be in great danger! Yes.,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_124,nathan,But why did you come here? Why risk running into Vincent?,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_125,coppelius,When I left I forgot some notes that could help me to keep Nora from getting sick. I didn't know that Vincent was already here.,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_126,nathan,Then why did you want me to get into the house?,Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_127,coppelius,"Well, I don't know how Vincent got in... but I tried to make it as complicated as possible to get down here. Unfortunately I couldn't remember how to get in here myself ... it seems I'm getting too old.",Dr. Coppelius (dialog tree),topic: invention,
+lab2,lab2_128,nathan,What is this place?,Dr. Coppelius (dialog tree),topic: lab,
+lab2,lab2_129,coppelius,This is my research laboratory.,Dr. Coppelius (dialog tree),topic: lab,
+lab2,lab2_130,coppelius,About two years ago I heard that Vincent was after our discoveries and that several members of our research team had disappeared.,Dr. Coppelius (dialog tree),topic: lab,
+lab2,lab2_131,coppelius,We tried to stay in contact via radio and mail but after I lost one contact after the other I decided that it's better to leave and to destroy everything that might be useful for Vincent and his evil plans.,Dr. Coppelius (dialog tree),topic: lab,
+lab2,lab2_132,nathan,So that's why the university doesn't know where you are?,Dr. Coppelius (dialog tree),topic: lab,
+lab2,lab2_133,coppelius,Exactly.,Dr. Coppelius (dialog tree),topic: lab,
+lab2,lab2_134,nathan,How do we get out of here?,Dr. Coppelius (dialog tree),topic: escape,
+lab2,lab2_135,coppelius,"Well, that escape pod over there would be an option, but ...",Dr. Coppelius (dialog tree),topic: escape,
+lab2,lab2_136,nathan,Escape? That sounds perfect!,Dr. Coppelius (dialog tree),topic: escape,
+lab2,lab2_137,coppelius,Yes ... well ... it has its quirks.,Dr. Coppelius (dialog tree),topic: escape,
+lab2,lab2_138,nathan,How can I use it?,Dr. Coppelius (dialog tree),topic: escape,
+lab2,lab2_139,coppelius,"Maybe you're right, we don't have a choice.",Dr. Coppelius (dialog tree),topic: escape,
+lab2,lab2_140,coppelius,First you'll have to get get a fire started in the boiler ... then put in anything that might burn. Anything that contains alcohol would help.,Dr. Coppelius (dialog tree),topic: escape,
+lab2,lab2_141,coppelius,That should generate enough steam to activate the pod.,Dr. Coppelius (dialog tree),topic: escape,
+lab2,lab2_142,nathan,First: Start a fire. Second: Put in highly flammable things ... I should be able to do that.,Dr. Coppelius (dialog tree),topic: escape,
+lab2,lab2_143,nathan,I'll try to get us out of here.,Dr. Coppelius (dialog tree),topic: goodbye,
+lab2,lab2_144,coppelius,Very good.,Dr. Coppelius (dialog tree),topic: goodbye,
+photo,photo_001,coppelius,"Yes, the members of the Smith Institute for Advanced Research.",photo,cutscene,1
+photo,photo_002,coppelius,"Among us were leading scientists from all over the world, who together made the most stunning discoveries.",photo,cutscene,2
+photo,photo_003,coppelius,Do you recognize the man in the background?,photo,cutscene,3
+photo,photo_004,coppelius,"Right, it's Vincent.",photo,cutscene,4
+photo,photo_005,coppelius,He was the reason the group split up in the end.,photo,cutscene,5
+photo,photo_006,coppelius,He tried to convince us to use our inventions to overthrow the government.,photo,cutscene,6
+photo,photo_007,coppelius,Of course we declined. We then decided to cease our official researches.,photo,cutscene,7
+photo,photo_008,coppelius,Vincent disappeared.,photo,cutscene,8
+photo,photo_009,coppelius,"Years passed and I slowly lost contact with my colleagues. In his last message, Professor Smith wrote only one line...",photo,cutscene,9
+photo,photo_010,coppelius,Vincent is back.,photo,cutscene,10
+well,well_000,nathan,It's the long way back to the village.,path through fields,look at,
+well,well_001,nathan,I can't leave. Not yet.,path through fields,use,
+well,well_002,nathan,It's dead.,dead tree,look at,
+well,well_003,nathan,The dry branches would make perfect firewood.,dead tree,use,
+well,well_004,nathan,"It's an old bridge, but the wood still looks strong and trustworthy.",wooden bridge,look at,
+well,well_005,nathan,I can only use it to get to the other side.,wooden bridge,use,
+well,well_006,nathan,That cart has seen better days...,broken cart,look at,
+well,well_007,nathan,I wonder who left you here.,broken cart,talk to,
+well,well_008,nathan,I can't use it. It's definitely broken.,broken cart,use,
+well,well_009,nathan,Is that a coffin? Creepy.,strange box,look at,1
+well,well_010,nathan,It looks like it was opened from inside...,strange box,look at,2
+well,well_011,nathan,I'm not going in there!,strange box,use,
+well,well_012,nathan,There's something shiny stuck between the boards.,shiny object,look at,
+well,well_013,nathan,What's this?,shiny object,use,
+well,well_014,nathan,It's the well handle.,handle (attached),look at,
+well,well_015,nathan,Ooops!,handle (attached),use (take),
+well,well_016,nathan,It's the handle from the well.,handle (detached),look at,
+well,well_017,nathan,Okay. It might be useful.,handle (detached),use (take),
+well,well_018,nathan,It's an old well.,stone well,look at,
+well,well_019,nathan,Hello!? Is anyone down there?,stone well,talk to,1
+well,well_020,well,...,stone well,talk to,2
+well,well_021,nathan,No one is answering. Good.,stone well,talk to,3
+well,well_022,nathan,I should use the handle.,stone well,use,
+well,well_024,nathan,It broke when I touched it.,stone well (broken handle),look at,
+well,well_028,nathan,It's a nice lantern.,lantern,look at,
+well,well_029,nathan,I don't want to. I don't like darkness.,lantern,talk to (blow out),
+well,well_030,nathan,"No, it's already lit.",lantern,use (open),
+well,well_031,nathan,It looks like he's on a hiking trip.,greg,look at,
+well,well_032,nathan,Excuse me...,greg,talk to,1
+well,well_033,greg,Why hello!,greg,talk to,2
+well,well_034,nathan,No.,greg,use (hit),
+well,well_035,nathan,I don't want to duel him!,greg,item (glove),
+well,well_037,nathan,Those are nice looking mushrooms.,mushrooms,look at,
+well,well_038,nathan,"No, they might be poisonous.",mushrooms,talk to (eat),
+well,well_039,nathan,I have no idea what kind of mushrooms these are.,mushrooms,use (take),1
+well,well_040,nathan,I should only take what I really need.,mushrooms,use (take),2
+well,well_041,nathan,It's a crow.,crow,look at,1
+well,well_042,nathan,Someone has tied a golden chain with a key to his leg.,crow,look at,2
+well,well_043,nathan,Hi there.,crow,talk to,1
+well,well_044,nathan,"Come on ... you don't need this key, right?",crow,talk to,2
+well,well_045,nathan,"No. He's going to bite my fingers off, I know it.",crow,use,
+well,well_046,nathan,"Try this, my friend.",crow,item (seeds3),1
+well,well_047,nathan,It seems that he likes them... and I do believe that he looks slightly tired now.,crow,item (seeds3),2
+well,well_048,nathan,How about another delicious and crunchy sedative seed?,crow,item (seeds2),1
+well,well_049,nathan,He definitely looks tired now.,crow,item (seeds2),2
+well,well_050,nathan,How about one more delicious and crunchy sedative seed?,crow,item (seeds1),1
+well,well_051,nathan,Hmm... I guess he flew away to take a nap.,crow,item (seeds1),2
+well,well_052,nathan,I'll have to find him.,crow,item (seeds1),3
+well,well_053,nathan,A dry branch.,branch,look at,
+well,well_055,nathan,There's no light.,lamp (closed),look at,
+well,well_056,nathan,Now it's open.,lamp (closed),use (open),
+well,well_057,nathan,"That should work, but I'll have to open the lantern first.",lamp (closed),item (lighter),
+well,well_059,nathan,It's already open.,lamp (opened),look at,
+well,well_060,nathan,Nice warm light.,lamp (opened),item (lighter),
+well,well_062,nathan,No. I really don't like darkness.,lamp (lit),talk to (blow out),
+well,well_063,nathan,There's no need to do that anymore.,lamp (lit),use (open),
+well,well_065,nathan,I'm Nathan. Who are you?,greg (dialog tree),topic: hello,1
+well,well_066,greg,"Hi Nathan. I'm Gregory, a traveller.",greg (dialog tree),topic: hello,2
+well,well_067,nathan,A pleasure to meet you. May I call you Greg?,greg (dialog tree),topic: hello,3
+well,well_068,greg,"...Er, sure.",greg (dialog tree),topic: hello,4
+well,well_069,nathan,"Where are you off to, Greg?",greg (dialog tree),topic: destination,1
+well,well_070,greg,"Right now I'm heading to Leipzig to meet my friend, Matthew.",greg (dialog tree),topic: destination,2
+well,well_071,greg,We have a street performance act that we're taking on the road!,greg (dialog tree),topic: destination,3
+well,well_072,nathan,"Neat, what's your act?",greg (dialog tree),topic: destination,4
+well,well_073,greg,I juggle fire while Matthew tells adventurous short stories.,greg (dialog tree),topic: destination,5
+well,well_074,nathan,"Wow, that sounds great!",greg (dialog tree),topic: destination,6
+well,well_075,greg,"Who knows, maybe you'll catch our act someday.",greg (dialog tree),topic: destination,7
+well,well_076,nathan,Are you connected to the mystery that surrounds this remote area?,greg (dialog tree),topic: help,1
+well,well_077,greg,"I don't think so, but I may be able to help.",greg (dialog tree),topic: help,2
+well,well_078,greg,"Whenever I ponder a mystery, I crack a can of soda to help me think.",greg (dialog tree),topic: help,3
+well,well_079,greg,"Here, try this!",greg (dialog tree),topic: help,4
+well,well_080,nathan,"Wow, thanks! A can of Dr. Pepper, my favorite!",greg (dialog tree),topic: help,5
+well,well_081,greg,"No problem, mate!",greg (dialog tree),topic: help,6
+well,well_082,nathan,Do you know a Dr. Coppelius?,greg (dialog tree),topic: coppelius,1
+well,well_083,greg,"Sorry, I can't help. I'm just passing through these parts.",greg (dialog tree),topic: coppelius,2
+well,well_084,nathan,So ... you don't know him?,greg (dialog tree),topic: coppelius,3
+well,well_085,greg,Can't say that I do.,greg (dialog tree),topic: coppelius,4
+well,well_086,nathan,"Okay, just thought I'd ask.",greg (dialog tree),topic: coppelius,5
+well,well_087,nathan,"So, you're sure you don't know a Dr. Coppelius?",greg (dialog tree),"topic: coppelius, repeat",1
+well,well_088,greg,Still no.,greg (dialog tree),"topic: coppelius, repeat",2
+well,well_089,nathan,I see.,greg (dialog tree),"topic: coppelius, repeat",3
+well,well_090,nathan,"Well, I gotta go.",greg (dialog tree),topic: goodbye,1
+well,well_091,greg,"See ya, Nathan!",greg (dialog tree),topic: goodbye,2

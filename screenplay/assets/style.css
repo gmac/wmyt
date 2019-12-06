@@ -1,0 +1,125 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 50px;
+}
+
+h1 {
+  font-size: 2.85em;
+  margin: 1em 0 0;
+}
+
+h2 {
+  font-size: 1.43em;
+  margin: 1.5em 0 0.5em;
+}
+
+h3 {
+  font-size: 1em;
+  margin: 1em 0 0;
+}
+
+p {
+  margin: 0.1em 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 900px;
+}
+
+.header h1 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.25em;
+}
+
+.header select {
+  margin-right: 2em;
+}
+
+.queue-title {
+  float: right;
+  font-size: 2em;
+  font-style: italic;
+  line-height: 50px;
+}
+
+.room {
+  margin-bottom: 80px;
+  page-break-after: always;
+}
+
+.line {
+  border-bottom: 1px solid #eee;
+  padding: 0.5em;
+  padding-left: 28px;
+  position: relative;
+}
+
+.line input {
+  left: 0.5em;
+  position: absolute;
+  top: 1em;
+  vertical-align: middle;
+}
+
+.line tt {
+  border-radius: 4px;
+  color: #999;
+  display: block;
+  font-family: courier, monospace;
+  font-size: 0.72em;
+  float: right;
+  line-height: 21px;
+  margin-left: 1em;
+  padding: 1px 0.25em;
+}
+
+.line label {
+  font-weight: bold;
+  padding-right: 0.5em;
+}
+
+.line.active {
+  background-color: #FAF7E8;
+}
+
+@media print {
+  body {
+    font-size: 15px;
+    margin: 10px 30px;
+  }
+  
+  h1 {
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    padding-bottom: 0.25em;
+  }
+  
+  h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+  
+  .filters {
+    display: none;
+  }
+  
+  .line {
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+  
+  .line input {
+    display: none;
+  }
+  
+  .line.active label {
+    color: #DB9A00;
+  }
+}

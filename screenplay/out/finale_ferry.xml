@@ -1,0 +1,224 @@
+<room id="finale_ferry" coreLibs="lib/ferry.swf,lib/coppelius.swf" voiceLibs="" enterScript="_enter" exitScript="_exit" grid="main" sound1="lib/ferry.swf:FerryMusic" sound2="lib/ferry.swf:FerryFx"><grids><grid id="main"><boxes><box x="676" y="461" w="365" h="64" nodes="n4,n5"/>
+</boxes><nodes><node id="n0" x="265" y="548" join="n1" trap="0" name="to_field"/>
+<node id="n1" x="325" y="500" join="n0,n3" trap="1" name="join_field"/>
+<node id="n3" x="540" y="490" join="n4,n1" trap="1"/>
+<node id="n4" x="680" y="490" join="n3,n5" trap="0"/>
+<node id="n5" x="1040" y="465" join="n6,n4" trap="0"/>
+<node id="n6" x="1130" y="435" join="n7,n5" trap="1"/>
+<node id="n7" x="1215" y="420" join="n6,n9,n8" trap="1"/>
+<node id="n8" x="1295" y="446" join="n7" trap="1" name="sea"/>
+<node id="n9" x="1145" y="400" join="n7" trap="1" name="rowboat"/>
+</nodes></grid></grids><positions><position id="to_field" turn="2" x="265" y="548"/>
+<position id="join_field" turn="4" x="325" y="500"/>
+<position id="sea" turn="4" x="1295" y="446"/>
+<position id="rowboat" turn="4" x="1145" y="400"/>
+</positions><filters><filter id="scale" axis="y" enabled="1"><pole x="995" y="405" scale="0.4" rate="0.5" blur="1" color="0x000000" tint="0.5"/>
+<pole x="995" y="464" scale="0.72" rate="1" blur="5" color="0xFFFFFF" tint="0.5"/>
+</filter><filter id="color" axis="x" enabled="1"><pole x="264" y="362" scale="0.5" rate="0.5" blur="1" color="0x000000" tint="0.51"/>
+<pole x="602" y="362" scale="1" rate="1" blur="5" color="0x000000" tint="0"/>
+</filter></filters><scripts><script id="_enter"><cursor gameMouse="0" wait="1"/>
+<curtain blackout="0"/>
+<puppet target="coppelius" callAction="0"/>
+</script><script id="_exit"><library unloadRoom="_current"/>
+<curtain blackout="1"/>
+</script></scripts><layers><layer id="_bg" type="background" asset="lib/ferry.swf:FerryBg" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="1665" hitH="675" shape="rect"><param mouse="0" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer><layer id="water" type="plane" asset="lib/ferry.swf:FerryWater" depth="1" visible="1" state="main"><states><state id="main" x="982" y="335" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mouse="0" float="0" parallax=""/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer><layer id="cliff" type="puppet" asset="lib/ferry.swf:FerryCliff" depth="2" visible="1" state="main"><states><state id="main" x="1664" y="560" img="1" imgX="-111" imgY="-358" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="1" hit="0" hitX="-108" hitY="-362" hitW="108" hitH="136" shape="rect"><param mapX="1300" mapY="445" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[acantilado lejano]]></es>
+    <en><![CDATA[distant cliff]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[...]]></es>
+    <en><![CDATA[...]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="_avatar" type="avatar" asset="lib/nathan.swf:Nathan" depth="3" visible="1" state="main"><states><state id="main" x="679" y="491" img="1" imgX="4" imgY="3" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param scroller="1" float="1" mouse="0" tween="7" scale="scale" color="color" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[nathan]]></es>
+    <en><![CDATA[nathan]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer><layer id="railing" type="plane" asset="lib/ferry.swf:FerryRail" depth="4" visible="1" state="main"><states><state id="main" x="1116" y="456" img="1" imgX="-51" imgY="-68" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="1" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mouse="0" float="0" parallax=""/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer><layer id="crab" type="puppet" asset="lib/ferry.swf:FerryCrab" depth="5" visible="1" state="main"><states><state id="main" x="985" y="507" img="1" imgX="65" imgY="-20" imgW="0.9" imgH="0.9" frame="5" blend="normal" alpha="1" bitmap="0" hit="0" hitX="97" hitY="-48" hitW="55" hitH="60" shape="rect"><param mapX="1040" mapY="485" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xCCCCCC" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[cangrejo ermita�o]]></es>
+    <en><![CDATA[hermit crab]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[@state:glove]]></es>
+    <en><![CDATA[@state:glove]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Recoger]]></es>
+    <en><![CDATA[Pick up]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="shroom" type="puppet" asset="lib/ferry.swf:FerryShroom" depth="6" visible="1" state="main"><states><state id="main" x="953" y="534" img="1" imgX="-43" imgY="-63" imgW="0.87" imgH="0.87" frame="4" blend="normal" alpha="1" bitmap="0" hit="0" hitX="-40" hitY="-65" hitW="68" hitH="75" shape="rect"><param mapX="835" mapY="465" turnTo="6" turn="0" cursor="" onclick="-1" prefix="awake_" subtitle="0xCCCCCC" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[Shroom]]></es>
+    <en><![CDATA[Shroom]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Scratch]]></es>
+    <en><![CDATA[Scratch]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="sailor" type="puppet" asset="lib/ferry.swf:FerrySailor" depth="7" visible="1" state="main"><states><state id="main" x="1012" y="537" img="1" imgX="0" imgY="0" imgW="-0.87" imgH="0.87" frame="7" blend="normal" alpha="1" bitmap="0" hit="0" hitX="-30" hitY="-230" hitW="60" hitH="230" shape="rect"><param mapX="960" mapY="465" turnTo="6" turn="0" cursor="" onclick="-1" prefix="nocap_" subtitle="0x99CCFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[Marinero]]></es>
+    <en><![CDATA[Sailor]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+<tree load="sailor"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Golpear]]></es>
+    <en><![CDATA[Hit]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="coppelius" type="puppet" asset="lib/coppelius.swf:Coppelius" depth="8" visible="1" state="main"><states><state id="main" x="798" y="538" img="1" imgX="0" imgY="0" imgW="0.88" imgH="0.88" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="-35" hitY="-190" hitW="70" hitH="190" shape="rect"><param mapX="860" mapY="500" turnTo="4" turn="0" cursor="" onclick="-1" prefix="normal_" subtitle="0xCCCCCC" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[Coppelius]]></es>
+    <en><![CDATA[Coppelius]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Sequence]]></es>
+    <en><![CDATA[Sequence]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="coppelius" frame="" sound="lib/finale_ferry_voice.swf:finale_ferry_001">
+    <es><![CDATA[&#191;Qu� ha pasado? &#191;D�nde esta Nora?]]></es>
+    <en><![CDATA[What happened? Where's Nora?]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="sailor" frame="" sound="lib/finale_ferry_voice.swf:finale_ferry_002">
+    <es><![CDATA[Acababa de dejar a su nieta abordo de mi barco y estaba remando de vuelta a la costa cuando de repente un tipo con una capa apareci� &#161;y me tir� por la borda!]]></es>
+    <en><![CDATA[I had just brought your granddaughter aboard my ship and was rowing back to the shore, when suddenly a guy with a cape appeared and threw me overboard!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="sailor" frame="" sound="lib/finale_ferry_voice.swf:finale_ferry_003">
+    <es><![CDATA[Pude nadar hasta aqu� ... pero ese malvado se escabull� con mi barco y la muchacha.]]></es>
+    <en><![CDATA[I swam back here ... but that villain stole away with my ship and the girl.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="lib/finale_ferry_voice.swf:finale_ferry_004">
+    <es><![CDATA[&#161;Oh, no!]]></es>
+    <en><![CDATA[Oh, no!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="sailor" frame="" sound="lib/finale_ferry_voice.swf:finale_ferry_005">
+    <es><![CDATA[Con un poco de suerte, esa muchacha tuvo buen criterio y se encondi�.]]></es>
+    <en><![CDATA[Hopefully that girl had the good sense to hide herself.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="coppelius" frame="" sound="lib/finale_ferry_voice.swf:finale_ferry_006">
+    <es><![CDATA[&#161;Si Vincent descubre lo de Nora, estar� en grave peligro!]]></es>
+    <en><![CDATA[If Vincent finds out about Nora, then she'll be in grave danger!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="lib/finale_ferry_voice.swf:finale_ferry_007">
+    <es><![CDATA[Tenemos que seguirles.]]></es>
+    <en><![CDATA[We have to follow them.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="sailor" frame="" sound="lib/finale_ferry_voice.swf:finale_ferry_008">
+    <es><![CDATA[&#161;S�!]]></es>
+    <en><![CDATA[Aye!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="coppelius" frame="" sound="lib/finale_ferry_voice.swf:finale_ferry_009">
+    <es><![CDATA[&#161;Vincent, maldito. Si te atraves a hacerle da�o a Nora, te juro que te perseguir� hasta el fin del mundo si hace falta!]]></es>
+    <en><![CDATA[Vincent, you devil. If you dare to harm Nora, then I swear I'll hunt you to the end of the earth!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="lib/finale_ferry_voice.swf:finale_ferry_010">
+    <es><![CDATA[Nora ... espero que est�s bien.]]></es>
+    <en><![CDATA[Nora ... I hope you are alright.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><sequence skip="1"><dialogue playList="0,1,2,3,4,5,6,7,8"/>
+<puppetTween target="_avatar" type="moveThenTurn" to="position:sea" toView="1" waitForComplete="1"/>
+<dialogue playList="9"/>
+</sequence><game room="finale"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="foreground" type="plane" asset="lib/ferry.swf:FerryFg" depth="9" visible="1" state="main"><states><state id="main" x="310" y="243" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="1" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mouse="0" float="0" parallax=""/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer></layers><trees/>
+</room>

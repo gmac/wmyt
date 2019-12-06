@@ -1,0 +1,964 @@
+<room id="lab1" coreLibs="lib/lab1.swf" voiceLibs="lib/lab1_voice.swf" enterScript="_enter" exitScript="_exit" grid="main,trapped" sound1="lib/lab1.swf:Lab1Music" sound2="lib/lab1.swf:Lab1Fx"><grids><grid id="main"><boxes><box x="301" y="508" w="253" h="4" nodes="n0,n1,n7,n10"/>
+<box x="355" y="420" w="36" h="92" nodes="n0,n1,n2,n5"/>
+</boxes><nodes><node id="n0" x="390" y="511" join="n4,n1,n6,n7,n10,n2,n5" trap="0"/>
+<node id="n1" x="356" y="511" join="n0,n4,n7,n10,n2,n5" trap="0"/>
+<node id="n2" x="390" y="425" join="n0,n1,n5" trap="0" name="back"/>
+<node id="n4" x="330" y="600" join="n0,n1" trap="0" name="join_foyer"/>
+<node id="n5" x="390" y="455" join="n6,n0,n1,n2" trap="0"/>
+<node id="n6" x="425" y="480" join="n7,n5,n0" trap="1" name="handle"/>
+<node id="n7" x="460" y="510" join="n6,n0,n1,n10" trap="0"/>
+<node id="n8" x="660" y="485" join="n9,n11,n10" trap="0" name="join_lab2"/>
+<node id="n9" x="875" y="455" join="n8" trap="0" name="to_lab2"/>
+<node id="n10" x="551" y="510" join="n11,n8,n0,n1,n7" trap="0"/>
+<node id="n11" x="605" y="470" join="n8,n10" trap="0" name="crow"/>
+</nodes></grid><grid id="trapped"><boxes/>
+<nodes><node id="n8" x="660" y="485" join="n9,n11" trap="0"/>
+<node id="n9" x="875" y="455" join="n8" trap="0"/>
+<node id="n11" x="605" y="470" join="n8" trap="1" name="crow"/>
+</nodes></grid></grids><positions><position id="back" turn="4" x="390" y="425"/>
+<position id="join_foyer" turn="2" x="330" y="600"/>
+<position id="handle" turn="4" x="425" y="480"/>
+<position id="join_lab2" turn="6" x="660" y="485"/>
+<position id="to_lab2" turn="4" x="875" y="455"/>
+<position id="crow" turn="4" x="605" y="470"/>
+<position id="crow" turn="4" x="605" y="470"/>
+</positions><filters><filter id="_main" axis="y" enabled="1"><pole x="124" y="428" scale="0.9" rate="0.5" blur="1" color="0x000000" tint="0.5"/>
+<pole x="124" y="610" scale="1.2" rate="1" blur="5" color="0xFFFFFF" tint="0.5"/>
+</filter></filters><scripts><script id="_enter"><curtain blackout="0"/>
+<logic eval="[trappedInLab] EQ 1"><puppet target="gate2" callAction="3"/>
+</logic></script><script id="_exit"><library unloadRoom="_current"/>
+<curtain blackout="1"/>
+</script><script id="_prerender"><logic><if eval="[trappedInLab] EQ 1"><room target="_current" grid="trapped"/>
+<layer target="_current:handle" state="crow"/>
+<layer target="_current:map" visible="0"/>
+<layer target="_current:boxes" visible="0"/>
+<layer target="_current:binoculars" visible="0"/>
+<layer target="_current:exit_foyer" visible="0" state="closed"/>
+<layer target="_current:exit_lab2" visible="1"/>
+<layer target="_current:bird_feeder" state="trapped"/>
+<layer target="_current:cupboard" state="unlocked"/>
+<layerState target="_current:curtains:main" mouseEnabled="0"/>
+<layer target="_current:gate" visible="0"/>
+<layer target="_current:gate2" render="1"/>
+<layer target="_current:crow" render="1"/>
+</if><else><layer target="_current:gate" visible="1"/>
+<layer target="_current:gate2" render="0"/>
+<layer target="_current:crow" render="0"/>
+</else></logic></script></scripts><layers><layer id="_bg" type="background" asset="lib/lab1.swf:Lab1Bg" depth="0" visible="1" state="main"><states><state id="main" x="0" y="0" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="0" hitY="0" hitW="900" hitH="675" shape="rect"><param mouse="1" scrollL="300" scrollR="300" scrollT="300" scrollB="300"/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer><layer id="exit_lab2" type="puppet" asset="" depth="1" visible="0" state="main"><states><state id="main" x="899" y="561" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-130" hitY="-448" hitW="130" hitH="450" shape="rect"><param mapX="875" mapY="455" turnTo="2" turn="0" cursor="exit3" onclick="0" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog/>
+<script><game room="lab2:join_lab1"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="map" type="puppet" asset="" depth="2" visible="1" state="main"><states><state id="main" x="451" y="283" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-34" hitY="-41" hitW="78" hitH="54" shape="rect"><param mapX="390" mapY="425" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[mapa]]></es>
+    <en><![CDATA[map]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es un mapa de esta zona de la bahía de Ravenhollow.]]></es>
+    <en><![CDATA[It's a map of this part of Ravenhollow Bay.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Parece que hay una isla cerca de la costa.]]></es>
+    <en><![CDATA[It seems there's an island near the coast.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Coger]]></es>
+    <en><![CDATA[Take]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora mismo no creo que me haga falta.]]></es>
+    <en><![CDATA[I don't think I need that right now.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="note2" type="puppet" asset="" depth="3" visible="1" state="main"><states><state id="main" x="447" y="231" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-16" hitY="-41" hitW="42" hitH="45" shape="rect"><param mapX="390" mapY="425" turnTo="2" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[nota grande]]></es>
+    <en><![CDATA[larger note]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;Nota para mí mismo - no te olvides: Vincent también vendrá a por tí. Márchate antes de que lo haga y llévate todo lo que pueda resultarle útil. Escóndete.&quot;]]></es>
+    <en><![CDATA[&quot;Note to self - don't forget: Vincent will come for you too. Leave before he does and take everything with you that he might find useful. Hide.&quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;PS: no le cuentes nada a Nora, es demasiado peligroso. Le prometiste cuidar de ella.&quot;]]></es>
+    <en><![CDATA[&quot;PS: don't tell Nora, it's far too dangerous. You promised to look after her.&quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;No le cuentes nada a Nora ...?]]></es>
+    <en><![CDATA[Don't tell Nora ...?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Coger]]></es>
+    <en><![CDATA[Take]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Eh, no.]]></es>
+    <en><![CDATA[Eh, no.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="note1" type="puppet" asset="" depth="4" visible="1" state="main"><states><state id="main" x="431" y="188" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-20" hitY="-31" hitW="37" hitH="40" shape="rect"><param mapX="390" mapY="425" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[nota]]></es>
+    <en><![CDATA[note]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;Nota para mí mismo - &#161;Peligro! No usar la cápsula prototipo. Las posibilidades de sobrevivir son mínimas.&quot;]]></es>
+    <en><![CDATA[&quot;Note to self - Danger! Don't use pod prototype. Chance to survive escape is minimal.&quot;]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Qué se supone que significa eso?]]></es>
+    <en><![CDATA[What's that supposed to mean?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Coger]]></es>
+    <en><![CDATA[Take]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Eh, no.]]></es>
+    <en><![CDATA[Eh, no.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="boxes" type="puppet" asset="" depth="5" visible="1" state="main"><states><state id="main" x="247" y="444" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-44" hitY="-61" hitW="71" hitH="66" shape="rect"><param mapX="310" mapY="510" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[cajas]]></es>
+    <en><![CDATA[boxes]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Están vacías.]]></es>
+    <en><![CDATA[They're empty.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Coger]]></es>
+    <en><![CDATA[Take]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No hay nada dentro.]]></es>
+    <en><![CDATA[There's nothing in them.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="bird_feeder" type="puppet" asset="" depth="6" visible="1" state="main"><states><state id="main" x="506" y="242" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-25" hitY="-35" hitW="61" hitH="40" shape="rect"><param mapX="425" mapY="480" turnTo="2" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[comida para pájaros]]></es>
+    <en><![CDATA[bird food]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es una caja llena de comida para pájaros.]]></es>
+    <en><![CDATA[It's a box with bird food.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Comer]]></es>
+    <en><![CDATA[Eat]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No gracias.]]></es>
+    <en><![CDATA[No thanks.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Coger algo de]]></es>
+    <en><![CDATA[Take feed from]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No gracias. Ya estoy servido de semillas para pájaros.]]></es>
+    <en><![CDATA[No thanks. I've had my fill of birdseed.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state><state id="trapped" x="506" y="242" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-25" hitY="-35" hitW="61" hitH="40" shape="rect"><param mapX="605" mapY="470" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[comida para pájaros]]></es>
+    <en><![CDATA[bird food]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es una caja llena de comida para pájaros.]]></es>
+    <en><![CDATA[It's a box with bird food.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Comer]]></es>
+    <en><![CDATA[Eat]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No gracias.]]></es>
+    <en><![CDATA[No thanks.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Coger algo de]]></es>
+    <en><![CDATA[Take feed from]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No alcanzo desde aquí.]]></es>
+    <en><![CDATA[I can't reach it from here.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="painting1" type="puppet" asset="" depth="7" visible="1" state="main"><states><state id="main" x="632" y="293" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-45" hitY="-127" hitW="100" hitH="128" shape="rect"><param mapX="660" mapY="485" turnTo="1" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[cuadro]]></es>
+    <en><![CDATA[painting]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&quot;Phosphorus and Lily&quot;. Una impresionante pintura al óleo.]]></es>
+    <en><![CDATA[&quot;Phosphorus and Lily&quot;. An impressive oil painting.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="painting2" type="puppet" asset="" depth="8" visible="1" state="main"><states><state id="main" x="715" y="293" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-10" hitY="-127" hitW="40" hitH="128" shape="rect"><param mapX="660" mapY="485" turnTo="2" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[otro cuadro]]></es>
+    <en><![CDATA[another painting]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Se titula &quot;Britt's Place&quot;.]]></es>
+    <en><![CDATA[It's called &quot;Britt's Place&quot;.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="binoculars" type="puppet" asset="" depth="9" visible="1" state="main"><states><state id="main" x="342" y="256" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-50" hitY="-70" hitW="85" hitH="70" shape="rect"><param mapX="390" mapY="425" turnTo="8" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[prismáticos]]></es>
+    <en><![CDATA[binoculars]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Son unos prismáticos.]]></es>
+    <en><![CDATA[That's a pair of binoculars.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Mh ... puedo ver el embarcadero.]]></es>
+    <en><![CDATA[Mh ... I can see the pier.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Nora, el marinero y su perro están allí abajo.]]></es>
+    <en><![CDATA[Nora, the sailor, and his dog are down there.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="exit_foyer" type="puppet" asset="lib/lab1.swf:Lab1Stairs" depth="10" visible="1" state="opened"><states><state id="opened" x="212" y="563" img="1" imgX="-211" imgY="-450" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="-213" hitY="-75" hitW="390" hitH="75" shape="rect"><param mapX="330" mapY="600" turnTo="6" turn="0" cursor="exit6" onclick="0" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[escalera]]></es>
+    <en><![CDATA[stairs]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog/>
+<script><game room="foyer:join_lab1"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></actions><items/>
+</state><state id="closed" x="212" y="563" img="1" imgX="-211" imgY="-450" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="-213" hitY="-75" hitW="390" hitH="75" shape="rect"><param mapX="330" mapY="600" turnTo="5" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[escalera]]></es>
+    <en><![CDATA[stairs]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Parece que Vincent no quiere que le sigamos.]]></es>
+    <en><![CDATA[It seems that Vincent doesn't want us to follow him.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ha cerrado la entrada.]]></es>
+    <en><![CDATA[He's closed the entrance.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No puedo subir. La entrada secreta está cerrada.]]></es>
+    <en><![CDATA[I can't go up there. The secret entrance was closed.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Me da que sólo puede abrirse desde el otro lado.]]></es>
+    <en><![CDATA[I guess it can only be opened from the other side.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="cupboard" type="puppet" asset="lib/lab1.swf:Lab1Cupboard" depth="11" visible="1" state="locked"><states><state id="locked" x="378" y="418" img="1" imgX="20" imgY="-109" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-79" hitY="-102" hitW="100" hitH="80" shape="rect"><param mapX="390" mapY="425" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[armario]]></es>
+    <en><![CDATA[cupboard]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Está cerrado.]]></es>
+    <en><![CDATA[It's closed.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Abrir]]></es>
+    <en><![CDATA[Open]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Está cerrado con llave.]]></es>
+    <en><![CDATA[It's locked.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state><state id="unlocked" x="378" y="418" img="1" imgX="20" imgY="-109" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-79" hitY="-102" hitW="100" hitH="80" shape="rect"><param mapX="358" mapY="426" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[armario]]></es>
+    <en><![CDATA[cupboard]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Está cerrado.]]></es>
+    <en><![CDATA[It's closed.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Abrir]]></es>
+    <en><![CDATA[Open]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Ahora no está cerrado con llave!]]></es>
+    <en><![CDATA[It's not locked!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="kneel_speak" sound="">
+    <es><![CDATA[&#161;Hey, he encontrado algunas de las cosas que Vincent me robó!]]></es>
+    <en><![CDATA[Hey, I found some of the things that Vincent stole from me!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Al menos he recuperado mis cosas.]]></es>
+    <en><![CDATA[At least I have some of my things back.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahora sólo tengo que salir de aquí.]]></es>
+    <en><![CDATA[Now I just need to get out of here.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><sequence><dialogue playList="0"/>
+<layerSprite target="_avatar" animFrame="kneel_down_reach" waitForComplete="1"/>
+<layerSprite target="_avatar" animFrame="kneel_reach_in" waitForComplete="1"/>
+<layerSprite target="cupboard" animFrame="opening" waitForComplete="1"/>
+<dialogue playList="1"/>
+<layerSprite target="_avatar" animFrame="kneel_reach_out" waitForComplete="1"/>
+<inventory add="lighter,photo,key123,glovePair,clothWet,bottleEmpty,leaflet,seeds0,barbedWire,journal,shaker"/>
+<layer target="_current:cupboard" state="empty"/>
+<layerSprite target="_avatar" animFrame="kneel_pocket_in" waitForComplete="1"/>
+<layerSprite target="_avatar" animFrame="kneel_up" waitForComplete="1"/>
+<dialogue playList="2,3"/>
+</sequence></script></action></actions><items/>
+</state><state id="empty" x="378" y="418" img="1" imgX="20" imgY="-109" imgW="1" imgH="1" frame="4" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-79" hitY="-102" hitW="100" hitH="80" shape="rect"><param mapX="390" mapY="425" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="0" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[armario]]></es>
+    <en><![CDATA[cupboard]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Está vacío.]]></es>
+    <en><![CDATA[It's empty.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Cerrar]]></es>
+    <en><![CDATA[Close]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lo dejaré así.]]></es>
+    <en><![CDATA[I'll leave it be.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue playList="0"/>
+<layerSprite target="_avatar" animFrame="kneel_down" waitForComplete="1"/>
+<layerSprite target="cupboard" animFrame="opening" waitForComplete="1"/>
+<dialogue playList="1"/>
+<inventory add="lighter,photo,key123,glovePair,clothWet,bottleEmpty,leaflet,seeds0,barbedWire,journal,shaker"/>
+<layerSprite target="_avatar" animFrame="kneel_pocket_in" waitForComplete="1"/>
+<layerSprite target="_avatar" animFrame="kneel_up" waitForComplete="1"/>
+<dialogue playList="2,3"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="curtains" type="puppet" asset="lib/lab1.swf:Lab1Curtains" depth="12" visible="1" state="main"><states><state id="main" x="208" y="548" img="1" imgX="42" imgY="-239" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-89" hitY="-436" hitW="145" hitH="263" shape="rect"><param mapX="310" mapY="510" turnTo="8" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[exterior]]></es>
+    <en><![CDATA[outside]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Puedo ver el mar ahí afuera ...]]></es>
+    <en><![CDATA[I can see the sea out there ...]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Este lugar debe estar debajo del risco.]]></es>
+    <en><![CDATA[This place must be somewhere below the cliff.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="handle" type="puppet" asset="lib/lab1.swf:Lab1Opener" depth="13" visible="1" state="hidden"><states><state id="hidden" x="491" y="471" img="1" imgX="27" imgY="-157" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-14" hitY="-160" hitW="48" hitH="58" shape="rect"><param mapX="425" mapY="480" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[fotografía]]></es>
+    <en><![CDATA[photograph]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Es una fotografía enmarcada de un hombre con barba y con gorro de cowboy.]]></es>
+    <en><![CDATA[It's a framed photograph of a bearded man wearing a cowboy hat.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;A quién estás mirando, gringo?]]></es>
+    <en><![CDATA[Who are you looking at, gringo?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Tocar]]></es>
+    <en><![CDATA[Touch]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Hey, había algo escondido tras la fotografía.]]></es>
+    <en><![CDATA[Hey, there was something hidden behind the picture.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><sequence><layerSprite target="_avatar" animFrame="reach_out" waitForComplete="1"/>
+<layer target="_current:handle" state="socket"/>
+<layerSprite target="handle" animFrame="reveal" waitForComplete="0"/>
+<layerSprite target="_avatar" animFrame="reach_in" waitForComplete="1"/>
+</sequence><dialogue play="*"/>
+</script></action></actions><items/>
+</state><state id="socket" x="491" y="471" img="1" imgX="27" imgY="-157" imgW="1" imgH="1" frame="3" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-12" hitY="-160" hitW="48" hitH="55" shape="rect"><param mapX="425" mapY="480" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[receptáculo]]></es>
+    <en><![CDATA[socket]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Hay una pequeña flecha circular pintada junto al agujero.]]></es>
+    <en><![CDATA[There's a small circular arrow painted next to the hole.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ahí falta algo...]]></es>
+    <en><![CDATA[Something's missing here...]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items><action id="handle"><title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Parece que encaja.]]></es>
+    <en><![CDATA[That seems to fit.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cursor item=""/>
+<layerSprite target="_avatar" animFrame="reach_out" waitForComplete="1"/>
+<layer target="_current:handle" state="handle"/>
+<inventory remove="handle"/>
+<layerSprite target="_avatar" animFrame="reach_in" waitForComplete="1"/>
+<dialogue play="*"/>
+</script></action></items></state><state id="handle" x="491" y="471" img="1" imgX="27" imgY="-157" imgW="1" imgH="1" frame="4" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-30" hitY="-160" hitW="60" hitH="55" shape="rect"><param mapX="425" mapY="480" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[manivela]]></es>
+    <en><![CDATA[handle]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Esta manivela debería servir para abrir la reja.]]></es>
+    <en><![CDATA[This handle should work to open the gate.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Girar]]></es>
+    <en><![CDATA[Turn]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Allá vamos...]]></es>
+    <en><![CDATA[Here we go...]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Hey, funcionó!]]></es>
+    <en><![CDATA[Hey, it worked!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue playList="0"/>
+<sequence><layerSprite target="_avatar" animFrame="reach_out" waitForComplete="1"/>
+<layerSprite target="gate" animFrame="opening" waitForComplete="0"/>
+<layerSprite target="handle" animFrame="opening" waitForComplete="1"/>
+<layerState target="_current:handle:handle" frameLabel="open"/>
+<layerSprite target="_avatar" animFrame="reach_in" waitForComplete="1"/>
+<layerState target="_current:gate:main" frameLabel="open" mouseEnabled="0"/>
+<layer target="_current:exit_lab2" visible="1"/>
+</sequence><dialogue playList="1"/>
+</script></action></actions><items/>
+</state><state id="crow" x="491" y="471" img="1" imgX="27" imgY="-157" imgW="1" imgH="1" frame="7" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-29" hitY="-161" hitW="61" hitH="55" shape="rect"><param mapX="605" mapY="470" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[manivela]]></es>
+    <en><![CDATA[handle]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Con sólo alcanzar la manivela podría abrir la reja.]]></es>
+    <en><![CDATA[I could open the gate if only I could reach the handle.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Morder]]></es>
+    <en><![CDATA[Bite]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No alcanzo desde aquí...]]></es>
+    <en><![CDATA[I can't reach it...]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Girar]]></es>
+    <en><![CDATA[Turn]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No alcanzo desde aquí...]]></es>
+    <en><![CDATA[I can't reach it...]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="crow" type="puppet" asset="" depth="14" visible="1" state="sleeping"><states><state id="sleeping" x="461" y="211" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-52" hitY="-55" hitW="83" hitH="87" shape="rect"><param mapX="605" mapY="470" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[cuervo]]></es>
+    <en><![CDATA[crow]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Hmm. Parece que el cuervo es la mascota del Dr. Coppelius.]]></es>
+    <en><![CDATA[Hmm. The crow seems to be Dr. Coppelius' pet bird.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Todavía está durmiendo.]]></es>
+    <en><![CDATA[He's still sleeping.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;DESPIERTA!]]></es>
+    <en><![CDATA[WAKE UP!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+<sequence><layerSprite target="handle" animFrame="waking" waitForComplete="1"/>
+<layerState target="_current:handle:crow" frameLabel="crow_closed"/>
+<layer target="_current:crow" state="awake"/>
+</sequence></script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Todavía está durmiendo.]]></es>
+    <en><![CDATA[He's still sleeping.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state><state id="awake" x="461" y="211" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-52" hitY="-55" hitW="83" hitH="87" shape="rect"><param mapX="605" mapY="470" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xCCCCCC" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[cuervo]]></es>
+    <en><![CDATA[crow]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Está despierto.]]></es>
+    <en><![CDATA[He's awake.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Ven aquí bonito. Ven, ven.]]></es>
+    <en><![CDATA[Come here. Come, come.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Te acuerdas de mí? Te hice dormir un buen ratito...]]></es>
+    <en><![CDATA[Remember me? I made you sleepy...]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="crow" frame="" sound="">
+    <es><![CDATA[..........]]></es>
+    <en><![CDATA[..........]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Bueno, al menos parece que me está escuchando.]]></es>
+    <en><![CDATA[Well, at least he seems to be listening to me.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Vamos, ven con el Tío Nathan!]]></es>
+    <en><![CDATA[Come on, come to Uncle Nathan!]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Gracias, amiguito. Has sido un cuervo realmente útil.]]></es>
+    <en><![CDATA[Thanks, my friend. You've been a really helpful crow.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><cache field="crowHelp" math="+1"/>
+<logic><if eval="[crowHelp] EQ 1"><dialogue playList="0,1,2,3"/>
+</if><else><dialogue playList="4"/>
+<sequence><layerSprite target="handle" animFrame="crow_opening" waitForComplete="1"/>
+<layerSprite target="gate2" animFrame="opening" waitForComplete="1"/>
+<layerState target="_current:gate:main" frameLabel="open" mouseEnabled="0"/>
+</sequence><layer target="_current:gate2" visible="0" omit="1"/>
+<layer target="_current:gate" visible="1"/>
+<layer target="_current:map" visible="1"/>
+<layer target="_current:binoculars" visible="1"/>
+<layer target="_current:boxes" visible="1"/>
+<layer target="_current:exit_foyer" visible="1"/>
+<layer target="_current:crow" visible="0" omit="1"/>
+<layer target="_current:bird_feeder" state="main"/>
+<layerState target="_current:cupboard:unlocked" mouseEnabled="1"/>
+<layerState target="_current:curtains:main" mouseEnabled="1"/>
+<layerState target="_current:handle:crow" frameLabel="crow_open" mouseEnabled="0"/>
+<layerState target="lab2:exit_lab1:main" imageEnabled="0"/>
+<room target="_current" grid="main"/>
+<cache field="crowHelp" value=""/>
+<cache field="trappedInLab" value=""/>
+<dialogue playList="5"/>
+</else></logic></script></action><action id="act2"><title>
+    <es><![CDATA[Usar]]></es>
+    <en><![CDATA[Use]]></en>
+    <de><![CDATA[Benutze]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Parece que ha dormido suficiente. Me alegro de que esté bien.]]></es>
+    <en><![CDATA[Looks like he had enough sleep. I'm glad he's well.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="gate" type="puppet" asset="lib/lab1.swf:Lab1Gate" depth="15" visible="1" state="main"><states><state id="main" x="667" y="563" img="1" imgX="-153" imgY="-453" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-119" hitY="-400" hitW="195" hitH="360" shape="rect"><param mapX="550" mapY="510" turnTo="4" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[reja]]></es>
+    <en><![CDATA[gate]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Está cerrada.]]></es>
+    <en><![CDATA[It's closed.]]></en>
+    <de><![CDATA[]]></de>
+</dia><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Lástima, desde aquí no puedo ver bien los cuadros de detrás de la reja.]]></es>
+    <en><![CDATA[Too bad, I can't get a good view of those paintings beyond it.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Abrir]]></es>
+    <en><![CDATA[Open]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#191;Cómo podré abrirla?]]></es>
+    <en><![CDATA[How can I open it?]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="_avatar" type="avatar" asset="lib/nathan.swf:Nathan" depth="16" visible="1" state="main"><states><state id="main" x="460" y="529" img="1" imgX="4" imgY="3" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param scroller="1" float="1" mouse="0" tween="7" scale="_main" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[nathan]]></es>
+    <en><![CDATA[nathan]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer><layer id="gate2" type="puppet" asset="lib/lab1.swf:Lab1Gate" depth="17" visible="1" state="main"><states><state id="main" x="667" y="563" img="1" imgX="-153" imgY="-453" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="0" hit="1" hitX="-119" hitY="-400" hitW="195" hitH="360" shape="rect"><param mapX="660" mapY="485" turnTo="6" turn="0" cursor="" onclick="-1" prefix="" subtitle="0xFFFFFF" mouse="1" float="0" tween="7" rotate="0" scroller="0" scale="" color="" rate="" blur=""/>
+<vars/>
+<title>
+    <es><![CDATA[reja]]></es>
+    <en><![CDATA[gate]]></en>
+    <de><![CDATA[]]></de>
+</title><actions><action id="act0"><title>
+    <es><![CDATA[Mirar]]></es>
+    <en><![CDATA[Look at]]></en>
+    <de><![CDATA[Untersuche]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[Está cerrada.]]></es>
+    <en><![CDATA[It's closed.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="act1"><title>
+    <es><![CDATA[Hablar con]]></es>
+    <en><![CDATA[Talk to]]></en>
+    <de><![CDATA[Sprich mit]]></de>
+</title><dialog/>
+<script><dialogue play="*"/>
+</script></action><action id="act2"><title>
+    <es><![CDATA[Abrir]]></es>
+    <en><![CDATA[Open]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[No cederá.]]></es>
+    <en><![CDATA[It won't move.]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action><action id="item"><title>
+    <es><![CDATA[intro]]></es>
+    <en><![CDATA[intro]]></en>
+    <de><![CDATA[]]></de>
+</title><dialog><dia puppet="_avatar" frame="" sound="">
+    <es><![CDATA[&#161;Vincent nos ha encerrado aquí dentro ... maldito!]]></es>
+    <en><![CDATA[Vincent locked us in here ... that devil!]]></en>
+    <de><![CDATA[]]></de>
+</dia></dialog><script><dialogue play="*"/>
+</script></action></actions><items/>
+</state></states></layer><layer id="foreground" type="plane" asset="lib/lab1.swf:Lab1Fg" depth="18" visible="1" state="main"><states><state id="main" x="0" y="113" img="1" imgX="0" imgY="0" imgW="1" imgH="1" frame="1" blend="normal" alpha="1" bitmap="1" hit="0" hitX="0" hitY="0" hitW="100" hitH="100" shape="rect"><param mouse="0" float="0" parallax=""/>
+<vars/>
+<title>
+    <es><![CDATA[]]></es>
+    <en><![CDATA[]]></en>
+    <de><![CDATA[]]></de>
+</title><actions/>
+<items/>
+</state></states></layer></layers><trees/>
+</room>
